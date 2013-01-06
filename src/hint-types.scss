@@ -14,7 +14,7 @@
 	}
 
 	// arrow color
-	@include arrow-border-color($errorColor)
+	@include arrow-border-color($color);
 }
 
 // Error
