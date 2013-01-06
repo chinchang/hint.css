@@ -1,3 +1,11 @@
+@mixin positioned-tooltip($color) {
+	@each $position in top, bottom, left, right {
+		&.hint--#{$position}:before {
+			border-#{$position}-color: $color;
+		}
+	}
+}
+
 // position: top
 
 .hint--top {
