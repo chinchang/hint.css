@@ -3,7 +3,7 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-    pkg: '<json:hint.css.json>',
+    pkg: '<json:package.json>',
     meta: {
       banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
         '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
@@ -11,25 +11,34 @@ module.exports = function(grunt) {
         '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
         ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
     },
-    concat: {
-      dist: {
-        src: ['<banner:meta.banner>', '*.css>'],
-        dest: '<%= pkg.name %>.css'
+
+    sass: {
+        dist: {
+            files: {
+                '<%= pkg.name %>.css': 'src/<%= pkg.name %>.scss'
+            }
+        }
+    },
+
+    mincss: {
+      compress: {
+        files: {
+          '<%= pkg.name %>.min.css': [ '<%= pkg.name %>.css' ]
+        }
       }
     },
-    min: {
-      dist: {
-        src: ['<banner:meta.banner>', '<config:concat.dist.dest>'],
-        dest: '<%= pkg.name %>.min.css'
-      }
-    },
+
     watch: {
-      files: '<config:lint.files>',
-      tasks: 'lint qunit'
-    },
+      files: 'src/*.scss',
+      tasks: 'default'
+    }
   });
 
+  // Dependencies
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-mincss');
+  
   // Default task.
-  grunt.registerTask('default', 'concat min');
+  grunt.registerTask('default', 'sass mincss');
 
 };

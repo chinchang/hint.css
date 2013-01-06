@@ -1,3 +1,141 @@
-/*! Hint - v0.1.0 - 2012-12-31
-* https://github.com/chinchang/hint.css
-* Copyright (c) 2012 Kushagra Gour; Licensed MIT */
+.hint {
+  position: relative;
+  display: inline-block; }
+
+.hint:before, .hint:after {
+  position: absolute;
+  opacity: 0;
+  z-index: 1000000;
+  pointer-events: none;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease; }
+
+.hint:hover:before, .hint:hover:after {
+  opacity: 1; }
+
+/*
+ * tooltip arrow
+ */
+.hint:before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  border: 6px solid transparent;
+  z-index: 1000001; }
+
+/*
+ * tooltip body
+ */
+.hint:after {
+  content: attr(data-hint);
+  background: #383838;
+  color: white;
+  text-shadow: 0 -1px 0px #050505;
+  padding: 8px 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
+
+.hint--top:before {
+  bottom: 100%;
+  left: 50%;
+  margin: 0 0 -18px 0;
+  border-top-color: #383838; }
+.hint--top:after {
+  bottom: 100%;
+  left: 50%;
+  margin: 0 0 -6px -10px; }
+.hint--top:hover:before {
+  margin-bottom: -10px; }
+.hint--top:hover:after {
+  margin-bottom: 2px; }
+
+.hint--bottom:before {
+  top: 100%;
+  left: 50%;
+  margin: -14px 0 0 0;
+  border-bottom-color: #383838; }
+.hint--bottom:after {
+  top: 100%;
+  left: 50%;
+  margin: -2px 0 0 -10px; }
+.hint--bottom:hover:before {
+  margin-top: -6px; }
+.hint--bottom:hover:after {
+  margin-top: 6px; }
+
+.hint--right:before {
+  left: 100%;
+  bottom: 50%;
+  margin: 0 0 -4px -8px;
+  border-right-color: #383838; }
+.hint--right:after {
+  left: 100%;
+  bottom: 50%;
+  margin: 0 0 -13px 4px; }
+.hint--right:hover:before {
+  margin: 0 0 -4px -0; }
+.hint--right:hover:after {
+  margin: 0 0 -13px 12px; }
+
+.hint--left:before {
+  right: 100%;
+  bottom: 50%;
+  margin: 0 -8px -4px 0;
+  border-left-color: #383838; }
+.hint--left:after {
+  right: 100%;
+  bottom: 50%;
+  margin: 0 4px -13px 0; }
+.hint--left:hover:before {
+  margin: 0 0 -4px 0; }
+.hint--left:hover:after {
+  margin: 0 12px -13px 0; }
+
+.hint--error:after {
+  background-color: #b34e4d;
+  text-shadow: 0 -1px 0px #6c2e2e; }
+.hint--error.hint--top:before {
+  border-top-color: #b34e4d; }
+.hint--error.hint--bottom:before {
+  border-bottom-color: #b34e4d; }
+.hint--error.hint--left:before {
+  border-left-color: #b34e4d; }
+.hint--error.hint--right:before {
+  border-right-color: #b34e4d; }
+
+.hint--warning:after {
+  background-color: #c09854;
+  text-shadow: 0 -1px 0px #7f602f; }
+.hint--warning.hint--top:before {
+  border-top-color: #c09854; }
+.hint--warning.hint--bottom:before {
+  border-bottom-color: #c09854; }
+.hint--warning.hint--left:before {
+  border-left-color: #c09854; }
+.hint--warning.hint--right:before {
+  border-right-color: #c09854; }
+
+.hint--info:after {
+  background-color: #3986ac;
+  text-shadow: 0 -1px 0px #204b5f; }
+.hint--info.hint--top:before {
+  border-top-color: #3986ac; }
+.hint--info.hint--bottom:before {
+  border-bottom-color: #3986ac; }
+.hint--info.hint--left:before {
+  border-left-color: #3986ac; }
+.hint--info.hint--right:before {
+  border-right-color: #3986ac; }
+
+.hint--success:after {
+  background-color: #458746;
+  text-shadow: 0 -1px 0px #234423; }
+.hint--success.hint--top:before {
+  border-top-color: #458746; }
+.hint--success.hint--bottom:before {
+  border-bottom-color: #458746; }
+.hint--success.hint--left:before {
+  border-left-color: #458746; }
+.hint--success.hint--right:before {
+  border-right-color: #458746; }
