@@ -1,0 +1,52 @@
+@mixin arrow-border-color($color) {
+	@each $position in top, bottom, left, right {
+		&.hint--#{$position}:before {
+			border-#{$position}-color: $color;
+		}
+	}
+}
+
+
+// Error
+.hint--error {
+	&:after {
+		background-color: $errorColor;
+		text-shadow: 0 -1px 0px darken($errorColor, 20%);
+	}
+
+	// arrow color
+	@include arrow-border-color($errorColor)
+}
+
+// Warning
+.hint--warning {
+	&:after {
+		background-color: $warningColor;
+		text-shadow: 0 -1px 0px darken($warningColor, 20%);
+	}
+
+	// arrow color
+	@include arrow-border-color($warningColor)
+}
+
+// Info
+.hint--info {
+	&:after {
+		background-color: $infoColor;
+		text-shadow: 0 -1px 0px darken($infoColor, 20%);
+	}
+
+	// arrow color
+	@include arrow-border-color($infoColor)
+}
+
+// Success
+.hint--success {
+	&:after {
+		background-color: $successColor;
+		text-shadow: 0 -1px 0px darken($successColor, 20%);
+	}
+
+	// arrow color
+	@include arrow-border-color($successColor)
+}
