@@ -1,107 +1,64 @@
-@mixin positioned-tooltip($color) {
-	@each $position in top, bottom, left, right {
-		&.hint--#{$position}:before {
-			border-#{$position}-color: $color;
-		}
+@mixin vertical-positioned-tooltip($propertyY, $transitionDirection) {
+	&:before {
+		// get the arrow out
+		margin-#{$propertyY}: -2 * $arrowBorderWidth;
+	}
+
+	&:after {
+		// bring back the tooltip by some offset so that arrow doesn't stick at end
+		margin-left: -1 * $arrowOffsetX;
+	}
+
+	&:before, &:after {
+		#{$propertyY}: 100%;
+		left: 50%;
+	}
+
+	&:hover:before, &:hover:after {
+		-webkit-transform: translateY(-1 * $transitionDirection * $transitionDistance);
+		-moz-transform: translateY(-1 * $transitionDirection * $transitionDistance);
 	}
 }
 
-// position: top
+@mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
+	&:before {
+		// get the arrow out
+		margin-#{$propertyX}: -2 * $arrowBorderWidth;
+		// bring back to center
+		margin-bottom: -1 * $arrowBorderWidth;
+	}
+
+	&:after {
+		// bring back to center
+		margin-bottom: -1 * floor($tooltipHeight / 2);
+	}
+
+	&:before, &:after {
+		#{$propertyX}: 100%;
+		bottom: 50%;
+	}
+
+	&:hover:before, &:hover:after {
+		-webkit-transform: translateX(-1 * $transitionDirection * $transitionDistance);
+		-moz-transform: translateX(-1 * $transitionDirection * $transitionDistance);
+	}
+}
+
+// set default color for tooltip arrows
++arrow-border-color($defaultColor, 'false');
 
 .hint--top {
-	&:before {
-		bottom: 100%;
-		left: 50%;
-		margin: 0 0 -18px 0;
-		border-top-color: $defaultColor;
-	}
-
-	&:after {
-		bottom: 100%;
-		left: 50%;
-		margin: 0 0 -6px -10px;
-	}
-
-	&:hover:before {
-		margin-bottom: -10px;
-	}
-
-	&:hover:after {
-		margin-bottom: 2px;
-	}
+	+vertical-positioned-tooltip('bottom', 1);
 }
-
-// position: bottom
 
 .hint--bottom {
-	&:before {
-		top: 100%;
-		left: 50%;
-		margin: -14px 0 0 0;
-		border-bottom-color: $defaultColor;
-	}
-			
-	&:after {
-		top: 100%;
-		left: 50%;
-		margin: -2px 0 0 -10px;
-	}
-
-	&:hover:before {
-		margin-top: -6px;
-	}
-
-	&:hover:after {
-		margin-top: 6px;
-	}
+	+vertical-positioned-tooltip('top', -1);
 }
-
-// position: right
 
 .hint--right {
-	&:before {
-		left: 100%;
-		bottom: 50%;
-		margin: 0 0 -4px -8px;
-		border-right-color: $defaultColor;
-	}
-			
-	&:after {
-		left: 100%;
-		bottom: 50%;
-		margin: 0 0 -13px 4px;
-	}
-
-	&:hover:before {
-		margin: 0 0 -4px -0;
-	}
-
-	&:hover:after {
-		margin: 0 0 -13px 12px;
-	}
+	+horizontal-positioned-tooltip('left', -1);
 }
 
-// position: left
-
 .hint--left {
-	&:before {
-		right: 100%;
-		bottom: 50%;
-		margin: 0 -8px -4px 0;
-		border-left-color: $defaultColor;
-	}
-			
-	&:after {
-		right: 100%;
-		bottom: 50%;
-		margin: 0 4px -13px 0;
-	}
-
-	&:hover:before {
-		margin: 0 0 -4px 0;
-	}
-
-	&:hover:after {
-		margin: 0 12px -13px 0;
-	}
+	+horizontal-positioned-tooltip('right', 1);
 }
