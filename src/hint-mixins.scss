@@ -1,3 +1,8 @@
+// hint-mixins.scss
+// 
+// Place to store common mixins.
+
+
 // Generates border-color rules for all 4 positions
 @mixin arrow-border-color($color, $isInsideSelector: "true") {
 	@each $position in top, bottom, left, right {

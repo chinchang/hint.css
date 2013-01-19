@@ -1,3 +1,15 @@
+/**
+ * hint-core.scss
+ *
+ * Defines the basic styling for the tooltip.
+ * Each tooltip is made of 2 parts:
+ * 	1) body (:after)
+ * 	2) arrow (:before)
+ * 
+ * Classes added:
+ * 	1) hint
+ */
+
 .hint {
 	position: relative;
 	display: inline-block;

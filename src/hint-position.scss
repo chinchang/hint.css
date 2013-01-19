@@ -1,3 +1,15 @@
+/**
+ * hint-position.scss
+ *
+ * Defines the positoning logic for the tooltips.
+ * 
+ * Classes added:
+ * 	1) hint--top
+ * 	2) hint--bottom
+ * 	3) hint--left
+ * 	4) hint--right
+ */
+
 @mixin vertical-positioned-tooltip($propertyY, $transitionDirection) {
 	&:before {
 		// get the arrow out
@@ -43,6 +55,7 @@
 		-moz-transform: translateX(-1 * $transitionDirection * $transitionDistance);
 	}
 }
+
 
 // set default color for tooltip arrows
 +arrow-border-color($defaultColor, 'false');

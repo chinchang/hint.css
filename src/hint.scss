@@ -1,5 +1,10 @@
-// root path needs to be specified because of a bug in grunt-sass 
+/**
+ * hint.scss
+ *
+ */
 
+
+// root path needs to be specified because of a bug in grunt-sass 
 @import "src/hint-variables";
 @import "src/hint-mixins";
 @import "src/hint-core";
