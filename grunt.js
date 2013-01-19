@@ -28,6 +28,18 @@ module.exports = function(grunt) {
       }
     },
 
+    // concat banner to final lib files
+    concat: {
+      lib: {
+        src: ['<banner:meta.banner>', 'hint.css'],
+        dest: 'hint.css'
+      },
+      minlib: {
+        src: ['<banner:meta.banner>', 'hint.min.css'],
+        dest: 'hint.min.css'
+      }
+    },
+
     watch: {
       files: 'src/*.scss',
       tasks: 'default'
@@ -39,6 +51,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-mincss');
   
   // Default task.
-  grunt.registerTask('default', 'sass mincss');
+  grunt.registerTask('default', 'sass');
+  grunt.registerTask('deploy', 'sass mincss concat');
 
 };
