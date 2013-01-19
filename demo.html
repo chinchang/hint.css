@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Demo | Hint.css</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <style type="text/css">
+			body {
+				text-align: center;
+				font-family: Arial;
+				background: #C2E2F2;
+				height: 100%;
+				font-size: 18px;
+				color: #444;
+			}
+
+			h1 {
+				font-size: 5em;
+			}
+
+			h1,h3{
+				margin: 5px 0;
+			}
+
+			a {
+				color: #1A5A7A;
+				text-decoration: none;
+			}
+        </style>
+        <link rel="stylesheet" href="hint.css">
+    </head>
+    <body>
+       
+    	<h1>HINT.css</h1>
+		<h3>A CSS tooltip library</h3>
+		<em><small>(Works best in Firefox)</small></em>
+
+
+		<p> 
+			<a href="#" class="hint  hint--top" data-hint="Yeah, I am >:D">Look, there is something over me.</a>
+		</p>
+
+		<p>
+			<a href="#" class="hint  hint--right" data-hint="Are you sure you are?">I am always right!</a>
+		</p>
+
+		<p>
+			<a href="#" class="hint  hint--bottom" data-hint="Sure. Cheers!">How about a bottoms up?</a>
+		</p>
+
+		<p>
+			<a href="#" class="hint  hint--left" data-hint="LEFT-over Sir...">What do we get now?</a></p>
+
+
+		<p><a class="hint  hint--right" data-hint="Made by Kushagra Gour" target="_blank" href="https://twitter.com/chinchang457"><img  src="http://www.gravatar.com/avatar/6be4e636e8aacd405bed5cd15124a875?s=80&d=mm&"></a>
+		</p>
+
+		<p>
+			<a class="hint  hint--top  hint--error" data-hint="This is an error tooltip">Oh man! You are gonna self-destruct in 5 sec.</a>
+		</p>
+		
+		<p>
+			<a class="hint  hint--left  hint--warning" data-hint="This is a warning tooltip">You did something wrong!</a>
+		</p>
+		
+		<p>
+			<a class="hint  hint--right  hint--info" data-hint="This is an info tooltip">You can use different classes for different types of tooltips.</a>
+		</p>
+
+		<p>
+			<a class="hint  hint--bottom  hint--success" data-hint="This is a success tooltip">Hurray! You have seen all 4 context types.</a>
+		</p>
+
+		<p>
+			<a class="hint  hint--left  hint--always" data-hint="...which always keep showing">You can also make tooltips...</a>
+		</p>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
