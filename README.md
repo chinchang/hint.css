@@ -11,15 +11,8 @@ Download the [production version][min] or the [development version][max].
 In your web page:
 
 ```html
-<script src="jquery.js"></script>
-<script src="dist/hint.css.min.js"></script>
-<script>
-jQuery(function($) {
-  $.awesome(); // "awesome"
-});
-</script>
+<link rel="stylesheet" href="dist/hint.min.css"></link>
 ```
-
 ## Documentation
 _(Coming soon)_
 
