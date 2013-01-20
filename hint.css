@@ -1,3 +1,21 @@
+/*-------------------------------------*\
+	HINT.css - A CSS tooltip library
+\*-------------------------------------*/
+/**
+ * HINT.css is a tooltip library made in pure CSS.
+ *
+ */
+/**
+ * source: hint-core.scss
+ *
+ * Defines the basic styling for the tooltip.
+ * Each tooltip is made of 2 parts:
+ * 	1) body (:after)
+ * 	2) arrow (:before)
+ * 
+ * Classes added:
+ * 	1) hint
+ */
 .hint {
   position: relative;
   display: inline-block; }
@@ -27,6 +45,17 @@
     white-space: nowrap;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
 
+/**
+ * source: hint-position.scss
+ *
+ * Defines the positoning logic for the tooltips.
+ * 
+ * Classes added:
+ * 	1) hint--top
+ * 	2) hint--bottom
+ * 	3) hint--left
+ * 	4) hint--right
+ */
 .hint--top:before {
   border-top-color: #383838; }
 
@@ -85,6 +114,21 @@
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px); }
 
+/**
+ * source: hint-color-types.scss
+ *
+ * Contains tooltips of various types based on color differences.
+ * 
+ * Classes added:
+ * 	1) hint--error
+ * 	2) hint--warning
+ * 	3) hint--info
+ * 	4) hint--success
+ * 	
+ */
+/**
+ * Error
+ */
 .hint--error:after {
   background-color: #b34e4d;
   text-shadow: 0 -1px 0px #5a2626; }
@@ -97,6 +141,9 @@
 .hint--error.hint--right:before {
   border-right-color: #b34e4d; }
 
+/**
+ * Warning
+ */
 .hint--warning:after {
   background-color: #c09854;
   text-shadow: 0 -1px 0px #6d5228; }
@@ -109,6 +156,9 @@
 .hint--warning.hint--right:before {
   border-right-color: #c09854; }
 
+/**
+ * Info
+ */
 .hint--info:after {
   background-color: #3986ac;
   text-shadow: 0 -1px 0px #193c4c; }
@@ -121,6 +171,9 @@
 .hint--info.hint--right:before {
   border-right-color: #3986ac; }
 
+/**
+ * Success
+ */
 .hint--success:after {
   background-color: #458746;
   text-shadow: 0 -1px 0px #1a331a; }
