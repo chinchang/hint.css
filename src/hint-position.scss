@@ -27,8 +27,9 @@
 	}
 
 	&:hover:before, &:hover:after {
-		-webkit-transform: translateY(-1 * $transitionDirection * $transitionDistance);
-		-moz-transform: translateY(-1 * $transitionDirection * $transitionDistance);
+		-webkit-transform: translateY($transitionDirection * $transitionDistance);
+		-moz-transform: translateY($transitionDirection * $transitionDistance);
+		transform: translateY($transitionDirection * $transitionDistance);
 	}
 }
 
@@ -51,8 +52,9 @@
 	}
 
 	&:hover:before, &:hover:after {
-		-webkit-transform: translateX(-1 * $transitionDirection * $transitionDistance);
-		-moz-transform: translateX(-1 * $transitionDirection * $transitionDistance);
+		-webkit-transform: translateX($transitionDirection * $transitionDistance);
+		-moz-transform: translateX($transitionDirection * $transitionDistance);
+		transform: translateX($transitionDirection * $transitionDistance);
 	}
 }
 
@@ -66,26 +68,26 @@
  * top tootip
  */
 .hint--top {
-	+vertical-positioned-tooltip('bottom', 1);
+	+vertical-positioned-tooltip('bottom', -1);
 }
 
 /**
  * bottom tootip
  */
 .hint--bottom {
-	+vertical-positioned-tooltip('top', -1);
+	+vertical-positioned-tooltip('top', 1);
 }
 
 /**
  * right tootip
  */
 .hint--right {
-	+horizontal-positioned-tooltip('left', -1);
+	+horizontal-positioned-tooltip('left', 1);
 }
 
 /**
  * left tootip
  */
 .hint--left {
-	+horizontal-positioned-tooltip('right', 1);
+	+horizontal-positioned-tooltip('right', -1);
 }
