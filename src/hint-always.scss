@@ -1,0 +1,41 @@
+/**
+ * source: hint-always.scss
+ *
+ * Defines a persisted tooltip which shows always.
+ * 
+ * Classes added:
+ * 	1) hint--always
+ * 	
+ */
+
+// mixin to set margin on tooltip using translate transform
+@mixin set-margin($property, $transitionDirection) {
+	&:after, &:before {
+		-webkit-transform: #{$property}($transitionDirection * $transitionDistance);
+		-moz-transform: #{$property}($transitionDirection * $transitionDistance);
+		transform: #{$property}($transitionDirection * $transitionDistance);
+	}
+}
+
+.hint--always {
+	&:after, &:before {
+		opacity: 1;
+	}
+
+	&.hint--top {
+		+set-margin('translateY', -1);
+	}
+
+	&.hint--bottom {
+		+set-margin('translateY', 1);
+	}
+
+	&.hint--left {
+		+set-margin('translateX', -1);
+	}
+
+	&.hint--right {
+		+set-margin('translateX', 1);
+	}
+}
+
