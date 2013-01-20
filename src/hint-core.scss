@@ -30,7 +30,9 @@
 		opacity: 1;
 	}
 
-	// tooltip arrow
+	/**
+	 * tooltip arrow
+	 */
 	&:before {
 		content: '';
 		position: absolute;
@@ -41,7 +43,9 @@
 	}
 
 
-	// tooltip body
+	/**
+	 * tooltip body
+	 */
 	&:after {
 		content: attr(data-hint);
 		background: $defaultColor;

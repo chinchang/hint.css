@@ -57,21 +57,35 @@
 }
 
 
-// set default color for tooltip arrows
+/**
+ * set default color for tooltip arrows
+ */
 +arrow-border-color($defaultColor, 'false');
 
+/**
+ * top tootip
+ */
 .hint--top {
 	+vertical-positioned-tooltip('bottom', 1);
 }
 
+/**
+ * bottom tootip
+ */
 .hint--bottom {
 	+vertical-positioned-tooltip('top', -1);
 }
 
+/**
+ * right tootip
+ */
 .hint--right {
 	+horizontal-positioned-tooltip('left', -1);
 }
 
+/**
+ * left tootip
+ */
 .hint--left {
 	+horizontal-positioned-tooltip('right', 1);
 }
