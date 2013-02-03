@@ -1,9 +1,9 @@
 # hint.css
 *A tooltip library in CSS*
 
-`hint.css` is created as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses **data-* attribute**, **pseudo elements** and **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
+`hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
 
-*Note: CSS3 Transitions is currently available on Firefox only. On rest of the browsers, this degrades gracefull without any transition. Though the same will be [coming soon on webkit](https://bugs.webkit.org/show_bug.cgi?id=92591) also.*
+*Note: CSS3 Transitions on pseudo elements is currently available on Firefox only. On rest of the browsers it degrades gracefully without any transition. Though the good news is that it will be [coming soon on webkit](https://bugs.webkit.org/show_bug.cgi?id=92591) also.*
 
 ###Try it out:
 http://kushagragour.in/lab/hint/
