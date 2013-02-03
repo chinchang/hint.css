@@ -1,29 +1,48 @@
 # hint.css
+***A tooltip library in CSS***
 
-A CSS based tooltip library
 
-## Getting Started
-Download the [production version][min] or the [development version][max].
+## Get Started
+Download one of the 2 version:
 
-[min]: https://raw.github.com/chinchang/hint.css/master/dist/hint.css.min.js
-[max]: https://raw.github.com/chinchang/hint.css/master/dist/hint.css.js
+[unminified] : https://raw.github.com/chinchang/hint.css/master/blob/raw/hint.css
+[minified] : https://raw.github.com/chinchang/hint.css/master/blob/raw/hint.min.css
 
-In your web page:
+And include it in the _HEAD_ of your page:
 
 ```html
-<link rel="stylesheet" href="dist/hint.min.css"></link>
+<link rel="stylesheet" href="hint.css"></link>
 ```
-## Documentation
-_(Coming soon)_
+or
 
-## Examples
-_(Coming soon)_
+```html
+<link rel="stylesheet" href="hint.min.css"></link>
+```
 
-## Release History
-_(Nothing yet)_
+Any element in your markup which needs to have a tooltip has to be given atleast 2 classes: <code>hint</code> & any one of `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
+
+```html
+Hello Sir, <span class="hint  hint--bottom">hover me.</span>
+```
+
+The tooltip text needs to be given using the `data-hint` attribute on that element.
+
+```html
+Hello Sir, <span class="hint  hint--bottom" data-hint="Thank you!">hover me.</span>
+```
+
+Use it with other available modifiers in various combinations. Available modifiers:
+- `hint--error`
+- `hint--info`
+- `hint--warning`
+- `hint--success`
+- `hint--always`
+
+
+## Contributing
 
 ## License
-Copyright (c) 2012 Kushagra Gour  
+Copyright (c) 2013 Kushagra Gour  
 Licensed under the MIT license.
 
 
