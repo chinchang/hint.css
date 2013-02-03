@@ -1,6 +1,12 @@
 # hint.css
 *A tooltip library in CSS*
 
+`hint.css` is created as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses `data-* attribute`, `pseudo elements` and `content property` and `CSS3 transitions` to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
+
+*Note*: CSS3 Transitions is currently available on Firefox only. On rest of the browsers, this degrades gracefull without any transition. Though the same will be coming on Chrome very soon too.
+
+###Try it out:
+DEMO LINK HERE
 
 ## Get Started
 Download one of the 2 library version:
@@ -40,6 +46,10 @@ Use it with other available modifiers in various combinations. Available modifie
 
 
 ## Contributing
+`hint.css` is developed in SASS and the source files can be found in the `src/` directory.
+
+If you would like to create more types of tooltips/ fix bugs/ enhance the library etc. you are more than welcome to submit your pull requests.
+
 
 ## License
 Copyright (c) 2013 Kushagra Gour  
