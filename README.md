@@ -1,14 +1,14 @@
 # hint.css
-***A tooltip library in CSS***
+*A tooltip library in CSS*
 
 
 ## Get Started
-Download one of the 2 version:
+Download one of the 2 library version:
 
-[unminified] : https://raw.github.com/chinchang/hint.css/master/blob/raw/hint.css
-[minified] : https://raw.github.com/chinchang/hint.css/master/blob/raw/hint.min.css
+- [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
+- [minified] : https://raw.github.com/chinchang/hint.css/master/hint.min.css
 
-And include it in the _HEAD_ of your page:
+And include it in the *HEAD* of your page:
 
 ```html
 <link rel="stylesheet" href="hint.css"></link>
