@@ -6,7 +6,7 @@
 *Note*: CSS3 Transitions is currently available on Firefox only. On rest of the browsers, this degrades gracefull without any transition. Though the same will be coming on Chrome very soon too.
 
 ###Try it out:
-DEMO LINK HERE
+http://kushagragour.in/lab/hint/
 
 ## Get Started
 Download one of the 2 library version:
