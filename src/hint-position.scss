@@ -11,83 +11,82 @@
  */
 
 @mixin vertical-positioned-tooltip($propertyY, $transitionDirection) {
-	&:before {
-		// get the arrow out
-		margin-#{$propertyY}: -2 * $arrowBorderWidth;
-	}
+    &:before {
+        // get the arrow out
+        margin-#{$propertyY}: -2 * $arrowBorderWidth;
+    }
 
-	&:after {
-		// bring back the tooltip by some offset so that arrow doesn't stick at end
-		margin-left: -1 * $arrowOffsetX;
-	}
+    &:after {
+        // bring back the tooltip by some offset so that arrow doesn't stick at end
+        margin-left: -1 * $arrowOffsetX;
+    }
 
-	&:before, &:after {
-		#{$propertyY}: 100%;
-		left: 50%;
-	}
+    &:before, &:after {
+        #{$propertyY}: 100%;
+        left: 50%;
+    }
 
-	&:hover:before, &:hover:after {
-		-webkit-transform: translateY($transitionDirection * $transitionDistance);
-		-moz-transform: translateY($transitionDirection * $transitionDistance);
-		transform: translateY($transitionDirection * $transitionDistance);
-	}
+    &:hover:before, &:hover:after {
+        -webkit-transform: translateY($transitionDirection * $transitionDistance);
+        -moz-transform: translateY($transitionDirection * $transitionDistance);
+        transform: translateY($transitionDirection * $transitionDistance);
+    }
 }
 
 @mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
-	&:before {
-		// get the arrow out
-		margin-#{$propertyX}: -2 * $arrowBorderWidth;
-		// bring back to center
-		margin-bottom: -1 * $arrowBorderWidth;
-	}
+    &:before {
+        // get the arrow out
+        margin-#{$propertyX}: -2 * $arrowBorderWidth;
+        // bring back to center
+        margin-bottom: -1 * $arrowBorderWidth;
+    }
 
-	&:after {
-		// bring back to center
-		margin-bottom: -1 * floor($tooltipHeight / 2);
-	}
+    &:after {
+        // bring back to center
+        margin-bottom: -1 * floor($tooltipHeight / 2);
+    }
 
-	&:before, &:after {
-		#{$propertyX}: 100%;
-		bottom: 50%;
-	}
+    &:before, &:after {
+        #{$propertyX}: 100%;
+        bottom: 50%;
+    }
 
-	&:hover:before, &:hover:after {
-		-webkit-transform: translateX($transitionDirection * $transitionDistance);
-		-moz-transform: translateX($transitionDirection * $transitionDistance);
-		transform: translateX($transitionDirection * $transitionDistance);
-	}
+    &:hover:before, &:hover:after {
+        -webkit-transform: translateX($transitionDirection * $transitionDistance);
+        -moz-transform: translateX($transitionDirection * $transitionDistance);
+        transform: translateX($transitionDirection * $transitionDistance);
+    }
 }
-
 
 /**
  * set default color for tooltip arrows
  */
-+arrow-border-color($defaultColor, 'false');
+@include arrow-border-color($defaultColor, 'false');
 
 /**
  * top tootip
  */
 .hint--top {
-	+vertical-positioned-tooltip('bottom', -1);
+    @include vertical-positioned-tooltip('bottom', -1);
 }
 
 /**
  * bottom tootip
  */
 .hint--bottom {
-	+vertical-positioned-tooltip('top', 1);
+    @include vertical-positioned-tooltip('top', 1);
 }
 
 /**
  * right tootip
  */
 .hint--right {
-	+horizontal-positioned-tooltip('left', 1);
+    @include horizontal-positioned-tooltip('left', 1);
 }
 
 /**
  * left tootip
  */
 .hint--left {
-	+horizontal-positioned-tooltip('right', -1);
+    @include horizontal-positioned-tooltip('right', -1);
 }

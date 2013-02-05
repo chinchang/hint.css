@@ -11,42 +11,41 @@
  * 	
  */
 
-
 // mixin to generate different color style tooltips
 @mixin hint-type($color) {
-	&:after {
-		background-color: $color;
-		text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
-	}
+    &:after {
+        background-color: $color;
+        text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
+    }
 
-	// generate arrow color style
-	@include arrow-border-color($color);
+// generate arrow color style
+    @include arrow-border-color($color);
 }
 
 /**
  * Error
  */
 .hint--error {
-	@include hint-type($errorColor);
+    @include hint-type($errorColor);
 }
 
 /**
  * Warning
  */
 .hint--warning {
-	@include hint-type($warningColor)
+    @include hint-type($warningColor)
 }
 
 /**
  * Info
  */
 .hint--info {
-	@include hint-type($infoColor)
+    @include hint-type($infoColor)
 }
 
 /**
  * Success
  */
 .hint--success {
-	@include hint-type($successColor)
+    @include hint-type($successColor)
 }
