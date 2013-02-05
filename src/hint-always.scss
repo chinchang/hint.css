@@ -8,15 +8,6 @@
  * 	
  */
 
-// mixin to set margin on tooltip using translate transform
-@mixin set-margin($property, $transitionDirection) {
-    &::after, &::before {
-        -webkit-transform: #{$property}($transitionDirection * $transitionDistance);
-        -moz-transform: #{$property}($transitionDirection * $transitionDistance);
-        transform: #{$property}($transitionDirection * $transitionDistance);
-    }
-}
-
 .hint--always {
     &::after, &::before {
         opacity: 1;
