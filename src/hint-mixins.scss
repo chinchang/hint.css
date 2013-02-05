@@ -3,18 +3,26 @@
 // Place to store common mixins.
 
 @mixin positioned-tooltip($property, $transitionDirection) {
+    $plane: vertical;
+    $translate: translateY($transitionDirection * $transitionDistance);
+
+    @if $property == left or $property == right {
+        $plane: horizontal;
+        $translate: translateX($transitionDirection * $transitionDistance);
+    }
+
     &::before {
         // get the arrow out
         margin-#{$property}: -2 * $arrowBorderWidth;
         // bring back to center
-        @if $property == left or $property == right {
+        @if $plane == horizontal {
             margin-bottom: -1 * $arrowBorderWidth;
         }
     }
 
     &::after {
         // bring back to center
-        @if $property == left or $property == right {
+        @if $plane == horizontal {
             margin-bottom: -1 * floor($tooltipHeight / 2);
         } @else {
             margin-left: -1 * $arrowOffsetX;
@@ -23,7 +31,7 @@
 
     &::before, &::after {
         #{$property}: 100%;
-        @if $property == left or $property == right {
+        @if $plane == horizontal {
             bottom: 50%;
         } @else {
             left: 50%;
@@ -31,15 +39,9 @@
     }
 
     &:hover::before, &:hover::after {
-        $value: null;
-        @if $property == left or $property == right {
-            $value: translateX($transitionDirection * $transitionDistance);
-        } @else {
-            $value: translateY($transitionDirection * $transitionDistance);
-        }
-        -webkit-transform: $value;
-        -moz-transform: $value;
-        transform: $value;
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        transform: $translate;
     }
 }
 
@@ -77,10 +79,14 @@
 /**
  * mixin to set margin on tooltip using translate transform
  */
-@mixin set-margin($property, $transitionDirection) {
+@mixin set-translate($plane, $transitionDirection) {
+    $translate: translateY($transitionDirection * $transitionDistance);
+    @if $plane == horizontal {
+        $translate: translateX($transitionDirection * $transitionDistance);
+    }
     &::after, &::before {
-        -webkit-transform: #{$property}($transitionDirection * $transitionDistance);
-        -moz-transform: #{$property}($transitionDirection * $transitionDistance);
-        transform: #{$property}($transitionDirection * $transitionDistance);
+        -webkit-transform: $translate;
+        -moz-transform: $translate;
+        transform: $translate;
     }
 }

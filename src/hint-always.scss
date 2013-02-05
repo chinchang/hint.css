@@ -14,18 +14,18 @@
     }
 
     &.hint--top {
-        @include set-margin('translateY', -1);
+        @include set-translate('vertical', -1);
     }
 
     &.hint--bottom {
-        @include set-margin('translateY', 1);
+        @include set-translate('vertical', 1);
     }
 
     &.hint--left {
-        @include set-margin('translateX', -1);
+        @include set-translate('horizontal', -1);
     }
 
     &.hint--right {
-        @include set-margin('translateX', 1);
+        @include set-translate('horizontal', 1);
     }
 }
