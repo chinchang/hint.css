@@ -9,23 +9,23 @@
  */
 
 .hint--always {
-    &::after, &::before {
-        opacity: 1;
-    }
+  &::after, &::before {
+    opacity: 1;
+  }
 
-    &.hint--top {
-        @include set-translate('vertical', -1);
-    }
+  &.hint--top {
+    @include set-translate('vertical', -1);
+  }
 
-    &.hint--bottom {
-        @include set-translate('vertical', 1);
-    }
+  &.hint--bottom {
+    @include set-translate('vertical', 1);
+  }
 
-    &.hint--left {
-        @include set-translate('horizontal', -1);
-    }
+  &.hint--left {
+    @include set-translate('horizontal', -1);
+  }
 
-    &.hint--right {
-        @include set-translate('horizontal', 1);
-    }
+  &.hint--right {
+    @include set-translate('horizontal', 1);
+  }
 }

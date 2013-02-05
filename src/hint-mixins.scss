@@ -3,90 +3,90 @@
 // Place to store common mixins.
 
 @mixin positioned-tooltip($property, $transitionDirection) {
-    $plane: vertical;
-    $translate: translateY($transitionDirection * $transitionDistance);
+  $plane: vertical;
+  $translate: translateY($transitionDirection * $transitionDistance);
 
-    @if $property == left or $property == right {
-        $plane: horizontal;
-        $translate: translateX($transitionDirection * $transitionDistance);
-    }
+  @if $property == left or $property == right {
+    $plane: horizontal;
+    $translate: translateX($transitionDirection * $transitionDistance);
+  }
 
-    &::before {
-        // get the arrow out
-        margin-#{$property}: -2 * $arrowBorderWidth;
-        // bring back to center
-        @if $plane == horizontal {
-            margin-bottom: -1 * $arrowBorderWidth;
-        }
+  &::before {
+    // get the arrow out
+    margin-#{$property}: -2 * $arrowBorderWidth;
+    // bring back to center
+    @if $plane == horizontal {
+      margin-bottom: -1 * $arrowBorderWidth;
     }
+  }
 
-    &::after {
-        // bring back to center
-        @if $plane == horizontal {
-            margin-bottom: -1 * floor($tooltipHeight / 2);
-        } @else {
-            margin-left: -1 * $arrowOffsetX;
-        }
+  &::after {
+    // bring back to center
+    @if $plane == horizontal {
+      margin-bottom: -1 * floor($tooltipHeight / 2);
+    } @else {
+      margin-left: -1 * $arrowOffsetX;
     }
+  }
 
-    &::before, &::after {
-        #{$property}: 100%;
-        @if $plane == horizontal {
-            bottom: 50%;
-        } @else {
-            left: 50%;
-        }
+  &::before, &::after {
+    #{$property}: 100%;
+    @if $plane == horizontal {
+      bottom: 50%;
+    } @else {
+      left: 50%;
     }
+  }
 
-    &:hover::before, &:hover::after {
-        -webkit-transform: $translate;
-        -moz-transform: $translate;
-        transform: $translate;
-    }
+  &:hover::before, &:hover::after {
+    -webkit-transform: $translate;
+    -moz-transform: $translate;
+    transform: $translate;
+  }
 }
 
 /**
  * Generates border-color rules for all 4 positions
  */
 @mixin arrow-border-color($color, $isInsideSelector: "true") {
-    @each $position in top, bottom, left, right {
-    // if the current mixin is called from within a selector, use a '&'. Otherwise not.
-        @if $isInsideSelector == "true" {
-            &.hint--#{$position}::before {
-                border-#{$position}-color: $color;
-            }
-        } @else {
-            .hint--#{$position}::before {
-                border-#{$position}-color: $color;
-            }
-        }
+  @each $position in top, bottom, left, right {
+  // if the current mixin is called from within a selector, use a '&'. Otherwise not.
+    @if $isInsideSelector == "true" {
+      &.hint--#{$position}::before {
+        border-#{$position}-color: $color;
+      }
+    } @else {
+      .hint--#{$position}::before {
+        border-#{$position}-color: $color;
+      }
     }
+  }
 }
 
 /**
  * mixin to generate different color style tooltips
  */
 @mixin hint-type($color) {
-    &::after {
-        background-color: $color;
-        text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
-    }
+  &::after {
+    background-color: $color;
+    text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
+  }
 
 // generate arrow color style
-    @include arrow-border-color($color);
+  @include arrow-border-color($color);
 }
 
 /**
  * mixin to set margin on tooltip using translate transform
  */
 @mixin set-translate($plane, $transitionDirection) {
-    $translate: translateY($transitionDirection * $transitionDistance);
-    @if $plane == horizontal {
-        $translate: translateX($transitionDirection * $transitionDistance);
-    }
-    &::after, &::before {
-        -webkit-transform: $translate;
-        -moz-transform: $translate;
-        transform: $translate;
-    }
+  $translate: translateY($transitionDirection * $transitionDistance);
+  @if $plane == horizontal {
+    $translate: translateX($transitionDirection * $transitionDistance);
+  }
+  &::after, &::before {
+    -webkit-transform: $translate;
+    -moz-transform: $translate;
+    transform: $translate;
+  }
 }

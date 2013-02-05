@@ -19,26 +19,26 @@
  * top tootip
  */
 .hint--top {
-    @include positioned-tooltip('bottom', -1);
+  @include positioned-tooltip('bottom', -1);
 }
 
 /**
  * bottom tootip
  */
 .hint--bottom {
-    @include positioned-tooltip('top', 1);
+  @include positioned-tooltip('top', 1);
 }
 
 /**
  * right tootip
  */
 .hint--right {
-    @include positioned-tooltip('left', 1);
+  @include positioned-tooltip('left', 1);
 }
 
 /**
  * left tootip
  */
 .hint--left {
-    @include positioned-tooltip('right', -1);
+  @include positioned-tooltip('right', -1);
 }

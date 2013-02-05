@@ -15,26 +15,26 @@
  * Error
  */
 .hint--error {
-    @include hint-type($errorColor);
+  @include hint-type($errorColor);
 }
 
 /**
  * Warning
  */
 .hint--warning {
-    @include hint-type($warningColor);
+  @include hint-type($warningColor);
 }
 
 /**
  * Info
  */
 .hint--info {
-    @include hint-type($infoColor);
+  @include hint-type($infoColor);
 }
 
 /**
  * Success
  */
 .hint--success {
-    @include hint-type($successColor);
+  @include hint-type($successColor);
 }
