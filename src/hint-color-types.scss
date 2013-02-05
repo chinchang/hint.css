@@ -13,7 +13,7 @@
 
 // mixin to generate different color style tooltips
 @mixin hint-type($color) {
-    &:after {
+    &::after {
         background-color: $color;
         text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
     }

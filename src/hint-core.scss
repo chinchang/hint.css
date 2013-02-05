@@ -3,8 +3,8 @@
  *
  * Defines the basic styling for the tooltip.
  * Each tooltip is made of 2 parts:
- * 	1) body (:after)
- * 	2) arrow (:before)
+ * 	1) body (::after)
+ * 	2) arrow (::before)
  * 
  * Classes added:
  * 	1) hint
@@ -14,7 +14,7 @@
     position: relative;
     display: inline-block;
 
-    &:before, &:after {
+    &::before, &::after {
         position: absolute;
         opacity: 0;
         z-index: 1000000;
@@ -27,26 +27,26 @@
         transition: 0.3s ease;
     }
 
-    &:hover:before, &:hover:after {
+    &:hover::before, &:hover::after {
         opacity: 1;
     }
 
     /**
      * tooltip arrow
      */
-    &:before {
+    &::before {
         content: '';
         position: absolute;
         background: transparent;
         border: $arrowBorderWidth solid transparent;
-        // move z-index 1 up than :after so that it shows over box-shadow
+        // move z-index 1 up than ::after so that it shows over box-shadow
         z-index: 1000001;
     }
 
     /**
      * tooltip body
      */
-    &:after {
+    &::after {
         content: attr(data-hint);
         background: $defaultColor;
         color: white;

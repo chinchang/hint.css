@@ -11,22 +11,22 @@
  */
 
 @mixin vertical-positioned-tooltip($propertyY, $transitionDirection) {
-    &:before {
+    &::before {
         // get the arrow out
         margin-#{$propertyY}: -2 * $arrowBorderWidth;
     }
 
-    &:after {
+    &::after {
         // bring back the tooltip by some offset so that arrow doesn't stick at end
         margin-left: -1 * $arrowOffsetX;
     }
 
-    &:before, &:after {
+    &::before, &::after {
         #{$propertyY}: 100%;
         left: 50%;
     }
 
-    &:hover:before, &:hover:after {
+    &:hover::before, &:hover::after {
         -webkit-transform: translateY($transitionDirection * $transitionDistance);
         -moz-transform: translateY($transitionDirection * $transitionDistance);
         transform: translateY($transitionDirection * $transitionDistance);
@@ -34,24 +34,24 @@
 }
 
 @mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
-    &:before {
+    &::before {
         // get the arrow out
         margin-#{$propertyX}: -2 * $arrowBorderWidth;
         // bring back to center
         margin-bottom: -1 * $arrowBorderWidth;
     }
 
-    &:after {
+    &::after {
         // bring back to center
         margin-bottom: -1 * floor($tooltipHeight / 2);
     }
 
-    &:before, &:after {
+    &::before, &::after {
         #{$propertyX}: 100%;
         bottom: 50%;
     }
 
-    &:hover:before, &:hover:after {
+    &:hover::before, &:hover::after {
         -webkit-transform: translateX($transitionDirection * $transitionDistance);
         -moz-transform: translateX($transitionDirection * $transitionDistance);
         transform: translateX($transitionDirection * $transitionDistance);
