@@ -1,0 +1,15 @@
+/**
+ * source: hint-always.scss
+ *
+ * Defines a persisted tooltip which shows always.
+ * 
+ * Classes added:
+ * 	1) hint--rounded
+ * 	
+ */
+ 
+.hint--rounded {
+	&:before {
+		border-radius: 5px;
+	}
+}
