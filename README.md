@@ -27,7 +27,7 @@ or
 
 Any element in your markup which needs to have a tooltip has to be given at least one class: any one of `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
 
-The `hint` class can also be used if you're looking for older browser support. However, this class is redundant in newer browsers.
+There is also a `hint` class, for backwards compatibility with previous versions of `hint.css`. It is no longer required.
 
 ```html
 Hello Sir, <span class="hint--bottom">hover me.</span>
