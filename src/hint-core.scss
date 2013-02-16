@@ -5,12 +5,12 @@
  * Each tooltip is made of 2 parts:
  * 	1) body (:after)
  * 	2) arrow (:before)
- * 
+ *
  * Classes added:
  * 	1) hint
  */
 
-.hint {
+[class*="hint--"] {
 	position: relative;
 	display: inline-block;
 
