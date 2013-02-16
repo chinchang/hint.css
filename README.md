@@ -52,6 +52,8 @@ Check out some examples at http://kushagragour.in/lab/hint/
 
 If you would like to create more types of tooltips/ fix bugs/ enhance the library etc. you are more than welcome to submit your pull requests.
 
+## Changelog
+See the [Changelog](https://github.com/chinchang/hint.css/wiki/Changelog)
 
 ## License
 Copyright (c) 2013 Kushagra Gour
