@@ -5,6 +5,8 @@
 
 *Note: CSS3 Transitions on pseudo elements is currently available on Firefox only. On rest of the browsers it degrades gracefully without any transition. Though the good news is that it will be [coming soon on webkit](https://bugs.webkit.org/show_bug.cgi?id=92591) also.*
 
+[Read more about it](http://kushagragour.in/blog/2013/02/years-first-side-project-hint/).
+
 ###Try it out:
 http://kushagragour.in/lab/hint/
 
