@@ -3,58 +3,58 @@
  *
  * Defines the basic styling for the tooltip.
  * Each tooltip is made of 2 parts:
- * 	1) body (:after)
- * 	2) arrow (:before)
+ * 	1) body (::after)
+ * 	2) arrow (::before)
  * 
  * Classes added:
  * 	1) hint
  */
 
 .hint {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 
-	&:before, &:after {
-		position: absolute;
-		opacity: 0;
-		z-index: 1000000;
-		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
-	  	pointer-events: none;
+  &::before, &::after {
+    position: absolute;
+    opacity: 0;
+    z-index: 1000000;
+    // shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
+    pointer-events: none;
 
-	  	// pseudo element transition is gonna come soon: https://bugs.webkit.org/show_bug.cgi?id=92591
-		-webkit-transition: 0.3s ease;
-		-moz-transition: 0.3s ease;
-	}
+    // pseudo element transition is gonna come soon: https://bugs.webkit.org/show_bug.cgi?id=92591
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
 
-	&:hover:before, &:hover:after {
-		opacity: 1;
-	}
+  &:hover::before, &:hover::after {
+    opacity: 1;
+  }
 
-	/**
-	 * tooltip arrow
-	 */
-	&:before {
-		content: '';
-		position: absolute;
-		background: transparent;
-		border: $arrowBorderWidth solid transparent;
-		// move z-index 1 up than :after so that it shows over box-shadow
-		z-index: 1000001;
-	}
+  /**
+   * tooltip arrow
+   */
+  &::before {
+    content: '';
+    position: absolute;
+    background: transparent;
+    border: $arrowBorderWidth solid transparent;
+    // move z-index 1 up than ::after so that it shows over box-shadow
+    z-index: 1000001;
+  }
 
-
-	/**
-	 * tooltip body
-	 */
-	&:after {
-		content: attr(data-hint);
-		background: $defaultColor;
-		color: white;
-		text-shadow: 0 -1px 0px darken($defaultColor, $textShadowDarkenAmount);
-		padding: 8px 10px;
-		font-size: 12px;
-		line-height: 12px;
-		white-space: nowrap;
-		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-	}
+  /**
+   * tooltip body
+   */
+  &::after {
+    content: attr(data-hint);
+    background: $defaultColor;
+    color: white;
+    text-shadow: 0 -1px 0px darken($defaultColor, $textShadowDarkenAmount);
+    padding: 8px 10px;
+    font-size: 12px;
+    line-height: 12px;
+    white-space: nowrap;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+  }
 }
