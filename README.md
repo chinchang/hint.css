@@ -27,16 +27,18 @@ or
 <link rel="stylesheet" href="hint.min.css"></link>
 ```
 
-Any element in your markup which needs to have a tooltip has to be given atleast 2 classes: <code>hint</code> & any one of `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
+Any element in your markup which needs to have a tooltip has to be given at least one class: any one of `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
+
+There is also a `hint` class, for backwards compatibility with previous versions of `hint.css`. It is no longer required.
 
 ```html
-Hello Sir, <span class="hint  hint--bottom">hover me.</span>
+Hello Sir, <span class="hint--bottom">hover me.</span>
 ```
 
 The tooltip text needs to be given using the `data-hint` attribute on that element.
 
 ```html
-Hello Sir, <span class="hint  hint--bottom" data-hint="Thank you!">hover me.</span>
+Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
 ```
 
 Use it with other available modifiers in various combinations. Available modifiers:
