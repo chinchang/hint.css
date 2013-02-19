@@ -65,28 +65,28 @@
 @include arrow-border-color($defaultColor, 'false');
 
 /**
- * top tootip
+ * top tooltip
  */
 .hint--top {
 	@include vertical-positioned-tooltip('bottom', -1);
 }
 
 /**
- * bottom tootip
+ * bottom tooltip
  */
 .hint--bottom {
 	@include vertical-positioned-tooltip('top', 1);
 }
 
 /**
- * right tootip
+ * right tooltip
  */
 .hint--right {
 	@include horizontal-positioned-tooltip('left', 1);
 }
 
 /**
- * left tootip
+ * left tooltip
  */
 .hint--left {
 	@include horizontal-positioned-tooltip('right', -1);
