@@ -1,4 +1,4 @@
-/*! Hint.css - v0.1.0 - 2013-02-03
+/*! Hint.css - v1.1.0 - 2013-02-20
 * https://github.com/chinchang/hint.css
 * Copyright (c) 2013 Kushagra Gour; Licensed MIT */
 
@@ -87,7 +87,7 @@
   border-right-color: #383838; }
 
 /**
- * top tootip
+ * top tooltip
  */
 .hint--top:before {
   margin-bottom: -12px; }
@@ -102,7 +102,7 @@
   transform: translateY(-8px); }
 
 /**
- * bottom tootip
+ * bottom tooltip
  */
 .hint--bottom:before {
   margin-top: -12px; }
@@ -117,7 +117,7 @@
   transform: translateY(8px); }
 
 /**
- * right tootip
+ * right tooltip
  */
 .hint--right:before {
   margin-left: -12px;
@@ -133,7 +133,7 @@
   transform: translateX(8px); }
 
 /**
- * left tootip
+ * left tooltip
  */
 .hint--left:before {
   margin-right: -12px;
@@ -247,3 +247,15 @@
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   transform: translateX(8px); }
+
+/**
+ * source: hint-rounded.scss
+ *
+ * Defines rounded corner tooltips.
+ * 
+ * Classes added:
+ *  1) hint--rounded
+ *  
+ */
+.hint--rounded:after {
+  border-radius: 4px; }
