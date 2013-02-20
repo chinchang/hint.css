@@ -1,8 +1,8 @@
 {
   "name": "hint",
   "title": "Hint.css",
-  "description": "A CSS based tooltip library",
-  "version": "0.1.0",
+  "description": "A tooltip library in CSS",
+  "version": "1.1.0",
   "homepage": "https://github.com/chinchang/hint.css",
   "author": {
     "name": "Kushagra Gour",

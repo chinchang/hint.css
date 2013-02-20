@@ -23,19 +23,19 @@
 	}
 
 	&.hint--top {
-		+set-margin('translateY', -1);
+		@include set-margin('translateY', -1);
 	}
 
 	&.hint--bottom {
-		+set-margin('translateY', 1);
+		@include set-margin('translateY', 1);
 	}
 
 	&.hint--left {
-		+set-margin('translateX', -1);
+		@include set-margin('translateX', -1);
 	}
 
 	&.hint--right {
-		+set-margin('translateX', 1);
+		@include set-margin('translateX', 1);
 	}
 }
 
