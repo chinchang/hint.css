@@ -55,6 +55,8 @@ Check out some examples at http://kushagragour.in/lab/hint/
 
 If you would like to create more types of tooltips/ fix bugs/ enhance the library etc. you are more than welcome to submit your pull requests.
 
+[Read more on contributing](./CONTRIBUTING.md).
+
 ## Changelog
 See the [Changelog](https://github.com/chinchang/hint.css/wiki/Changelog)
 

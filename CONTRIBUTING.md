@@ -2,7 +2,7 @@
 
 #Setup
 1. [Fork **Hint.css**](https://help.github.com/articles/fork-a-repo) and clone it on your system.
-2. Create a new branch out off `dev` for your fix/feature. `git checkout new-feature dev`
+2. Create a new branch out off `master` for your fix/feature. `git checkout new-feature master`
 
 #Building
 
@@ -22,3 +22,5 @@ Once you have the dependencies installed, run `grunt` from the project directory
 - Do not fix multiple issues in a single commit. Keep them one thing per commit so that they can be picked easily incase only few commits require to be merged.
 
 - For every new modifier (example `hint--success`, `hint--top`) added, make a separate file unless it fits into a current modifier file.
+
+- Before submitting a patch, rebase your branch on upstream `master` to make life easier for the merger.
