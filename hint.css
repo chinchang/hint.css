@@ -1,4 +1,4 @@
-/*! Hint.css - v1.1.0 - 2013-02-20
+/*! Hint.css - v1.1.1 - 2013-02-24
 * https://github.com/chinchang/hint.css
 * Copyright (c) 2013 Kushagra Gour; Licensed MIT */
 
@@ -40,7 +40,8 @@
     z-index: 1000000;
     pointer-events: none;
     -webkit-transition: 0.3s ease;
-    -moz-transition: 0.3s ease; }
+    -moz-transition: 0.3s ease;
+    transition: 0.3s ease; }
   .hint:hover:before, .hint:hover:after {
     opacity: 1; }
   .hint:before {
@@ -254,7 +255,7 @@
  * Defines rounded corner tooltips.
  * 
  * Classes added:
- *  1) hint--rounded
+ * 	1) hint--rounded
  *  
  */
 .hint--rounded:after {
