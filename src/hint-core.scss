@@ -19,11 +19,12 @@
 		opacity: 0;
 		z-index: 1000000;
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
-	  	pointer-events: none;
+		pointer-events: none;
 
-	  	// pseudo element transition is gonna come soon: https://bugs.webkit.org/show_bug.cgi?id=92591
+		// pseudo element transition is gonna come soon: https://bugs.webkit.org/show_bug.cgi?id=92591
 		-webkit-transition: 0.3s ease;
 		-moz-transition: 0.3s ease;
+		transition: 0.3s ease;
 	}
 
 	&:hover:before, &:hover:after {
@@ -41,7 +42,6 @@
 		// move z-index 1 up than :after so that it shows over box-shadow
 		z-index: 1000001;
 	}
-
 
 	/**
 	 * tooltip body
