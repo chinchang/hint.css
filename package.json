@@ -24,7 +24,7 @@
   ],
   "keywords": [],
   "devDependencies": {
-    "grunt-sass": "0.2.5",
+    "grunt-sass": "~@0.2.5",
     "grunt-contrib-mincss": "~0.3.2"
   }
 }

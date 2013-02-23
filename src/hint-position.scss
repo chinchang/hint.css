@@ -62,32 +62,32 @@
 /**
  * set default color for tooltip arrows
  */
-@include arrow-border-color($defaultColor, 'false');
++arrow-border-color($defaultColor, 'false');
 
 /**
  * top tootip
  */
 .hint--top {
-	@include vertical-positioned-tooltip('bottom', -1);
+	+vertical-positioned-tooltip('bottom', -1);
 }
 
 /**
  * bottom tootip
  */
 .hint--bottom {
-	@include vertical-positioned-tooltip('top', 1);
+	+vertical-positioned-tooltip('top', 1);
 }
 
 /**
  * right tootip
  */
 .hint--right {
-	@include horizontal-positioned-tooltip('left', 1);
+	+horizontal-positioned-tooltip('left', 1);
 }
 
 /**
  * left tootip
  */
 .hint--left {
-	@include horizontal-positioned-tooltip('right', -1);
+	+horizontal-positioned-tooltip('right', -1);
 }
