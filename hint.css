@@ -25,7 +25,7 @@
  * Classes added:
  * 	1) hint
  */
-.hint {
+.hint, [data-hint] {
   position: relative;
   display: inline-block;
   /**
@@ -34,22 +34,22 @@
   /**
 	 * tooltip body
 	 */ }
-  .hint:before, .hint:after {
+  .hint:before, .hint:after, [data-hint]:before, [data-hint]:after {
     position: absolute;
     opacity: 0;
     z-index: 1000000;
     pointer-events: none;
     -webkit-transition: 0.3s ease;
     -moz-transition: 0.3s ease; }
-  .hint:hover:before, .hint:hover:after {
+  .hint:hover:before, .hint:hover:after, [data-hint]:hover:before, [data-hint]:hover:after {
     opacity: 1; }
-  .hint:before {
+  .hint:before, [data-hint]:before {
     content: '';
     position: absolute;
     background: transparent;
     border: 6px solid transparent;
     z-index: 1000001; }
-  .hint:after {
+  .hint:after, [data-hint]:after {
     content: attr(data-hint);
     background: #383838;
     color: white;
