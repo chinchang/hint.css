@@ -24,3 +24,5 @@ Once you have the dependencies installed, run `grunt` from the project directory
 - For every new modifier (example `hint--success`, `hint--top`) added, make a separate file unless it fits into a current modifier file.
 
 - Before submitting a patch, rebase your branch on upstream `master` to make life easier for the merger.
+
+- **DO NOT** add the library builds (`hint.css` & `hint.min.css`) in your commits.
