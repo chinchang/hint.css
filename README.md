@@ -27,9 +27,9 @@ or
 <link rel="stylesheet" href="hint.min.css"></link>
 ```
 
-Any element in your markup which needs to have a tooltip has to be given at least one class: any one of `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
+Any element on your page which needs to have a tooltip has to be given at least one of the position classes: `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip. Plus, the text to be shown inside the tooltip using the `data-hint` attribute.
 
-The `hint` class can also be used if you're looking for older browser support. However, this class is redundant in newer browsers.
+[**Note**: The `hint` class is no more required and is deprecated. Tooltip is shown on elements which have the `data-hint` attribute.]
 
 ```html
 Hello Sir, <span class="hint--bottom">hover me.</span>
