@@ -1,9 +1,9 @@
 {
 	"name": "hint",
 	"title": "Hint.css",
-	"description": "A tooltip library in CSS",
-	"version": "1.1.1",
-	"homepage": "https://github.com/chinchang/hint.css",
+	"description": "A tooltip library in CSS for your lovely websites.",
+	"version": "1.2.0",
+	"homepage": "http://kushagragour.in/lab/hint/",
 	"author": {
 		"name": "Kushagra Gour",
 		"email": "chinchang457@gmail.com",
@@ -25,6 +25,7 @@
 	"keywords": [],
 	"devDependencies": {
 		"grunt-sass": "~@0.2.5",
-		"grunt-contrib-mincss": "~0.3.2"
+		"grunt-contrib-mincss": "~0.3.2",
+		"grunt": "~0.4.0"
 	}
 }

@@ -27,17 +27,19 @@ or
 <link rel="stylesheet" href="hint.min.css"></link>
 ```
 
-Any element in your markup which needs to have a tooltip has to be given atleast 2 classes: <code>hint</code> & any one of `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
+Any element on your page which needs to have a tooltip has to be given at least one of the position classes: `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
 
 ```html
-Hello Sir, <span class="hint  hint--bottom">hover me.</span>
+Hello Sir, <span class="hint--bottom">hover me.</span>
 ```
 
 The tooltip text needs to be given using the `data-hint` attribute on that element.
 
 ```html
-Hello Sir, <span class="hint  hint--bottom" data-hint="Thank you!">hover me.</span>
+Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
 ```
+
+[ **Note**: The `hint` class is no more required and is deprecated. Tooltip is shown on elements which have the `data-hint` attribute instead.]
 
 Use it with other available modifiers in various combinations. Available modifiers:
 - `hint--error`
@@ -66,4 +68,3 @@ Licensed under the MIT license.
 
 ## Credits
 This doesn't make use of a lot of BEM methodology but big thanks to [@csswizardry](https://twitter.com/csswizardry), [@necolas](https://twitter.com/necolas) for their awesome articles on BEM and to [@joshnh](https://twitter.com/_joshnh) through whose work I came to know about it :)
-
