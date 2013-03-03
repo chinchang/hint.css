@@ -62,6 +62,10 @@ If you would like to create more types of tooltips/ fix bugs/ enhance the librar
 ## Changelog
 See the [Changelog](https://github.com/chinchang/hint.css/wiki/Changelog)
 
+To catch all updates and discussion, join the mailing list: **hintcss@googlegroups.com**.
+
+To subscribe: **hintcss+subscribe@googlegroups.com** or visit [here](https://groups.google.com/forum/?fromgroups=#!forum/hintcss).
+
 ## License
 Copyright (c) 2013 Kushagra Gour
 Licensed under the MIT license.

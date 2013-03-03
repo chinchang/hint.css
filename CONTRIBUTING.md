@@ -28,3 +28,9 @@ Though this should be sufficient for building the library for testing, in case y
 - Before submitting a patch, rebase your branch on upstream `master` to make life easier for the merger.
 
 - **DO NOT** add the library builds (`hint.css` & `hint.min.css`) in your commits.
+
+#Stay in touch
+
+To catch all updates and discussion, join the mailing list: **hintcss@googlegroups.com**.
+
+To subscribe: **hintcss+subscribe@googlegroups.com** or visit [here](https://groups.google.com/forum/?fromgroups=#!forum/hintcss).
