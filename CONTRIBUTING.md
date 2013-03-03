@@ -18,6 +18,8 @@ To install all the dependencies, run `npm install`.
 
 Once you have the dependencies installed, run `grunt` from the project directory. This will run the default grunt task which compiles the SCSS files into `hint.css` file.
 
+Though this should be sufficient for building the library for testing, in case you want to build the minified version as well you can run the `grunt deploy` command instead.
+
 #Things to remember
 - Do not fix multiple issues in a single commit. Keep them one thing per commit so that they can be picked easily incase only few commits require to be merged.
 
