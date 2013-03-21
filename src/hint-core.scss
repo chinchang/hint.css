@@ -16,6 +16,7 @@
 
 	&:before, &:after {
 		position: absolute;
+		visibility: hidden;
 		opacity: 0;
 		z-index: 1000000;
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
@@ -28,6 +29,7 @@
 	}
 
 	&:hover:before, &:hover:after {
+		visibility: visible;
 		opacity: 1;
 	}
 
