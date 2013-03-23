@@ -16,6 +16,9 @@
 
 	&:before, &:after {
 		position: absolute;
+		// HACK: visibility is set to hidden because IE & Opera don't support
+		// pointer-events on HTML content yet because of which hovering a hidden tooltip
+		// shows the tooltip.
 		visibility: hidden;
 		opacity: 0;
 		z-index: 1000000;

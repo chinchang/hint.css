@@ -20,6 +20,7 @@
 .hint--always {
 	&:after, &:before {
 		opacity: 1;
+		visibility: visible;
 	}
 
 	&.hint--top {
