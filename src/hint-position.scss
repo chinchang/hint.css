@@ -26,10 +26,12 @@
 		left: 50%;
 	}
 
-	&:hover:before, &:hover:after {
-		-webkit-transform: translateY($transitionDirection * $transitionDistance);
-		-moz-transform: translateY($transitionDirection * $transitionDistance);
-		transform: translateY($transitionDirection * $transitionDistance);
+	&:hover, &:focus {
+		&:before, &:after {
+			-webkit-transform: translateY($transitionDirection * $transitionDistance);
+			-moz-transform: translateY($transitionDirection * $transitionDistance);
+			transform: translateY($transitionDirection * $transitionDistance);
+		}
 	}
 }
 
@@ -51,10 +53,12 @@
 		bottom: 50%;
 	}
 
-	&:hover:before, &:hover:after {
-		-webkit-transform: translateX($transitionDirection * $transitionDistance);
-		-moz-transform: translateX($transitionDirection * $transitionDistance);
-		transform: translateX($transitionDirection * $transitionDistance);
+	&:hover, &:focus {
+		&:before, &:after {
+			-webkit-transform: translateX($transitionDirection * $transitionDistance);
+			-moz-transform: translateX($transitionDirection * $transitionDistance);
+			transform: translateX($transitionDirection * $transitionDistance);
+		}
 	}
 }
 
