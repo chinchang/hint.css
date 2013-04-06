@@ -31,9 +31,11 @@
 		transition: 0.3s ease;
 	}
 
-	&:hover:before, &:hover:after {
-		visibility: visible;
-		opacity: 1;
+	&:hover, &:focus {
+		&:before, &:after {
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 
 	/**
