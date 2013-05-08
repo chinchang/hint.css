@@ -27,9 +27,7 @@
 	}
 
 	&:hover:before, &:hover:after {
-		-webkit-transform: translateY($transitionDirection * $transitionDistance);
-		-moz-transform: translateY($transitionDirection * $transitionDistance);
-		transform: translateY($transitionDirection * $transitionDistance);
+		@include set-margin('translateY', $transitionDirection);
 	}
 }
 
@@ -52,9 +50,7 @@
 	}
 
 	&:hover:before, &:hover:after {
-		-webkit-transform: translateX($transitionDirection * $transitionDistance);
-		-moz-transform: translateX($transitionDirection * $transitionDistance);
-		transform: translateX($transitionDirection * $transitionDistance);
+		@include set-margin('translateX', $transitionDirection);
 	}
 }
 
