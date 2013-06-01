@@ -1,4 +1,4 @@
-/*! Hint.css - v1.2.1 - 2013-03-24
+/*! Hint.css - v1.2.2 - 2013-06-01
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2013 Kushagra Gour; Licensed MIT */
 
@@ -36,6 +36,9 @@
 	 */ }
   .hint:before, .hint:after, [data-hint]:before, [data-hint]:after {
     position: absolute;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     visibility: hidden;
     opacity: 0;
     z-index: 1000000;
