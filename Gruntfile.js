@@ -3,13 +3,14 @@ module.exports = function(grunt) {
 
 	// Project configuration.
 	grunt.initConfig({
-		pkg: '<json:package.json>',
+		pkg: grunt.file.readJSON('package.json'),
+    
 		meta: {
 			banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-				'<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-				'<%= pkg.homepage ? "* " + pkg.homepage + "\n" : "" %>' +
+				'<%= grunt.template.today("yyyy-mm-dd") + "\\n" %>' +
+				'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
 				'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-				' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */'
+				' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */<%= "\\n" %>'
 		},
 
 		sass: {
@@ -20,7 +21,7 @@ module.exports = function(grunt) {
 			}
 		},
 
-		mincss: {
+		cssmin: {
 			compress: {
 				files: {
 					'<%= pkg.name %>.min.css': [ '<%= pkg.name %>.css' ]
@@ -30,13 +31,16 @@ module.exports = function(grunt) {
 
 		// concat banner to final lib files
 		concat: {
+      options: {
+        banner: '<%= meta.banner %>'
+      },
 			lib: {
-				src: ['<banner:meta.banner>', 'hint.css'],
-				dest: 'hint.css'
+				src: ['<%= pkg.name %>.css'],
+				dest: '<%= pkg.name %>.css'
 			},
 			minlib: {
-				src: ['<banner:meta.banner>', 'hint.min.css'],
-				dest: 'hint.min.css'
+				src: ['<%= pkg.name %>.min.css'],
+				dest: '<%= pkg.name %>.min.css'
 			}
 		},
 
@@ -48,10 +52,11 @@ module.exports = function(grunt) {
 
 	// Dependencies
 	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-contrib-mincss');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.loadNpmTasks('grunt-contrib-concat');
 	
 	// Default task.
 	grunt.registerTask('default', 'sass');
-	grunt.registerTask('deploy', 'sass mincss concat');
+	grunt.registerTask('deploy', ['sass', 'cssmin', 'concat']);
 
 };
