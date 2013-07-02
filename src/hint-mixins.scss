@@ -19,3 +19,14 @@
 		}
 	}
 }
+
+// mixin to set margin on tooltip using translate transform
+@mixin set-margin($property, $transitionDirection) {
+	$value: unquote("#{$property}(#{$transitionDistance * $transitionDirection})");
+	&:after,
+	&:before {
+		-webkit-transform: $value;
+		-moz-transform: $value;
+		transform: $value;
+	}
+}
