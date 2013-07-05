@@ -10,13 +10,13 @@ module.exports = function(grunt) {
 				'<%= grunt.template.today("yyyy-mm-dd") + "\\n" %>' +
 				'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
 				'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-				' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */<%= "\\n" %>'
+				' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n'
 		},
 
 		sass: {
 			dist: {
 				files: {
-						'<%= pkg.name %>.css': 'src/<%= pkg.name %>.scss'
+					'<%= pkg.name %>.css': 'src/<%= pkg.name %>.scss'
 				}
 			}
 		},
@@ -31,9 +31,9 @@ module.exports = function(grunt) {
 
 		// concat banner to final lib files
 		concat: {
-      options: {
-        banner: '<%= meta.banner %>'
-      },
+			options: {
+				banner: '<%= meta.banner %>'
+			},
 			lib: {
 				src: ['<%= pkg.name %>.css'],
 				dest: '<%= pkg.name %>.css'
@@ -54,7 +54,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-sass');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	
+
 	// Default task.
 	grunt.registerTask('default', 'sass');
 	grunt.registerTask('deploy', ['sass', 'cssmin', 'concat']);
