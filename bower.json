@@ -1,0 +1,11 @@
+{
+	"name": "hint.css",
+	"version": "1.2.2",
+	"main": "hint.min.css",
+	"author": "Kushagra Gour",
+	"ignore": [
+		"CONTRIBUTING.md",
+		"src/",
+		"Gruntfile.js"
+	]
+}
