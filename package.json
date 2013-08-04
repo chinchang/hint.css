@@ -24,9 +24,9 @@
 	],
 	"keywords": [],
 	"devDependencies": {
-		"grunt-sass": "~0.6.0",
 		"grunt-contrib-concat": "~0.3.0",
 		"grunt-contrib-cssmin": "~0.6.0",
+		"grunt-contrib-sass": "~0.4.1",
 		"grunt": "~0.4.1"
 	}
 }
