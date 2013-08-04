@@ -9,12 +9,25 @@
 http://kushagragour.in/lab/hint/
 
 ## Get Started
-Download one of the 2 library version:
 
-- [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
-- [minified] : https://raw.github.com/chinchang/hint.css/master/hint.min.css
+Get the library using one of the following ways:
 
-And include it in the *HEAD* of your page:
+1. **Github**
+
+ - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
+ - [minified] : https://raw.github.com/chinchang/hint.css/master/hint.min.css
+
+2. **Bower**
+
+ ```
+ bower install hint.css
+ ```
+
+3. **CDN**
+
+ [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
+
+Now include the library in the *HEAD* of your page:
 
 ```html
 <link rel="stylesheet" href="hint.css"></link>
