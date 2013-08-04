@@ -28,17 +28,17 @@
 		// shows the tooltip.
 		visibility: hidden;
 		opacity: 0;
-		z-index: 1000000;
+		z-index: $zIndex;
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
-		// pseudo element transition is gonna come soon: https://bugs.webkit.org/show_bug.cgi?id=92591
 		-webkit-transition: 0.3s ease;
 		-moz-transition: 0.3s ease;
 		transition: 0.3s ease;
 	}
 
-	&:hover:before, &:hover:after {
+	&:hover:before, &:hover:after,
+	&:focus:before, &:focus:after {
 		visibility: visible;
 		opacity: 1;
 	}

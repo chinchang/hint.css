@@ -1,4 +1,4 @@
-# Hint.css [v1.2.2]
+# Hint.css [v1.3.0]
 *A tooltip library in CSS for your lovely websites*
 
 `hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
@@ -9,12 +9,25 @@
 http://kushagragour.in/lab/hint/
 
 ## Get Started
-Download one of the 2 library version:
 
-- [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
-- [minified] : https://raw.github.com/chinchang/hint.css/master/hint.min.css
+Get the library using one of the following ways:
 
-And include it in the *HEAD* of your page:
+1. **Github**
+
+ - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
+ - [minified] : https://raw.github.com/chinchang/hint.css/master/hint.min.css
+
+2. **Bower**
+
+ ```
+ bower install hint.css
+ ```
+
+3. **CDN**
+
+ [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
+
+Now include the library in the *HEAD* of your page:
 
 ```html
 <link rel="stylesheet" href="hint.css"></link>
@@ -46,12 +59,14 @@ Use it with other available modifiers in various combinations. Available modifie
 - `hint--success`
 - `hint--always`
 - `hint--rounded`
+- `hint--bounce`
 
 Check out some examples at http://kushagragour.in/lab/hint/
 
 ## Who's Using This?
 - [CSS3 Playground](http://playground.webflow.com/)
 - [Inkpen](http://inkpen.in/)
+- [BitCast](https://www.bitcast.io/)
 
 Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
