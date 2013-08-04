@@ -19,10 +19,10 @@
 
 
 // root path needs to be specified because of a bug in grunt-sass 
-@import "src/hint-variables";
-@import "src/hint-mixins";
-@import "src/hint-core";
-@import "src/hint-position";
-@import "src/hint-color-types";
-@import "src/hint-always";
-@import "src/hint-rounded";
+@import "hint-variables";
+@import "hint-mixins";
+@import "hint-core";
+@import "hint-position";
+@import "hint-color-types";
+@import "hint-always";
+@import "hint-rounded";
