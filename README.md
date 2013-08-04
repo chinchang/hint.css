@@ -59,6 +59,7 @@ Use it with other available modifiers in various combinations. Available modifie
 - `hint--success`
 - `hint--always`
 - `hint--rounded`
+- `hint--bounce`
 
 Check out some examples at http://kushagragour.in/lab/hint/
 
