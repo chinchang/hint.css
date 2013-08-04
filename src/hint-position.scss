@@ -26,7 +26,8 @@
 		left: 50%;
 	}
 
-	&:hover:before, &:hover:after {
+	&:hover:before, &:hover:after,
+	&:focus:before, &:focus:after {
 		-webkit-transform: translateY($transitionDirection * $transitionDistance);
 		-moz-transform: translateY($transitionDirection * $transitionDistance);
 		transform: translateY($transitionDirection * $transitionDistance);
@@ -51,7 +52,8 @@
 		bottom: 50%;
 	}
 
-	&:hover:before, &:hover:after {
+	&:hover:before, &:hover:after,
+	&:focus:before, &:focus:after {
 		-webkit-transform: translateX($transitionDirection * $transitionDistance);
 		-moz-transform: translateX($transitionDirection * $transitionDistance);
 		transform: translateX($transitionDirection * $transitionDistance);
