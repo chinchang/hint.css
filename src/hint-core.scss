@@ -28,7 +28,7 @@
 		// shows the tooltip.
 		visibility: hidden;
 		opacity: 0;
-		z-index: 1000000;
+		z-index: $zIndex;
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
