@@ -5,7 +5,6 @@
 	"author": "Kushagra Gour",
 	"ignore": [
 		"CONTRIBUTING.md",
-		"src/",
 		"Gruntfile.js"
 	]
 }
