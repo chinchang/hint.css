@@ -67,6 +67,7 @@ Check out some examples at http://kushagragour.in/lab/hint/
 - [CSS3 Playground](http://playground.webflow.com/)
 - [Inkpen](http://inkpen.in/)
 - [BitCast](https://www.bitcast.io/)
+- [Tridiv](http://tridiv.com/)
 
 Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
