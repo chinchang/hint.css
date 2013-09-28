@@ -8,6 +8,8 @@
 ###Try it out:
 http://kushagragour.in/lab/hint/
 
+If you find this useful and want to show some love & encouragement, I am on [Gittip](https://www.gittip.com/chinchang/).
+
 ## Get Started
 
 Get the library using one of the following ways:
