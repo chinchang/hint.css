@@ -40,7 +40,7 @@ $successColor: hsl(121, 32%, 40%) !default;
 
 // Font manipulators
 // Font size
-$tooltipFontSize: 12pt;
+$tooltipFontSize: 12pt !default;
 
 // Font color
-$tooltipFontColor: #333;
+$tooltipFontColor: #333 !default;
