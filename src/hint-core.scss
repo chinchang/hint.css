@@ -61,7 +61,7 @@
 	&:after {
 		content: attr(data-hint);
 		background: $defaultColor;
-		color: white;
+		color: $tooltipFontColor;
 		text-shadow: 0 -1px 0px darken($defaultColor, $textShadowDarkenAmount);
 		padding: 8px 10px;
 		font-size: $tooltipFontSize;
