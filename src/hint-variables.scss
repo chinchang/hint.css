@@ -37,3 +37,13 @@ $infoColor: hsl(200, 50%, 45%) !default;
 
 // Success Color
 $successColor: hsl(121, 32%, 40%) !default;
+
+// Construction color
+$construction-color: darken(orange, 10%) !default;
+
+// Font manipulators
+// Font size
+$tooltipFontSize: 12pt !default;
+
+// Font color
+$tooltipFontColor: #333 !default;

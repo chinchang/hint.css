@@ -8,14 +8,14 @@
  * 	2) hint--warning
  * 	3) hint--info
  * 	4) hint--success
- * 	
+ * 	5) hint--construction
  */
 
 
 // mixin to generate different color style tooltips
 @mixin hint-type($color) {
 	&:after {
-		background-color: $color;
+		background-color: rgba($color, 0.8);
 		text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
 	}
 
@@ -49,4 +49,11 @@
  */
 .hint--success {
 	@include hint-type($successColor)
+}
+
+/**
+ * ITC
+ */
+.hint--construction {
+	@include hint-type($construction-color)
 }
