@@ -53,7 +53,7 @@
     content: '';
     position: absolute;
     background: transparent;
-    border: 6px solid transparent;
+    border: 7px solid transparent;
     z-index: 1000001; }
   .hint:after, [data-hint]:after {
     content: attr(data-hint);
