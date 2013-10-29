@@ -5,11 +5,31 @@
  * or one that reads the width from the attribute
  * `data-hint-width` (must be in the form `npx` e.g. `250px`).
  *
+ * `hint--below` can be used with either `hint--right` or
+ * `hint--left` to position the multiline hint below the
+ * source element
+ *
  * Classes added:
  * 	1) hint--multiline
  * 	2) hint--multiline--data
+ * 	3) hint--below
  *
  */
+.hint--multiline, .hint--multiline--data{
+	&.hint--below{
+		&:after{
+			top: -6px;
+			bottom: auto;
+		}
+
+		&:before{
+			top: 50%;
+			margin-bottom: auto;
+			margin-top: -6px;
+		}
+	}
+}
+
 .hint--multiline:after{
 	white-space: normal;
 	width: 200px;
