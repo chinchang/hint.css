@@ -1,0 +1,23 @@
+/**
+ * source: hint-rounded.scss
+ *
+ * Defines mulitline tooltips with a fixed width of 200px
+ * or one that reads the width from the attribute
+ * `data-hint-width` (must be in the form `npx` e.g. `250px`).
+ *
+ * Classes added:
+ * 	1) hint--multiline
+ * 	1) hint--multiline--data
+ *
+ */
+.hint--multiline:after{
+	white-space: normal;
+	width: 200px;
+	line-height: 15px;
+}
+
+.hint--multiline--data:after{
+	white-space: normal;
+	width: attr(data-hint-width);
+	line-height: 15px;
+}
