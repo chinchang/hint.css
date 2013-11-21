@@ -1,5 +1,5 @@
 // hint-mixins.scss
-// 
+//
 // Place to store common mixins.
 
 
@@ -8,12 +8,12 @@
 	@each $position in top, bottom, left, right {
 		// if the current mixin is called from within a selector, use a '&'. Otherwise not.
 		@if $isInsideSelector == "true" {
-			&.hint--#{$position}:before {
+			&.#{$prefix}#{$position}:before {
 				border-#{$position}-color: $color;
 			}
 		}
 		@else {
-			.hint--#{$position}:before {
+			.#{$prefix}#{$position}:before {
 				border-#{$position}-color: $color;
 			}
 		}
