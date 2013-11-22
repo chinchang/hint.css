@@ -2,31 +2,31 @@
  * source: hint-always.scss
  *
  * Defines a persisted tooltip which shows always.
- * 
+ *
  * Classes added:
  * 	1) hint--always
- * 	
+ *
  */
 
-.hint--always {
+.#{$prefix}always {
 	&:after, &:before {
 		opacity: 1;
 		visibility: visible;
 	}
 
-	&.hint--top {
+	&.#{$prefix}top {
 		@include set-margin('translateY', -1);
 	}
 
-	&.hint--bottom {
+	&.#{$prefix}bottom {
 		@include set-margin('translateY', 1);
 	}
 
-	&.hint--left {
+	&.#{$prefix}left {
 		@include set-margin('translateX', -1);
 	}
 
-	&.hint--right {
+	&.#{$prefix}right {
 		@include set-margin('translateX', 1);
 	}
 }

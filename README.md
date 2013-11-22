@@ -63,6 +63,12 @@ Use it with other available modifiers in various combinations. Available modifie
 - `hint--rounded`
 - `hint--bounce`
 
+## Changing the prefix for class names
+
+In case you like to change 'hint--' to 'hint-' or any preferred prefix, simply update `src/hint-variables.scss` and change `$prefix`.
+To generate the css file, please read the [contributing page](./CONTRIBUTING.md).
+
+
 Check out some examples at http://kushagragour.in/lab/hint/
 
 ## Who's Using This?
