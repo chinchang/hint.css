@@ -2,8 +2,8 @@
 //
 // Declares some variables used within the library.
 
-// By default, BEM naming convention is used
-$prefix: 'hint--';
+// Prefix for all classes. By default, BEM naming convention is used
+$prefix: 'hint--' !default;
 
 // default tooltip height
 $tooltipHeight: 28px !default;

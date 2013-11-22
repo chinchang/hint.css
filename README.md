@@ -65,11 +65,9 @@ Use it with other available modifiers in various combinations. Available modifie
 
 ## Changing the prefix for class names
 
-In case you like to change 'hint--' to 'hint-' or any preferred prefix, simply update `src/hint-variables.scss` and change `$prefix`.
+Don't like BEM naming (`hint--`) or want to use your own prefix for the class names?
+Simply update `src/hint-variables.scss` and change the `$prefix` variable.
 To generate the css file, please read the [contributing page](./CONTRIBUTING.md).
-
-
-Check out some examples at http://kushagragour.in/lab/hint/
 
 ## Who's Using This?
 - [CSS3 Playground](http://playground.webflow.com/)
