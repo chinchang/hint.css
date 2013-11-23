@@ -72,7 +72,6 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 
 ## Who's Using This?
 - [CSS3 Playground](http://playground.webflow.com/)
-- [Inkpen](http://inkpen.in/)
 - [BitCast](https://www.bitcast.io/)
 - [Tridiv](http://tridiv.com/)
 
