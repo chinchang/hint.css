@@ -1,4 +1,4 @@
-# Hint.css [v1.3.0]
+# Hint.css [v1.3.1]
 *A tooltip library in CSS for your lovely websites*
 
 `hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
