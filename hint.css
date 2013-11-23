@@ -1,4 +1,4 @@
-/*! Hint.css - v1.3.0 - 2013-08-05
+/*! Hint.css - v1.3.1 - 2013-11-23
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2013 Kushagra Gour; Licensed MIT */
 
@@ -9,7 +9,7 @@
  * HINT.css is a tooltip library made in pure CSS.
  *
  * Source: https://github.com/chinchang/hint.css
- * Demo: http://kushagragour.in/labs/hint/
+ * Demo: http://kushagragour.in/lab/hint/
  *
  * Release under The MIT License
  *
@@ -70,7 +70,7 @@
  * source: hint-position.scss
  *
  * Defines the positoning logic for the tooltips.
- * 
+ *
  * Classes added:
  * 	1) hint--top
  * 	2) hint--bottom
@@ -158,13 +158,13 @@
  * source: hint-color-types.scss
  *
  * Contains tooltips of various types based on color differences.
- * 
+ *
  * Classes added:
  * 	1) hint--error
  * 	2) hint--warning
  * 	3) hint--info
  * 	4) hint--success
- * 	
+ *
  */
 /**
  * Error
@@ -230,10 +230,10 @@
  * source: hint-always.scss
  *
  * Defines a persisted tooltip which shows always.
- * 
+ *
  * Classes added:
  * 	1) hint--always
- * 	
+ *
  */
 .hint--always:after, .hint--always:before {
   opacity: 1;
@@ -259,10 +259,10 @@
  * source: hint-rounded.scss
  *
  * Defines rounded corner tooltips.
- * 
+ *
  * Classes added:
  * 	1) hint--rounded
- *  
+ *
  */
 .hint--rounded:after {
   border-radius: 4px; }
@@ -271,10 +271,10 @@
  * source: hint-effects.scss
  *
  * Defines various transition effects for the tooltips.
- * 
+ *
  * Classes added:
  * 	1) hint--bounce
- * 	
+ *
  */
 .hint--bounce:before, .hint--bounce:after {
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);

@@ -1,4 +1,4 @@
-# Hint.css [v1.3.0]
+# Hint.css [v1.3.1]
 *A tooltip library in CSS for your lovely websites*
 
 `hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
@@ -63,11 +63,15 @@ Use it with other available modifiers in various combinations. Available modifie
 - `hint--rounded`
 - `hint--bounce`
 
-Check out some examples at http://kushagragour.in/lab/hint/
+## Changing the prefix for class names
+
+Don't like BEM naming (`hint--`) or want to use your own prefix for the class names?
+
+Simply update `src/hint-variables.scss` and change the `$prefix` variable.
+To generate the css file, please read the [contributing page](./CONTRIBUTING.md).
 
 ## Who's Using This?
 - [CSS3 Playground](http://playground.webflow.com/)
-- [Inkpen](http://inkpen.in/)
 - [BitCast](https://www.bitcast.io/)
 - [Tridiv](http://tridiv.com/)
 

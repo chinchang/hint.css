@@ -1,10 +1,19 @@
 // hint-variables.scss
-// 
+//
 // Declares some variables used within the library.
 
+// Prefix for all classes. By default, BEM naming convention is used
+$prefix: 'hint--' !default;
+
+// font size
+$fontSize: 12px;
+
+// paddings
+$verticalPadding: 8px;
+$horizontalPadding: 10px;
 
 // default tooltip height
-$tooltipHeight: 28px !default;
+$tooltipHeight: $fontSize + 2 * $verticalPadding !default;
 
 // border-width for tooltip arrow
 $arrowBorderWidth: 6px !default;

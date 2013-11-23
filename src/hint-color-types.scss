@@ -2,13 +2,13 @@
  * source: hint-color-types.scss
  *
  * Contains tooltips of various types based on color differences.
- * 
+ *
  * Classes added:
  * 	1) hint--error
  * 	2) hint--warning
  * 	3) hint--info
  * 	4) hint--success
- * 	
+ *
  */
 
 
@@ -26,27 +26,27 @@
 /**
  * Error
  */
-.hint--error {
+.#{$prefix}error {
 	@include hint-type($errorColor);
 }
 
 /**
  * Warning
  */
-.hint--warning {
+.#{$prefix}warning {
 	@include hint-type($warningColor)
 }
 
 /**
  * Info
  */
-.hint--info {
+.#{$prefix}info {
 	@include hint-type($infoColor)
 }
 
 /**
  * Success
  */
-.hint--success {
+.#{$prefix}success {
 	@include hint-type($successColor)
 }
