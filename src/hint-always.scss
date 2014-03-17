@@ -1,10 +1,12 @@
 /**
  * source: hint-always.scss
  *
- * Defines a persisted tooltip which shows always.
+ * Defines a persisted tooltip which shows always
+ * or one which shows never.
  *
  * Classes added:
  * 	1) hint--always
+ *  2) hint--hidden
  *
  */
 
@@ -31,3 +33,9 @@
 	}
 }
 
+.#{$prefix}hidden {
+    &:after, &:before {
+        visibility: hidden;
+        display: none;
+    }
+}
