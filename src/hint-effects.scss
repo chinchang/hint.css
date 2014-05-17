@@ -4,10 +4,21 @@
  * Defines various transition effects for the tooltips.
  *
  * Classes added:
- * 	1) hint--bounce
+ * 	1) hint--no-animate
+ * 	2) hint--bounce
  *
  */
 
+// Remove animation from tooltips.
+.#{$prefix}no-animate {
+	&:before, &:after {
+		-webkit-transition: none;
+		-moz-transition: none;
+		transition: none;
+	}
+}
+
+// Bounce effect in tooltips.
 .#{$prefix}bounce {
 	&:before, &:after {
 		-webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
