@@ -1,6 +1,6 @@
-/*! Hint.css - v1.3.1 - 2013-11-23
+/*! Hint.css - v1.3.2 - 2014-05-18
 * http://kushagragour.in/lab/hint/
-* Copyright (c) 2013 Kushagra Gour; Licensed MIT */
+* Copyright (c) 2014 Kushagra Gour; Licensed MIT */
 
 /*-------------------------------------*\
 	HINT.css - A CSS tooltip library
@@ -21,7 +21,7 @@
  * Each tooltip is made of 2 parts:
  * 	1) body (:after)
  * 	2) arrow (:before)
- * 
+ *
  * Classes added:
  * 	1) hint
  */
@@ -45,10 +45,17 @@
     pointer-events: none;
     -webkit-transition: 0.3s ease;
     -moz-transition: 0.3s ease;
-    transition: 0.3s ease; }
+    transition: 0.3s ease;
+    -webkit-transition-delay: 0ms;
+    -moz-transition-delay: 0ms;
+    transition-delay: 0ms; }
   .hint:hover:before, .hint:hover:after, .hint:focus:before, .hint:focus:after, [data-hint]:hover:before, [data-hint]:hover:after, [data-hint]:focus:before, [data-hint]:focus:after {
     visibility: visible;
     opacity: 1; }
+  .hint:hover:before, .hint:hover:after, [data-hint]:hover:before, [data-hint]:hover:after {
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms; }
   .hint:before, [data-hint]:before {
     content: '';
     position: absolute;
@@ -273,9 +280,15 @@
  * Defines various transition effects for the tooltips.
  *
  * Classes added:
- * 	1) hint--bounce
+ * 	1) hint--no-animate
+ * 	2) hint--bounce
  *
  */
+.hint--no-animate:before, .hint--no-animate:after {
+  -webkit-transition-duration: 0ms;
+  -moz-transition-duration: 0ms;
+  transition-duration: 0ms; }
+
 .hint--bounce:before, .hint--bounce:after {
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
   -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
