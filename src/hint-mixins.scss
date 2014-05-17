@@ -2,6 +2,12 @@
 //
 // Place to store common mixins.
 
+// Vendor prefixer mixin.
+@mixin vendor($property, $value) {
+	-webkit-#{$property}: $value;
+	-moz-#{$property}: $value;
+	#{$property}: $value;
+}
 
 // Generates border-color rules for all 4 positions
 @mixin arrow-border-color($color, $isInsideSelector: "true") {
@@ -25,8 +31,6 @@
 @mixin set-margin($property, $transitionDirection) {
 	$value: unquote("#{$property}(#{$transitionDistance * $transitionDirection})");
 	&:after, &:before {
-		-webkit-transform: $value;
-		-moz-transform: $value;
-		transform: $value;
+		@include vendor('transform', $value);
 	}
 }

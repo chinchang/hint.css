@@ -12,9 +12,7 @@
 // Remove animation from tooltips.
 .#{$prefix}no-animate {
 	&:before, &:after {
-		-webkit-transition: none;
-		-moz-transition: none;
-		transition: none;
+		@include vendor('transition', none);
 	}
 }
 

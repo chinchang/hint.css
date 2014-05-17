@@ -5,7 +5,7 @@
  * Each tooltip is made of 2 parts:
  * 	1) body (:after)
  * 	2) arrow (:before)
- * 
+ *
  * Classes added:
  * 	1) hint
  */
@@ -19,10 +19,8 @@
 
 		// HACK: Trigger hardware accelerated rendering, otherwise transform was not
 		// working on a hidden element
-		-webkit-transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
-		transform: translate3d(0, 0, 0);
-		
+		@include vendor('transform', translate3d(0, 0, 0));
+
 		// HACK: visibility is set to hidden because IE & Opera don't support
 		// pointer-events on HTML content yet because of which hovering a hidden tooltip
 		// shows the tooltip.
@@ -32,9 +30,7 @@
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
-		-webkit-transition: 0.3s ease;
-		-moz-transition: 0.3s ease;
-		transition: 0.3s ease;
+		@include vendor('transition', 0.3s ease);
 	}
 
 	&:hover:before, &:hover:after,
@@ -59,14 +55,14 @@
 	 * tooltip body
 	 */
 	&:after {
-		content: attr(data-hint);
+		content: attr(data-hint); // The magic!
 		background: $defaultColor;
 		color: white;
 		text-shadow: 0 -1px 0px darken($defaultColor, $textShadowDarkenAmount);
 		padding: $verticalPadding $horizontalPadding;
 		font-size: $fontSize;
-		line-height: $fontSize;
-		white-space: nowrap;
+		line-height: $fontSize; // Vertical centering.
+		white-space: nowrap; // Prevent breaking to new line.
 		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 	}
 }
