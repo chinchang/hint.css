@@ -27,6 +27,12 @@ $textShadowDarkenAmount: 25% !default;
 // transition distance
 $transitionDistance: 8px !default;
 
+// Delay in showing the tooltips.
+$showDelay: 100ms !default;
+
+// Delay in hiding the tooltips.
+$hideDelay: 0ms !default;
+
 // z-index for tooltips
 $zIndex: 1000000 !default;
 

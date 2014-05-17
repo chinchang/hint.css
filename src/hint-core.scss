@@ -31,12 +31,18 @@
 		pointer-events: none;
 
 		@include vendor('transition', 0.3s ease);
+		@include vendor('transition-delay', $hideDelay);
 	}
 
 	&:hover:before, &:hover:after,
 	&:focus:before, &:focus:after {
 		visibility: visible;
 		opacity: 1;
+	}
+
+	&:hover:before, &:hover:after {
+		// $showDelay will apply as soon as element is hovered.
+		@include vendor('transition-delay', $showDelay);
 	}
 
 	/**
