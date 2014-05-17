@@ -52,7 +52,7 @@
 		background: transparent;
 		border: $arrowBorderWidth solid transparent;
 		// move z-index 1 up than :after so that it shows over box-shadow
-		z-index: 1000001;
+		z-index: $zIndex + 1;
 	}
 
 	/**
