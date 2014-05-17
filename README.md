@@ -74,6 +74,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [CSS3 Playground](http://playground.webflow.com/)
 - [BitCast](https://www.bitcast.io/)
 - [Tridiv](http://tridiv.com/)
+- [Tradus](http://tradus.com/)
 
 Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
