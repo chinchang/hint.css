@@ -61,6 +61,7 @@ Use it with other available modifiers in various combinations. Available modifie
 - `hint--success`
 - `hint--always`
 - `hint--rounded`
+- `hint--no-animate`
 - `hint--bounce`
 
 ## Changing the prefix for class names
