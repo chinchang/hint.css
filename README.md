@@ -74,6 +74,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [CSS3 Playground](http://playground.webflow.com/)
 - [BitCast](https://www.bitcast.io/)
 - [Tridiv](http://tridiv.com/)
+- [Tradus](http://tradus.com/)
 
 Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
@@ -108,7 +109,3 @@ Licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## Credits
 This doesn't make use of a lot of BEM methodology but big thanks to [@csswizardry](https://twitter.com/csswizardry), [@necolas](https://twitter.com/necolas) for their awesome articles on BEM and to [@joshnh](https://twitter.com/_joshnh) through whose work I came to know about it :)
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chinchang/hint.css/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
