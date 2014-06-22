@@ -1,0 +1,16 @@
+/**
+ * source: hint-theme.scss
+ *
+ * Defines basic theme for tooltips.
+ *
+ */
+
+.hint, [data-hint] {
+	/**
+	 * tooltip body
+	 */
+	&:after {
+		text-shadow: 0 -1px 0px darken($defaultColor, $textShadowDarkenAmount);
+		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+	}
+}

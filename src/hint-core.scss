@@ -64,11 +64,9 @@
 		content: attr(data-hint); // The magic!
 		background: $defaultColor;
 		color: white;
-		text-shadow: 0 -1px 0px darken($defaultColor, $textShadowDarkenAmount);
 		padding: $verticalPadding $horizontalPadding;
 		font-size: $fontSize;
 		line-height: $fontSize; // Vertical centering.
 		white-space: nowrap; // Prevent breaking to new line.
-		box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 	}
 }
