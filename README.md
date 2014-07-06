@@ -16,8 +16,13 @@ Get the library using one of the following ways:
 
 1. **Github**
 
+ Full build
  - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
  - [minified] : https://raw.github.com/chinchang/hint.css/master/hint.min.css
+
+ Base build *(Does not include color themes and fancy effects)*
+ - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.base.css
+ - [minified] : https://raw.github.com/chinchang/hint.css/master/hint.base.min.css
 
 2. **Bower**
 
