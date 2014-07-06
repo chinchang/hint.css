@@ -7,7 +7,6 @@ module.exports = function(grunt) {
 
 		meta: {
 			getBanner: function () {
-				console.log(233)
 				return '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - <%= meta.banner %>';
 			},
 			getBannerForBaseVersion: function () {

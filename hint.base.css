@@ -1,4 +1,4 @@
-/*! Hint.css - v1.3.3 - 2014-07-06
+/*! Hint.css (base version) - v1.3.3 - 2014-07-06
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2014 Kushagra Gour; Licensed MIT */
 
@@ -160,78 +160,6 @@
   transform: translateX(-8px); }
 
 /**
- * source: hint-color-types.scss
- *
- * Contains tooltips of various types based on color differences.
- *
- * Classes added:
- * 	1) hint--error
- * 	2) hint--warning
- * 	3) hint--info
- * 	4) hint--success
- *
- */
-/**
- * Error
- */
-.hint--error:after {
-  background-color: #b34e4d;
-  text-shadow: 0 -1px 0px #592726; }
-.hint--error.hint--top:before {
-  border-top-color: #b34e4d; }
-.hint--error.hint--bottom:before {
-  border-bottom-color: #b34e4d; }
-.hint--error.hint--left:before {
-  border-left-color: #b34e4d; }
-.hint--error.hint--right:before {
-  border-right-color: #b34e4d; }
-
-/**
- * Warning
- */
-.hint--warning:after {
-  background-color: #c09854;
-  text-shadow: 0 -1px 0px #6c5328; }
-.hint--warning.hint--top:before {
-  border-top-color: #c09854; }
-.hint--warning.hint--bottom:before {
-  border-bottom-color: #c09854; }
-.hint--warning.hint--left:before {
-  border-left-color: #c09854; }
-.hint--warning.hint--right:before {
-  border-right-color: #c09854; }
-
-/**
- * Info
- */
-.hint--info:after {
-  background-color: #3986ac;
-  text-shadow: 0 -1px 0px #193b4d; }
-.hint--info.hint--top:before {
-  border-top-color: #3986ac; }
-.hint--info.hint--bottom:before {
-  border-bottom-color: #3986ac; }
-.hint--info.hint--left:before {
-  border-left-color: #3986ac; }
-.hint--info.hint--right:before {
-  border-right-color: #3986ac; }
-
-/**
- * Success
- */
-.hint--success:after {
-  background-color: #458746;
-  text-shadow: 0 -1px 0px #1a321a; }
-.hint--success.hint--top:before {
-  border-top-color: #458746; }
-.hint--success.hint--bottom:before {
-  border-bottom-color: #458746; }
-.hint--success.hint--left:before {
-  border-left-color: #458746; }
-.hint--success.hint--right:before {
-  border-right-color: #458746; }
-
-/**
  * source: hint-always.scss
  *
  * Defines a persisted tooltip which shows always.
@@ -259,35 +187,3 @@
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   transform: translateX(8px); }
-
-/**
- * source: hint-rounded.scss
- *
- * Defines rounded corner tooltips.
- *
- * Classes added:
- * 	1) hint--rounded
- *
- */
-.hint--rounded:after {
-  border-radius: 4px; }
-
-/**
- * source: hint-effects.scss
- *
- * Defines various transition effects for the tooltips.
- *
- * Classes added:
- * 	1) hint--no-animate
- * 	2) hint--bounce
- *
- */
-.hint--no-animate:before, .hint--no-animate:after {
-  -webkit-transition-duration: 0ms;
-  -moz-transition-duration: 0ms;
-  transition-duration: 0ms; }
-
-.hint--bounce:before, .hint--bounce:after {
-  -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-  -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
-  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24); }
