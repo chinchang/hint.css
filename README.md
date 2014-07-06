@@ -1,4 +1,4 @@
-# Hint.css [v1.3.1]
+# Hint.css [v1.3.3]
 *A tooltip library in CSS for your lovely websites*
 
 `hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
@@ -16,8 +16,13 @@ Get the library using one of the following ways:
 
 1. **Github**
 
+ Full build
  - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
  - [minified] : https://raw.github.com/chinchang/hint.css/master/hint.min.css
+
+ Base build *(Does not include color themes and fancy effects)*
+ - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.base.css
+ - [minified] : https://raw.github.com/chinchang/hint.css/master/hint.base.min.css
 
 2. **Bower**
 
@@ -76,6 +81,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [BitCast](https://www.bitcast.io/)
 - [Tridiv](http://tridiv.com/)
 - [Tradus](http://tradus.com/)
+- [Inkpen](http://inkpen.in/)
 
 Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
