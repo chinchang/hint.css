@@ -6,5 +6,11 @@
 	"ignore": [
 		"CONTRIBUTING.md",
 		"Gruntfile.js"
+	],
+	"keywords": [
+		"hint",
+		"tooltip",
+		"tooltips",
+		"ui"
 	]
 }
