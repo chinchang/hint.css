@@ -1,6 +1,6 @@
-/*! Hint.css - v1.3.3 - 2014-07-06
+/*! Hint.css - v1.3.4 - 2015-02-28
 * http://kushagragour.in/lab/hint/
-* Copyright (c) 2014 Kushagra Gour; Licensed MIT */
+* Copyright (c) 2015 Kushagra Gour; Licensed MIT */
 
 /*-------------------------------------*\
 	HINT.css - A CSS tooltip library
@@ -158,6 +158,20 @@
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px);
   transform: translateX(-8px); }
+
+/**
+ * source: hint-theme.scss
+ *
+ * Defines basic theme for tooltips.
+ *
+ */
+.hint, [data-hint] {
+  /**
+   * tooltip body
+   */ }
+  .hint:after, [data-hint]:after {
+    text-shadow: 0 -1px 0px black;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3); }
 
 /**
  * source: hint-color-types.scss
