@@ -1,5 +1,5 @@
 {
-  "name": "hint",
+  "name": "hint.css",
   "title": "Hint.css",
   "description": "A tooltip library in CSS for your lovely websites.",
   "version": "1.3.4",
@@ -22,7 +22,7 @@
       "url": "https://github.com/chinchang/hint.css/blob/master/LICENSE-MIT"
     }
   ],
-  "keywords": [],
+  "keywords": ["tooltip", "ui", "sass", "css"],
   "devDependencies": {
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.6.0",
