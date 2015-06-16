@@ -22,12 +22,19 @@
       "url": "https://github.com/chinchang/hint.css/blob/master/LICENSE-MIT"
     }
   ],
-  "keywords": ["tooltip", "ui", "sass", "css", "help", "hint"],
+  "keywords": [
+    "tooltip",
+    "ui",
+    "sass",
+    "css",
+    "help",
+    "hint"
+  ],
   "devDependencies": {
     "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-cssmin": "~0.6.0",
     "grunt-contrib-sass": "~0.4.1",
     "grunt": "~0.4.1",
-    "grunt-contrib-watch": "~0.5.3"
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-cssmin": "~0.12.3"
   }
 }

@@ -28,6 +28,9 @@ module.exports = function(grunt) {
 		},
 
 		cssmin: {
+			options: {
+				sourceMap: false
+			},
 			compress: {
 				files: {
 					'<%= pkg.name %>.min.css': [ '<%= pkg.name %>.css' ],
