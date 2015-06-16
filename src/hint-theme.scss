@@ -5,7 +5,7 @@
  *
  */
 
-.hint, [data-hint] {
+.hint, [data-hint]:not([data-hint='']) {
 	/**
 	 * tooltip body
 	 */

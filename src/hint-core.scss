@@ -10,7 +10,7 @@
  * 	1) hint
  */
 
-.hint, [data-hint] {
+.hint, [data-hint]:not([data-hint='']) {
 	position: relative;
 	display: inline-block;
 
