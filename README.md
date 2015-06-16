@@ -5,7 +5,7 @@
 
 [Read more about it](http://kushagragour.in/blog/2013/02/years-first-side-project-hint/).
 
-###Try it out:
+### Try it out:
 http://kushagragour.in/lab/hint/
 
 If you find this useful and want to show some love & encouragement, I am on [Gittip](https://www.gittip.com/chinchang/).
@@ -30,7 +30,13 @@ Get the library using one of the following ways:
  bower install hint.css
  ```
 
-3. **CDN**
+3. **npm**
+
+ ```
+ npm install --save hint.css
+ ```
+ 
+4. **CDN**
 
  [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
 
