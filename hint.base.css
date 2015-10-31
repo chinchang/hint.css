@@ -1,4 +1,4 @@
-/*! Hint.css (base version) - v1.3.5 - 2015-10-30
+/*! Hint.css (base version) - v1.3.5 - 2015-06-16
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2015 Kushagra Gour; Licensed MIT */
 
@@ -28,7 +28,6 @@
 .hint, [data-hint] {
   position: relative;
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /**
    * tooltip arrow
    */
@@ -188,5 +187,3 @@
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
   transform: translateX(8px); }
-
-/*# sourceMappingURL=hint.base.css.map */
