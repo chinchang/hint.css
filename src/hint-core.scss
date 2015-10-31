@@ -70,3 +70,9 @@
 		white-space: nowrap; // Prevent breaking to new line.
 	}
 }
+
+[data-hint=''] {
+	&:before, &:after {
+		display: none!important;
+	}
+}
