@@ -1,4 +1,4 @@
-/*! Hint.css - v1.3.5 - 2015-06-16
+/*! Hint.css - v1.3.5 - 2015-10-30
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2015 Kushagra Gour; Licensed MIT */
 
@@ -28,6 +28,7 @@
 .hint, [data-hint] {
   position: relative;
   display: inline-block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   /**
    * tooltip arrow
    */
@@ -220,7 +221,7 @@
  */
 .hint--info:after {
   background-color: #3986ac;
-  text-shadow: 0 -1px 0px #193b4d; }
+  text-shadow: 0 -1px 0px #1a3c4d; }
 .hint--info.hint--top:before {
   border-top-color: #3986ac; }
 .hint--info.hint--bottom:before {
@@ -305,3 +306,5 @@
   -webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
   -moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
   transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24); }
+
+/*# sourceMappingURL=hint.css.map */
