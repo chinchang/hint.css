@@ -1,4 +1,4 @@
-/*! Hint.css - v1.3.5 - 2015-06-16
+/*! Hint.css - v1.3.6 - 2015-10-31
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2015 Kushagra Gour; Licensed MIT */
 
@@ -70,6 +70,9 @@
     font-size: 12px;
     line-height: 12px;
     white-space: nowrap; }
+
+[data-hint='']:before, [data-hint='']:after {
+  display: none !important; }
 
 /**
  * source: hint-position.scss
