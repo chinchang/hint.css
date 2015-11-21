@@ -14,7 +14,7 @@ If you find this useful and want to show some love & encouragement, I am on [Git
 
 Get the library using one of the following ways:
 
-1. **Github**
+1. **GitHub**
 
  Full build
  - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.css
