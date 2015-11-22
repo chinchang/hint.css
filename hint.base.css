@@ -1,9 +1,4 @@
-/*! Hint.css (base version) - v1.3.6 - 2015-10-31
-* http://kushagragour.in/lab/hint/
-* Copyright (c) 2015 Kushagra Gour; Licensed MIT */
-
-/*-------------------------------------*\
-	HINT.css - A CSS tooltip library
+/*-------------------------------------*	HINT.css - A CSS tooltip library
 \*-------------------------------------*/
 /**
  * HINT.css is a tooltip library made in pure CSS.
@@ -29,11 +24,11 @@
   position: relative;
   display: inline-block;
   /**
-   * tooltip arrow
-   */
+	 * tooltip arrow
+	 */
   /**
-   * tooltip body
-   */ }
+	 * tooltip body
+	 */ }
   .hint:before, .hint:after, [data-hint]:before, [data-hint]:after {
     position: absolute;
     -webkit-transform: translate3d(0, 0, 0);
@@ -88,8 +83,20 @@
 /**
  * set default color for tooltip arrows
  */
+.hint--top-left:before {
+  border-top-color: #383838; }
+
+.hint--top-right:before {
+  border-top-color: #383838; }
+
 .hint--top:before {
   border-top-color: #383838; }
+
+.hint--bottom-left:before {
+  border-bottom-color: #383838; }
+
+.hint--bottom-right:before {
+  border-bottom-color: #383838; }
 
 .hint--bottom:before {
   border-bottom-color: #383838; }
@@ -105,30 +112,36 @@
  */
 .hint--top:before {
   margin-bottom: -12px; }
-.hint--top:after {
-  margin-left: -18px; }
+
 .hint--top:before, .hint--top:after {
   bottom: 100%;
   left: 50%; }
+
+.hint--top:after, .hint--top:before {
+  transform: translateX(-50%); }
+
 .hint--top:hover:after, .hint--top:hover:before, .hint--top:focus:after, .hint--top:focus:before {
-  -webkit-transform: translateY(-8px);
-  -moz-transform: translateY(-8px);
-  transform: translateY(-8px); }
+  -webkit-transform: translateX(-50%) translateY(-8px);
+  -moz-transform: translateX(-50%) translateY(-8px);
+  transform: translateX(-50%) translateY(-8px); }
 
 /**
  * bottom tooltip
  */
 .hint--bottom:before {
   margin-top: -12px; }
-.hint--bottom:after {
-  margin-left: -18px; }
+
 .hint--bottom:before, .hint--bottom:after {
   top: 100%;
   left: 50%; }
+
+.hint--bottom:after, .hint--bottom:before {
+  transform: translateX(-50%); }
+
 .hint--bottom:hover:after, .hint--bottom:hover:before, .hint--bottom:focus:after, .hint--bottom:focus:before {
-  -webkit-transform: translateY(8px);
-  -moz-transform: translateY(8px);
-  transform: translateY(8px); }
+  -webkit-transform: translateX(-50%) translateY(8px);
+  -moz-transform: translateX(-50%) translateY(8px);
+  transform: translateX(-50%) translateY(8px); }
 
 /**
  * right tooltip
@@ -136,11 +149,14 @@
 .hint--right:before {
   margin-left: -12px;
   margin-bottom: -6px; }
+
 .hint--right:after {
   margin-bottom: -14px; }
+
 .hint--right:before, .hint--right:after {
   left: 100%;
   bottom: 50%; }
+
 .hint--right:hover:after, .hint--right:hover:before, .hint--right:focus:after, .hint--right:focus:before {
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
@@ -152,15 +168,102 @@
 .hint--left:before {
   margin-right: -12px;
   margin-bottom: -6px; }
+
 .hint--left:after {
   margin-bottom: -14px; }
+
 .hint--left:before, .hint--left:after {
   right: 100%;
   bottom: 50%; }
+
 .hint--left:hover:after, .hint--left:hover:before, .hint--left:focus:after, .hint--left:focus:before {
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px);
   transform: translateX(-8px); }
+
+/**
+ * top-left tooltip
+ */
+.hint--top-left:before {
+  margin-bottom: -12px; }
+
+.hint--top-left:before, .hint--top-left:after {
+  bottom: 100%;
+  left: 50%; }
+
+.hint--top-left:after, .hint--top-left:before {
+  transform: translateX(-100%); }
+
+.hint--top-left:after {
+  margin-left: 6px; }
+
+.hint--top-left:hover:after, .hint--top-left:hover:before, .hint--top-left:focus:after, .hint--top-left:focus:before {
+  -webkit-transform: translateX(-100%) translateY(-8px);
+  -moz-transform: translateX(-100%) translateY(-8px);
+  transform: translateX(-100%) translateY(-8px); }
+
+/**
+ * top-right tooltip
+ */
+.hint--top-right:before {
+  margin-bottom: -12px; }
+
+.hint--top-right:before, .hint--top-right:after {
+  bottom: 100%;
+  left: 50%; }
+
+.hint--top-right:after, .hint--top-right:before {
+  transform: translateX(0); }
+
+.hint--top-right:after {
+  margin-left: -6px; }
+
+.hint--top-right:hover:after, .hint--top-right:hover:before, .hint--top-right:focus:after, .hint--top-right:focus:before {
+  -webkit-transform: translateY(-8px);
+  -moz-transform: translateY(-8px);
+  transform: translateY(-8px); }
+
+/**
+ * bottom-left tooltip
+ */
+.hint--bottom-left:before {
+  margin-top: -12px; }
+
+.hint--bottom-left:before, .hint--bottom-left:after {
+  top: 100%;
+  left: 50%; }
+
+.hint--bottom-left:after, .hint--bottom-left:before {
+  transform: translateX(-100%); }
+
+.hint--bottom-left:after {
+  margin-left: 6px; }
+
+.hint--bottom-left:hover:after, .hint--bottom-left:hover:before, .hint--bottom-left:focus:after, .hint--bottom-left:focus:before {
+  -webkit-transform: translateX(-100%) translateY(8px);
+  -moz-transform: translateX(-100%) translateY(8px);
+  transform: translateX(-100%) translateY(8px); }
+
+/**
+ * bottom-right tooltip
+ */
+.hint--bottom-right:before {
+  margin-top: -12px; }
+
+.hint--bottom-right:before, .hint--bottom-right:after {
+  top: 100%;
+  left: 50%; }
+
+.hint--bottom-right:after, .hint--bottom-right:before {
+  transform: translateX(0); }
+
+.hint--bottom-right:after {
+  margin-left: -6px; }
+
+.hint--bottom-right:hover:after, .hint--bottom-right:hover:before, .hint--bottom-right:focus:after, .hint--bottom-right:focus:before {
+  -webkit-transform: translateY(8px);
+  -moz-transform: translateY(8px);
+  transform: translateY(8px); }
 
 /**
  * source: hint-always.scss
@@ -174,18 +277,42 @@
 .hint--always:after, .hint--always:before {
   opacity: 1;
   visibility: visible; }
+
 .hint--always.hint--top:after, .hint--always.hint--top:before {
+  -webkit-transform: translateX(-50%) translateY(-8px);
+  -moz-transform: translateX(-50%) translateY(-8px);
+  transform: translateX(-50%) translateY(-8px); }
+
+.hint--always.hint--top-left:after, .hint--always.hint--top-left:before {
+  -webkit-transform: translateX(-100%) translateY(-8px);
+  -moz-transform: translateX(-100%) translateY(-8px);
+  transform: translateX(-100%) translateY(-8px); }
+
+.hint--always.hint--top-right:after, .hint--always.hint--top-right:before {
   -webkit-transform: translateY(-8px);
   -moz-transform: translateY(-8px);
   transform: translateY(-8px); }
+
 .hint--always.hint--bottom:after, .hint--always.hint--bottom:before {
+  -webkit-transform: translateX(-50%) translateY(8px);
+  -moz-transform: translateX(-50%) translateY(8px);
+  transform: translateX(-50%) translateY(8px); }
+
+.hint--always.hint--bottom-left:after, .hint--always.hint--bottom-left:before {
+  -webkit-transform: translateX(-100%) translateY(8px);
+  -moz-transform: translateX(-100%) translateY(8px);
+  transform: translateX(-100%) translateY(8px); }
+
+.hint--always.hint--bottom-right:after, .hint--always.hint--bottom-right:before {
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px); }
+
 .hint--always.hint--left:after, .hint--always.hint--left:before {
   -webkit-transform: translateX(-8px);
   -moz-transform: translateX(-8px);
   transform: translateX(-8px); }
+
 .hint--always.hint--right:after, .hint--always.hint--right:before {
   -webkit-transform: translateX(8px);
   -moz-transform: translateX(8px);
