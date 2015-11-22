@@ -11,7 +11,7 @@
 			body {
 				text-align: center;
 				font-family: Arial;
-				background: #C2E2F2;
+				background: #fff;
 				height: 100%;
 				font-size: 18px;
 				color: #444;
@@ -30,6 +30,23 @@
 				outline: none;
 				text-decoration: none;
 			}
+			.position-grid {
+				max-width: 550px;
+				margin: 50px auto;
+				overflow: hidden;
+			}
+			.position-grid__cell {
+				width: 33.33%;
+				float: left;
+			}
+			.position-grid__cell a {
+				width: 90%;
+				background: #9CAFB7;
+				color: white;
+				margin: 2px 0;
+				padding: 5px;
+			}
+
 		</style>
 		<link rel="stylesheet" href="hint.css">
 	</head>
@@ -38,26 +55,22 @@
 		<h1>HINT.css</h1>
 		<h3>A tooltip library in CSS</h3>
 
+		<div class="position-grid">
+			<div class="position-grid__cell"><a href="#" data-hint="bottom-right" class="hint--bottom-right">.hint--bottom-right</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="bottom" class="hint--bottom">.hint--bottom</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="bottom-left" class="hint--bottom-left">.hint--bottom-left</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="right" class="hint--right">.hint--right</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="" class="hint--">Position classes</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="left" class="hint--left">.hint--left</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="top-right" class="hint--top-right">.hint--top-right</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="top" class="hint--top">.hint--top</a></div>
+			<div class="position-grid__cell"><a href="#" data-hint="top-left" class="hint--top-left">.hint--top-left</a></div>
+		</div>
 
-		<p>
-			<a href="#" class="hint--top" data-hint="Yeah, I am >:D">Look, there is something over me.</a>
+		<p><a class="hint--right" data-hint="Made by Kushagra Gour" target="_blank" href="https://twitter.com/chinchang457">	<img  src="http://www.gravatar.com/avatar/6be4e636e8aacd405bed5cd15124a875?s=80&d=mm&"></a>
 		</p>
 
-		<p>
-			<a href="#" class="hint--right" data-hint="Are you sure you are?">I am always right!</a>
-		</p>
-
-		<p>
-			<a href="#" class="hint--bottom" data-hint="Sure. Cheers!">How about a bottoms up?</a>
-		</p>
-
-		<p>
-			<a href="#" class="hint--left" data-hint="LEFT-over Sir...">What do we get now?</a>
-		</p>
-
-
-		<p><a class="hint--right" data-hint="Made by Kushagra Gour" target="_blank" href="https://twitter.com/chinchang457"><img  src="http://www.gravatar.com/avatar/6be4e636e8aacd405bed5cd15124a875?s=80&d=mm&"></a>
-		</p>
+		<h3>Color Types</h3>
 
 		<p>
 			<a class="hint--top  hint--error" data-hint="This is an error tooltip">Oh man! You are gonna self-destruct in 5 sec.</a>
