@@ -31,10 +31,10 @@
     "hint"
   ],
   "devDependencies": {
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-sass": "~0.4.1",
     "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.12.3",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-cssmin": "~0.12.3"
+    "grunt-sass": "^1.1.0"
   }
 }
