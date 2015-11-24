@@ -88,6 +88,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Tridiv](http://tridiv.com/)
 - [Tradus](http://tradus.com/)
 - [Inkpen](http://inkpen.in/)
+- [TypeScript Builder](http://www.typescriptbuilder.com/)
 
 Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
