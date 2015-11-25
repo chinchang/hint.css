@@ -30,7 +30,7 @@
 	}
 
 	&:after, &:before {
-		transform: translateX($translateX);
+		@include vendor('transform', translateX($translateX));
 	}
 
 	&:after {
