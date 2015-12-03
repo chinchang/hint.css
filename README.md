@@ -83,7 +83,7 @@ Simply update `src/hint-variables.scss` and change the `$prefix` variable.
 To generate the css file, please read the [contributing page](./CONTRIBUTING.md).
 
 ## Who's Using This?
-- [CSS3 Playground](http://playground.webflow.com/)
+- [Webflow Playground](http://playground.webflow.com/)
 - [BitCast](https://www.bitcast.io/)
 - [Tridiv](http://tridiv.com/)
 - [Tradus](http://tradus.com/)
