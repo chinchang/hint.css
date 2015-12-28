@@ -90,6 +90,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Inkpen](http://inkpen.in/)
 - [TypeScript Builder](http://www.typescriptbuilder.com/)
 - [Fiverr's Devflow](https://github.com/fiverr/devflow/)
+- [codeMagic](http://codemagic.gr/)
 
 Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
