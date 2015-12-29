@@ -84,7 +84,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 
 ## Who's Using This?
 - [Webflow Playground](http://playground.webflow.com/)
-- [BitCast](https://www.bitcast.io/)
+- [Panda chrome app](http://usepanda.com/)
 - [Tridiv](http://tridiv.com/)
 - [Tradus](http://tradus.com/)
 - [Inkpen](http://inkpen.in/)
