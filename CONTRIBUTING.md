@@ -8,11 +8,15 @@
 
 **Hint.css** uses [Grunt](http://gruntjs.com/) for the build process which you need to have installed on your system.
 
-Also there are two additional Grunt tasks required to build the library:
+Also there are four additional Grunt tasks required to build the library:
 
 1. [grunt-contrib-cssmin](https://npmjs.org/package/grunt-contrib-cssmin)
 
 2. [grunt-contrib-sass](https://www.npmjs.com/package/grunt-contrib-sass)
+
+3. [grunt-contrib-concat](https://www.npmjs.com/package/grunt-contrib-concat)
+
+4. [grunt-contrib-watch](https://www.npmjs.com/package/grunt-contrib-watch)
 
 To install all the dependencies, run `npm install`.
 
