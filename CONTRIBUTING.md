@@ -12,7 +12,7 @@ Also there are two additional Grunt tasks required to build the library:
 
 1. [grunt-contrib-cssmin](https://npmjs.org/package/grunt-contrib-cssmin)
 
-2. [grunt-sass](https://npmjs.org/package/grunt-sass)
+2. [grunt-contrib-sass](https://www.npmjs.com/package/grunt-contrib-sass)
 
 To install all the dependencies, run `npm install`.
 
