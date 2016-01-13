@@ -10,7 +10,7 @@
 
 Also there are two additional Grunt tasks required to build the library:
 
-1. [grunt-contrib-mincss](https://npmjs.org/package/grunt-contrib-mincss)
+1. [grunt-contrib-cssmin](https://npmjs.org/package/grunt-contrib-cssmin)
 
 2. [grunt-sass](https://npmjs.org/package/grunt-sass)
 
