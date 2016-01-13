@@ -3,6 +3,7 @@
   "title": "Hint.css",
   "description": "A tooltip library in CSS for your lovely websites.",
   "version": "1.3.6",
+  "style": "hint.css",
   "homepage": "http://kushagragour.in/lab/hint/",
   "author": {
     "name": "Kushagra Gour",
