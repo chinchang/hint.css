@@ -35,7 +35,7 @@ Get the library using one of the following ways:
  ```
  npm install --save hint.css
  ```
- 
+
 4. **CDN**
 
  [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
@@ -120,7 +120,7 @@ To catch all updates and discussion, join the mailing list: **hintcss@googlegrou
 To subscribe: **hintcss+subscribe@googlegroups.com** or visit [here](https://groups.google.com/forum/?fromgroups=#!forum/hintcss).
 
 ## License
-Copyright (c) 2013 Kushagra Gour
+Copyright (c) 2013-2016 Kushagra Gour
 Licensed under the [MIT license](http://opensource.org/licenses/MIT).
 
 ## Credits
