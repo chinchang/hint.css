@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/chinchang/hint.css/issues"
   },
-  "license": "SEE LICENSE IN LICENSE-MIT",
+  "license": "MIT",
   "keywords": [
     "tooltip",
     "ui",
