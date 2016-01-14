@@ -35,10 +35,11 @@ Get the library using one of the following ways:
  ```
  npm install --save hint.css
  ```
- 
+
 4. **CDN**
 
  [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
+ [https://cdnjs.com/libraries/hint.css](https://cdnjs.com/libraries/hint.css)
 
 Now include the library in the *HEAD* of your page:
 
