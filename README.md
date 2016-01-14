@@ -1,7 +1,7 @@
 # Hint.css [![npm version](https://badge.fury.io/js/hint.css.svg)](https://badge.fury.io/js/hint.css)
 *A tooltip library in CSS for your lovely websites*
 
-`hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript and rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
+`hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript but rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
 
 [Read more about it](http://kushagragour.in/blog/2013/02/years-first-side-project-hint/).
 
@@ -41,7 +41,7 @@ Get the library using one of the following ways:
  [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
  [https://cdnjs.com/libraries/hint.css](https://cdnjs.com/libraries/hint.css)
 
-Now include the library in the *HEAD* of your page:
+Now include the library in the ``HEAD`` tag of your page:
 
 ```html
 <link rel="stylesheet" href="hint.css"></link>
@@ -58,13 +58,13 @@ Any element on your page which needs to have a tooltip has to be given at least 
 Hello Sir, <span class="hint--bottom">hover me.</span>
 ```
 
-The tooltip text needs to be given using the `data-hint` attribute on that element.
+The tooltip text needs to be provided via the `data-hint` attribute on that element.
 
 ```html
 Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
 ```
 
-[ **Note**: The `hint` class is no more required and is deprecated. Tooltip is shown on elements which have the `data-hint` attribute instead.]
+[ **Note**: The `hint` class is deprecated and no more required. Tooltip is shown on elements which have the `data-hint` attribute instead.]
 
 Use it with other available modifiers in various combinations. Available modifiers:
 - `hint--error`
