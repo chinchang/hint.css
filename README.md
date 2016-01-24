@@ -89,7 +89,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Tridiv](http://tridiv.com/)
 - [Tradus](http://tradus.com/)
 - [Formspree](http://formspree.io/)
-- (Stackshare)[http://stackshare.io/]
+- [Stackshare](http://stackshare.io/)
 - [TypeScript Builder](http://www.typescriptbuilder.com/)
 - [Fiverr's Devflow](https://github.com/fiverr/devflow/)
 - [codeMagic](http://codemagic.gr/)
