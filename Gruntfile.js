@@ -1,11 +1,16 @@
 /*global module:false*/
 module.exports = function(grunt) {
 
+	// Load tasks
+	require('load-grunt-tasks')(grunt);
+
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
 		meta: {
+			src: './src',
+			dist: './dist',
 			getBanner: function () {
 				return '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - <%= meta.banner %>';
 			},
@@ -18,12 +23,28 @@ module.exports = function(grunt) {
 				' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n'
 		},
 
+		clean: ['<%= meta.dist %>/*'],
+
 		sass: {
 			dist: {
 				files: {
-					'<%= pkg.name %>.css': 'src/<%= pkg.name %>.scss',
-					'<%= pkg.name %>.base.css': 'src/<%= pkg.name %>.base.scss'
+					'<%= meta.dist %>/<%= pkg.name %>.css': '<%= meta.src %>/<%= pkg.name %>.scss',
+					'<%= meta.dist %>/<%= pkg.name %>.base.css': '<%= meta.src %>/<%= pkg.name %>.base.scss'
 				}
+			}
+		},
+
+		autoprefixer: {
+			dist: {
+				files: [{
+					expand: true,
+					cwd: '<%= meta.dist %>/',
+					dest: '<%= meta.dist %>/',
+					src: ['*.css', '!*.min.css']
+				}]
+			},
+			options: {
+				browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
 			}
 		},
 
@@ -32,10 +53,13 @@ module.exports = function(grunt) {
 				sourceMap: false
 			},
 			compress: {
-				files: {
-					'<%= pkg.name %>.min.css': [ '<%= pkg.name %>.css' ],
-					'<%= pkg.name %>.base.min.css': [ '<%= pkg.name %>.base.css' ]
-				}
+				files: [{
+					expand: true,
+					cwd: '<%= meta.dist %>/',
+					dest: '<%= meta.dist %>/',
+					src: ['*.css', '!*.min.css'],
+					ext: '.min.css'
+				}]
 			}
 		},
 
@@ -45,43 +69,37 @@ module.exports = function(grunt) {
 				banner: '<%= meta.getBanner() %>'
 			},
 			lib: {
-				src: ['<%= pkg.name %>.css'],
-				dest: '<%= pkg.name %>.css'
+				src: ['<%= meta.dist %>/<%= pkg.name %>.css'],
+				dest: '<%= meta.dist %>/<%= pkg.name %>.css'
 			},
 			minLib: {
-				src: ['<%= pkg.name %>.min.css'],
-				dest: '<%= pkg.name %>.min.css'
+				src: ['<%= meta.dist %>/<%= pkg.name %>.min.css'],
+				dest: '<%= meta.dist %>/<%= pkg.name %>.min.css'
 			},
 			baseLib: {
 				options: {
 					banner: '<%= meta.getBannerForBaseVersion() %>'
 				},
-				src: ['<%= pkg.name %>.base.css'],
-				dest: '<%= pkg.name %>.base.css'
+				src: ['<%= meta.dist %>/<%= pkg.name %>.base.css'],
+				dest: '<%= meta.dist %>/<%= pkg.name %>.base.css'
 			},
 			baseMinLib: {
 				options: {
 					banner: '<%= meta.getBannerForBaseVersion() %>'
 				},
-				src: ['<%= pkg.name %>.base.min.css'],
-				dest: '<%= pkg.name %>.base.min.css'
+				src: ['<%= meta.dist %>/<%= pkg.name %>.base.min.css'],
+				dest: '<%= meta.dist %>/<%= pkg.name %>.base.min.css'
 			}
 		},
 
 		watch: {
-			files: 'src/*.scss',
+			files: '<%= meta.src %>/*.scss',
 			tasks: 'default'
 		}
 	});
 
-	// Dependencies
-	grunt.loadNpmTasks('grunt-sass');
-	grunt.loadNpmTasks('grunt-contrib-cssmin');
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-watch');
-
 	// Default task.
-	grunt.registerTask('default', 'sass');
-	grunt.registerTask('deploy', ['sass', 'cssmin', 'concat']);
+	grunt.registerTask('default', 'sass', 'autoprefixer');
+	grunt.registerTask('deploy', ['clean', 'sass', 'autoprefixer', 'cssmin', 'concat']);
 
 };
