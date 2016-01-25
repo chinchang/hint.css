@@ -99,7 +99,7 @@ module.exports = function(grunt) {
 	});
 
 	// Default task.
-	grunt.registerTask('default', 'sass', 'autoprefixer');
+	grunt.registerTask('default', ['sass', 'autoprefixer']);
 	grunt.registerTask('deploy', ['clean', 'sass', 'autoprefixer', 'cssmin', 'concat']);
 
 };
