@@ -98,8 +98,21 @@ module.exports = function(grunt) {
 		}
 	});
 
-	// Default task.
-	grunt.registerTask('default', ['sass', 'autoprefixer']);
-	grunt.registerTask('deploy', ['clean', 'sass', 'autoprefixer', 'cssmin', 'concat']);
+	// Default task
+	grunt.registerTask('default', [
+		'sass',
+		'autoprefixer'
+	]);
+
+	// Deploy task
+	grunt.registerTask('deploy', [
+		'clean',
+		'default',
+		'cssmin',
+		'concat'
+	]);
+
+	// Deploy task alias
+	grunt.registerTask('build', ['deploy']);
 
 };
