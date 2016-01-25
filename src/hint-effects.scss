@@ -12,15 +12,13 @@
 // Remove animation from tooltips.
 .#{$prefix}no-animate {
 	&:before, &:after {
-		@include vendor('transition-duration', 0ms);
+		transition-duration: 0ms;
 	}
 }
 
 // Bounce effect in tooltips.
 .#{$prefix}bounce {
 	&:before, &:after {
-		-webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
-		-moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
 		transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
 	}
 }
