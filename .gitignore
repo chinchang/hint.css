@@ -1,4 +1,6 @@
+.DS_Store
 .sass-cache
+dist/
 node_modules/
 hint.sublime-project
 hint.sublime-workspace
