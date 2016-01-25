@@ -52,19 +52,12 @@ or
 <link rel="stylesheet" href="hint.min.css"></link>
 ```
 
-Any element on your page which needs to have a tooltip has to be given at least one of the position classes: `hint--top`, `hint--bottom`, `hint--left`, `hint--right` to position the tooltip.
+Now, all you need to do is give your element any position class and tooltip text using the `data-hint` attribute:
 
-```html
-Hello Sir, <span class="hint--bottom">hover me.</span>
-```
-
-The tooltip text needs to be provided via the `data-hint` attribute on that element.
 
 ```html
 Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
 ```
-
-[ **Note**: The `hint` class is deprecated and no more required. Tooltip is shown on elements which have the `data-hint` attribute instead.]
 
 Use it with other available modifiers in various combinations. Available modifiers:
 - `hint--error`
@@ -75,6 +68,10 @@ Use it with other available modifiers in various combinations. Available modifie
 - `hint--rounded`
 - `hint--no-animate`
 - `hint--bounce`
+
+## Upgrading from v1.x
+
+If you are already using v1.x, you may need to tweak certain position classes because of the way tooltips are positioned in v2.
 
 ## Changing the prefix for class names
 
