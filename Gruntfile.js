@@ -1,10 +1,11 @@
-/*global module:false*/
+/* global module:false */
+
 module.exports = function(grunt) {
 
 	// Load tasks
 	require('load-grunt-tasks')(grunt);
 
-	// Project configuration.
+	// Project configuration
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
@@ -38,8 +39,8 @@ module.exports = function(grunt) {
 			dist: {
 				files: [{
 					expand: true,
-					cwd: '<%= meta.dist %>/',
-					dest: '<%= meta.dist %>/',
+					cwd: '<%= meta.dist %>',
+					dest: '<%= meta.dist %>',
 					src: ['*.css', '!*.min.css']
 				}]
 			},
@@ -53,13 +54,10 @@ module.exports = function(grunt) {
 				sourceMap: false
 			},
 			compress: {
-				files: [{
-					expand: true,
-					cwd: '<%= meta.dist %>/',
-					dest: '<%= meta.dist %>/',
-					src: ['*.css', '!*.min.css'],
-					ext: '.min.css'
-				}]
+				files: {
+					'<%= meta.dist %>/<%= pkg.name %>.min.css': '<%= meta.dist %>/<%= pkg.name %>.css',
+					'<%= meta.dist %>/<%= pkg.name %>.base.min.css': '<%= meta.dist %>/<%= pkg.name %>.base.css'
+				}
 			}
 		},
 
