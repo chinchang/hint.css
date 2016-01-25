@@ -15,11 +15,24 @@
 	}
 
 	&.#{$prefix}top {
-		@include set-margin('translateY', -1);
+		@include set-margin('translateY', -1, -50%);
+
+		&-left {
+			@include set-margin('translateY', -1, -100%);
+		}
+		&-right {
+			@include set-margin('translateY', -1, 0);
+		}
 	}
 
 	&.#{$prefix}bottom {
-		@include set-margin('translateY', 1);
+		@include set-margin('translateY', 1, -50%);
+		&-left {
+			@include set-margin('translateY', 1, -100%);
+		}
+		&-right {
+			@include set-margin('translateY', 1, 0);
+		}
 	}
 
 	&.#{$prefix}left {
