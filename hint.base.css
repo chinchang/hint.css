@@ -1,3 +1,7 @@
+/*! Hint.css (base version) - v2.0.0 - 2016-01-25
+* http://kushagragour.in/lab/hint/
+* Copyright (c) 2016 Kushagra Gour; Licensed  */
+
 /*-------------------------------------*	HINT.css - A CSS tooltip library
 \*-------------------------------------*/
 /**
@@ -20,7 +24,7 @@
  * Classes added:
  * 	1) hint
  */
-.hint, [data-hint] {
+[data-hint] {
   position: relative;
   display: inline-block;
   /**
@@ -29,7 +33,7 @@
   /**
 	 * tooltip body
 	 */ }
-  .hint:before, .hint:after, [data-hint]:before, [data-hint]:after {
+  [data-hint]:before, [data-hint]:after {
     position: absolute;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -44,20 +48,20 @@
     -webkit-transition-delay: 0ms;
     -moz-transition-delay: 0ms;
     transition-delay: 0ms; }
-  .hint:hover:before, .hint:hover:after, .hint:focus:before, .hint:focus:after, [data-hint]:hover:before, [data-hint]:hover:after, [data-hint]:focus:before, [data-hint]:focus:after {
+  [data-hint]:hover:before, [data-hint]:hover:after {
     visibility: visible;
     opacity: 1; }
-  .hint:hover:before, .hint:hover:after, [data-hint]:hover:before, [data-hint]:hover:after {
+  [data-hint]:hover:before, [data-hint]:hover:after {
     -webkit-transition-delay: 100ms;
     -moz-transition-delay: 100ms;
     transition-delay: 100ms; }
-  .hint:before, [data-hint]:before {
+  [data-hint]:before {
     content: '';
     position: absolute;
     background: transparent;
     border: 6px solid transparent;
     z-index: 1000001; }
-  .hint:after, [data-hint]:after {
+  [data-hint]:after {
     content: attr(data-hint);
     background: #383838;
     color: white;
@@ -118,6 +122,8 @@
   left: 50%; }
 
 .hint--top:after, .hint--top:before {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
   transform: translateX(-50%); }
 
 .hint--top:hover:after, .hint--top:hover:before, .hint--top:focus:after, .hint--top:focus:before {
@@ -136,6 +142,8 @@
   left: 50%; }
 
 .hint--bottom:after, .hint--bottom:before {
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
   transform: translateX(-50%); }
 
 .hint--bottom:hover:after, .hint--bottom:hover:before, .hint--bottom:focus:after, .hint--bottom:focus:before {
@@ -192,6 +200,8 @@
   left: 50%; }
 
 .hint--top-left:after, .hint--top-left:before {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
   transform: translateX(-100%); }
 
 .hint--top-left:after {
@@ -213,6 +223,8 @@
   left: 50%; }
 
 .hint--top-right:after, .hint--top-right:before {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
   transform: translateX(0); }
 
 .hint--top-right:after {
@@ -234,6 +246,8 @@
   left: 50%; }
 
 .hint--bottom-left:after, .hint--bottom-left:before {
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
   transform: translateX(-100%); }
 
 .hint--bottom-left:after {
@@ -255,6 +269,8 @@
   left: 50%; }
 
 .hint--bottom-right:after, .hint--bottom-right:before {
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
   transform: translateX(0); }
 
 .hint--bottom-right:after {
