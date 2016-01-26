@@ -111,12 +111,12 @@ If you would like to create more types of tooltips/ fix bugs/ enhance the librar
 
 [Read more on contributing](./CONTRIBUTING.md).
 
-## Changelog
-See the [Changelog](https://github.com/chinchang/hint.css/wiki/Changelog)
+## Changelog & Updates
+See the [Changelog](https://github.com/chinchang/hint.css/wiki/Changelog).
 
-To catch all updates and discussion, join the mailing list: **hintcss@googlegroups.com**.
+To catch all updates and discussion, join the mailing list: [**hintcss@googlegroups.com**](https://groups.google.com/forum/?fromgroups=#!forum/hintcss).
 
-To subscribe: **hintcss+subscribe@googlegroups.com** or visit [here](https://groups.google.com/forum/?fromgroups=#!forum/hintcss).
+Or follow on twitter: [**@hint_css**](https://twitter.com/hint_css)
 
 ## License
 Copyright (c) 2013-2016 Kushagra Gour
