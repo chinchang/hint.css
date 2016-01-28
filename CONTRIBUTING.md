@@ -12,7 +12,7 @@ Also there are four additional Grunt tasks required to build the library:
 
 1. [grunt-contrib-cssmin](https://npmjs.org/package/grunt-contrib-cssmin)
 
-2. [grunt-contrib-sass](https://www.npmjs.com/package/grunt-contrib-sass)
+2. [grunt-sass](https://www.npmjs.com/package/grunt-sass)
 
 3. [grunt-contrib-concat](https://www.npmjs.com/package/grunt-contrib-concat)
 
