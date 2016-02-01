@@ -27,9 +27,12 @@
   ],
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-autoprefixer": "^3.0.3",
+    "grunt-contrib-clean": "^0.7.0",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-cssmin": "~0.12.3",
     "grunt-contrib-watch": "~0.5.3",
-    "grunt-sass": "^1.1.0"
+    "grunt-sass": "^1.1.0",
+    "load-grunt-tasks": "^3.4.0"
   }
 }

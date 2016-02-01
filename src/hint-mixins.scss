@@ -2,13 +2,6 @@
 //
 // Place to store common mixins.
 
-// Vendor prefixer mixin.
-@mixin vendor($property, $value) {
-	-webkit-#{$property}: $value;
-	-moz-#{$property}: $value;
-	#{$property}: $value;
-}
-
 // Generates border-color rules for all possible positions
 @mixin arrow-border-color($color) {
 	@each $position in top, bottom, left, right {
@@ -32,10 +25,10 @@
 	$value: unquote("#{$property}(#{$transitionDistance * $transitionDirection})");
 	&:after, &:before {
 		@if $translateX != 0 {
-			@include vendor('transform', translateX($translateX) $value);
+			transform: translateX($translateX) $value;
 		}
 		@else {
-			@include vendor('transform', $value);
+			transform: $value;
 		}
 	}
 }

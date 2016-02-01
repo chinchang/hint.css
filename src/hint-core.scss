@@ -19,7 +19,7 @@
 
 		// HACK: Trigger hardware accelerated rendering, otherwise transform was not
 		// working on a hidden element
-		@include vendor('transform', translate3d(0, 0, 0));
+		transform: translate3d(0, 0, 0);
 
 		// HACK: visibility is set to hidden because IE & Opera don't support
 		// pointer-events on HTML content yet because of which hovering a hidden tooltip
@@ -30,8 +30,8 @@
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
-		@include vendor('transition', 0.3s ease);
-		@include vendor('transition-delay', $hideDelay);
+		transition: 0.3s ease;
+		transition-delay: $hideDelay;
 	}
 
 	&:hover:before, &:hover:after {
@@ -41,7 +41,7 @@
 
 	&:hover:before, &:hover:after {
 		// $showDelay will apply as soon as element is hovered.
-		@include vendor('transition-delay', $showDelay);
+		transition-delay: $showDelay;
 	}
 
 	/**

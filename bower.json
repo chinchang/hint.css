@@ -1,15 +1,31 @@
 {
-	"name": "hint.css",
-	"main": "hint.min.css",
-	"author": "Kushagra Gour",
-	"ignore": [
-		"CONTRIBUTING.md",
-		"Gruntfile.js"
-	],
-	"keywords": [
-		"hint",
-		"tooltip",
-		"tooltips",
-		"ui"
-	]
+  "name": "hint.css",
+  "description": "A tooltip library in CSS for your lovely websites.",
+  "main": "dist/hint.min.css",
+  "authors": [
+    "Kushagra Gour"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "tooltip",
+    "ui",
+    "sass",
+    "css",
+    "help",
+    "hint"
+  ],
+  "homepage": "https://github.com/chinchang/hint.css",
+  "moduleType": [
+    "globals"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "CONTRIBUTING.md",
+    "component.json"
+  ]
 }
