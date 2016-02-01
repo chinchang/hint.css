@@ -34,13 +34,15 @@
 		@include vendor('transition-delay', $hideDelay);
 	}
 
-	&:hover:before, &:hover:after {
+	&:hover:before, &:hover:after,
+	&:not(button):focus:before, &:not(button):focus:after {
 		visibility: visible;
 		opacity: 1;
 	}
 
-	&:hover:before, &:hover:after {
-		// $showDelay will apply as soon as element is hovered.
+	&:hover:before, &:hover:after,
+	&:not(button):focus:before, &:not(button):focus:after {
+		// $showDelay will apply as soon as element is hovered or focused.
 		@include vendor('transition-delay', $showDelay);
 	}
 
