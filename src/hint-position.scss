@@ -13,7 +13,7 @@
 @mixin vertical-positioned-tooltip($propertyY, $transitionDirection, $xDirection:0) {
 	&:before {
 		// get the arrow out
-		margin-#{$propertyY}: -2 * $arrowBorderWidth;
+		margin-#{$propertyY}: -2 * $hint-arrowBorderWidth;
 	}
 
 	&:before, &:after {
@@ -36,7 +36,7 @@
 	&:after {
 		@if $xDirection != 0 {
 			// bring back the tooltip by some offset so that arrow doesn't stick at end
-			margin-left: -$xDirection * $arrowOffsetX;
+			margin-left: -$xDirection * $hint-arrowOffsetX;
 		}
 	}
 
@@ -48,14 +48,14 @@
 @mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
 	&:before {
 		// get the arrow out
-		margin-#{$propertyX}: -2 * $arrowBorderWidth;
+		margin-#{$propertyX}: -2 * $hint-arrowBorderWidth;
 		// bring back to center
-		margin-bottom: -1 * $arrowBorderWidth;
+		margin-bottom: -1 * $hint-arrowBorderWidth;
 	}
 
 	&:after {
 		// bring back to center
-		margin-bottom: -1 * floor($tooltipHeight / 2);
+		margin-bottom: -1 * floor($hint-tooltipHeight / 2);
 	}
 
 	&:before, &:after {
@@ -72,40 +72,40 @@
 /**
  * set default color for tooltip arrows
  */
-@include arrow-border-color($defaultColor);
+@include arrow-border-color($hint-defaultColor);
 
 /**
  * top tooltip
  */
-.#{$prefix}top {
+.#{$hint-prefix}top {
 	@include vertical-positioned-tooltip('bottom', -1);
 }
 
 /**
  * bottom tooltip
  */
-.#{$prefix}bottom {
+.#{$hint-prefix}bottom {
 	@include vertical-positioned-tooltip('top', 1);
 }
 
 /**
  * right tooltip
  */
-.#{$prefix}right {
+.#{$hint-prefix}right {
 	@include horizontal-positioned-tooltip('left', 1);
 }
 
 /**
  * left tooltip
  */
-.#{$prefix}left {
+.#{$hint-prefix}left {
 	@include horizontal-positioned-tooltip('right', -1);
 }
 
 /**
  * top-left tooltip
  */
-.#{$prefix}top-left {
+.#{$hint-prefix}top-left {
 	@include vertical-positioned-tooltip('bottom', -1, -1);
 }
 
@@ -113,14 +113,14 @@
 /**
  * top-right tooltip
  */
-.#{$prefix}top-right {
+.#{$hint-prefix}top-right {
 	@include vertical-positioned-tooltip('bottom', -1, 1);
 }
 
 /**
  * bottom-left tooltip
  */
-.#{$prefix}bottom-left {
+.#{$hint-prefix}bottom-left {
 	@include vertical-positioned-tooltip('top', 1, -1);
 }
 
@@ -128,6 +128,6 @@
 /**
  * bottom-right tooltip
  */
-.#{$prefix}bottom-right {
+.#{$hint-prefix}bottom-right {
 	@include vertical-positioned-tooltip('top', 1, 1);
 }

@@ -16,7 +16,7 @@
 @mixin hint-type($color) {
 	&:after {
 		background-color: $color;
-		text-shadow: 0 -1px 0px darken($color, $textShadowDarkenAmount);
+		text-shadow: 0 -1px 0px darken($color, $hint-textShadowDarkenAmount);
 	}
 
 	// generate arrow color style
@@ -26,27 +26,27 @@
 /**
  * Error
  */
-.#{$prefix}error {
-	@include hint-type($errorColor);
+.#{$hint-prefix}error {
+	@include hint-type($hint-errorColor);
 }
 
 /**
  * Warning
  */
-.#{$prefix}warning {
-	@include hint-type($warningColor)
+.#{$hint-prefix}warning {
+	@include hint-type($hint-warningColor)
 }
 
 /**
  * Info
  */
-.#{$prefix}info {
-	@include hint-type($infoColor)
+.#{$hint-prefix}info {
+	@include hint-type($hint-infoColor)
 }
 
 /**
  * Success
  */
-.#{$prefix}success {
-	@include hint-type($successColor)
+.#{$hint-prefix}success {
+	@include hint-type($hint-successColor)
 }
