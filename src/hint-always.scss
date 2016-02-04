@@ -8,13 +8,13 @@
  *
  */
 
-.#{$prefix}always {
+.#{$hintPrefix}always {
 	&:after, &:before {
 		opacity: 1;
 		visibility: visible;
 	}
 
-	&.#{$prefix}top {
+	&.#{$hintPrefix}top {
 		@include set-margin('translateY', -1, -50%);
 
 		&-left {
@@ -25,7 +25,7 @@
 		}
 	}
 
-	&.#{$prefix}bottom {
+	&.#{$hintPrefix}bottom {
 		@include set-margin('translateY', 1, -50%);
 		&-left {
 			@include set-margin('translateY', 1, -100%);
@@ -35,11 +35,11 @@
 		}
 	}
 
-	&.#{$prefix}left {
+	&.#{$hintPrefix}left {
 		@include set-margin('translateX', -1);
 	}
 
-	&.#{$prefix}right {
+	&.#{$hintPrefix}right {
 		@include set-margin('translateX', 1);
 	}
 }

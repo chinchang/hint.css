@@ -15,12 +15,12 @@
 		@if $position == top or $position == bottom {
 			// Loop further for classes like .top-left, bottom-right etc
 			@each $xDir in left, right {
-				&.#{$prefix}#{$position}-#{$xDir}:before {
+				&.#{$hintPrefix}#{$position}-#{$xDir}:before {
 					border-#{$position}-color: $color;
 				}
 			}
 		}
-		&.#{$prefix}#{$position}:before {
+		&.#{$hintPrefix}#{$position}:before {
 			border-#{$position}-color: $color;
 		}
 	}
@@ -29,7 +29,7 @@
 // mixin to set margin on tooltip using translate transform
 // $property
 @mixin set-margin($property, $transitionDirection, $translateX: 0) {
-	$value: unquote("#{$property}(#{$transitionDistance * $transitionDirection})");
+	$value: unquote("#{$property}(#{$hintTransitionDistance * $transitionDirection})");
 	&:after, &:before {
 		@if $translateX != 0 {
 			@include vendor('transform', translateX($translateX) $value);
