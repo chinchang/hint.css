@@ -26,12 +26,12 @@
 		// shows the tooltip.
 		visibility: hidden;
 		opacity: 0;
-		z-index: $hint-zIndex;
+		z-index: $hintZIndex;
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
 		@include vendor('transition', 0.3s ease);
-		@include vendor('transition-delay', $hint-hideDelay);
+		@include vendor('transition-delay', $hintHideDelay);
 	}
 
 	&:hover:before, &:hover:after {
@@ -40,8 +40,8 @@
 	}
 
 	&:hover:before, &:hover:after {
-		// $hint-showDelay will apply as soon as element is hovered.
-		@include vendor('transition-delay', $hint-showDelay);
+		// $hintShowDelay will apply as soon as element is hovered.
+		@include vendor('transition-delay', $hintShowDelay);
 	}
 
 	/**
@@ -51,9 +51,9 @@
 		content: '';
 		position: absolute;
 		background: transparent;
-		border: $hint-arrowBorderWidth solid transparent;
+		border: $hintArrowBorderWidth solid transparent;
 		// move z-index 1 up than :after so that it shows over box-shadow
-		z-index: $hint-zIndex + 1;
+		z-index: $hintZIndex + 1;
 	}
 
 	/**
@@ -61,17 +61,17 @@
 	 */
 	&:after {
 		content: attr(data-hint); // The magic!
-		background: $hint-defaultColor;
+		background: $hintDefaultColor;
 		color: white;
-		padding: $hint-verticalPadding $hint-horizontalPadding;
-		font-size: $hint-fontSize;
-		line-height: $hint-fontSize; // Vertical centering.
+		padding: $hintVerticalPadding $hintHorizontalPadding;
+		font-size: $hintFontSize;
+		line-height: $hintFontSize; // Vertical centering.
 		white-space: nowrap; // Prevent breaking to new line.
 	}
 }
 
 [data-hint=''] {
 	&:before, &:after {
-		display: none!important;
+		display: none !important;
 	}
 }
