@@ -3,52 +3,52 @@
 // Declares some variables used within the library.
 
 // Prefix for all classes. By default, BEM naming convention is used
-$prefix: 'hint--' !default;
+$hintPrefix: 'hint--' !default;
 
 // font size
-$fontSize: 12px !default;
+$hintFontSize: 12px !default;
 
 // paddings
-$verticalPadding: 8px !default;
-$horizontalPadding: 10px !default;
+$hintVerticalPadding: 8px !default;
+$hintHorizontalPadding: 10px !default;
 
 // default tooltip height
-$tooltipHeight: $fontSize + 2 * $verticalPadding !default;
+$hintTooltipHeight: $hintFontSize + 2 * $hintVerticalPadding !default;
 
 // border-width for tooltip arrow
-$arrowBorderWidth: 6px !default;
+$hintArrowBorderWidth: 6px !default;
 
 // horizontal arrow offset
-$arrowOffsetX: 1 * $arrowBorderWidth !default;
+$hintArrowOffsetX: 1 * $hintArrowBorderWidth !default;
 
 // text-shadow darken percentage
-$textShadowDarkenAmount: 25% !default;
+$hintTextShadowDarkenAmount: 25% !default;
 
 // transition distance
-$transitionDistance: 8px !default;
+$hintTransitionDistance: 8px !default;
 
 // Delay in showing the tooltips.
-$showDelay: 100ms !default;
+$hintShowDelay: 100ms !default;
 
 // Delay in hiding the tooltips.
-$hideDelay: 0ms !default;
+$hintHideDelay: 0ms !default;
 
 // z-index for tooltips
-$zIndex: 1000000 !default;
+$hintZIndex: 1000000 !default;
 
 
 // Various colors
 // Default color is blackish
-$defaultColor: hsl(0, 0%, 22%) !default;
+$hintDefaultColor: hsl(0, 0%, 22%) !default;
 
 // Error color
-$errorColor: hsl(1, 40%, 50%) !default;
+$hintErrorColor: hsl(1, 40%, 50%) !default;
 
 // Warning color
-$warningColor: hsl(38, 46%, 54%) !default;
+$hintWarningColor: hsl(38, 46%, 54%) !default;
 
 // Info Color
-$infoColor: hsl(200, 50%, 45%) !default;
+$hintInfoColor: hsl(200, 50%, 45%) !default;
 
 // Success Color
-$successColor: hsl(121, 32%, 40%) !default;
+$hintSuccessColor: hsl(121, 32%, 40%) !default;
