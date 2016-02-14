@@ -6,11 +6,11 @@
 $prefix: 'hint--' !default;
 
 // font size
-$fontSize: 12px;
+$fontSize: 12px !default;
 
 // paddings
-$verticalPadding: 8px;
-$horizontalPadding: 10px;
+$verticalPadding: 8px !default;
+$horizontalPadding: 10px !default;
 
 // default tooltip height
 $tooltipHeight: $fontSize + 2 * $verticalPadding !default;
