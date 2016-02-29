@@ -9,7 +9,7 @@
  */
 
 .#{$hintPrefix}rounded {
-	&:after {
+	&::after {
 		border-radius: 4px;
 	}
 }

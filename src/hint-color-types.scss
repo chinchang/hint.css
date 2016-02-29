@@ -14,9 +14,9 @@
 
 // mixin to generate different color style tooltips
 @mixin hint-type($color) {
-	&:after {
+	&::after {
 		background-color: $color;
-		text-shadow: 0 -1px 0px darken($color, $hintTextShadowDarkenAmount);
+		text-shadow: 0 -1px 0 darken($color, $hintTextShadowDarkenAmount);
 	}
 
 	// generate arrow color style

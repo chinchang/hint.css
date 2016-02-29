@@ -11,12 +11,13 @@
  */
 
 @mixin vertical-positioned-tooltip($propertyY, $transitionDirection, $xDirection:0) {
-	&:before {
+	&::before {
 		// get the arrow out
 		margin-#{$propertyY}: -2 * $hintArrowBorderWidth;
 	}
 
-	&:before, &:after {
+	&::before,
+	&::after {
 		#{$propertyY}: 100%;
 		left: 50%;
 	}
@@ -24,46 +25,49 @@
 	$translateX: -50%;
 	@if $xDirection == -1 {
 		$translateX: -100%;
-	}
-	@elseif $xDirection == 1 {
+	} @elseif $xDirection == 1 {
 		$translateX: 0;
 	}
 
-	&:after, &:before {
+	&::after,
+	&::before {
 		@include vendor('transform', translateX($translateX));
 	}
 
-	&:after {
+	&::after {
 		@if $xDirection != 0 {
 			// bring back the tooltip by some offset so that arrow doesn't stick at end
 			margin-left: -$xDirection * $hintArrowOffsetX;
 		}
 	}
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		@include set-margin('translateY', $transitionDirection, $translateX);
 	}
 }
 
 @mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
-	&:before {
+	&::before {
 		// get the arrow out
 		margin-#{$propertyX}: -2 * $hintArrowBorderWidth;
 		// bring back to center
 		margin-bottom: -1 * $hintArrowBorderWidth;
 	}
 
-	&:after {
+	&::after {
 		// bring back to center
 		margin-bottom: -1 * floor($hintTooltipHeight / 2);
 	}
 
-	&:before, &:after {
+	&::before,
+	&::after {
 		#{$propertyX}: 100%;
 		bottom: 50%;
 	}
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		@include set-margin('translateX', $transitionDirection);
 	}
 }

@@ -9,7 +9,8 @@
  */
 
 .#{$hintPrefix}always {
-	&:after, &:before {
+	&::after,
+	&::before {
 		opacity: 1;
 		visibility: visible;
 	}

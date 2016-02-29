@@ -11,16 +11,18 @@
 
 // Remove animation from tooltips.
 .#{$hintPrefix}no-animate {
-	&:before, &:after {
-		@include vendor('transition-duration', 0ms);
+	&::before,
+	&::after {
+		@include vendor('transition-duration', 0);
 	}
 }
 
 // Bounce effect in tooltips.
 .#{$hintPrefix}bounce {
-	&:before, &:after {
-		-webkit-transition: opacity 0.3s ease, visibility 0.3s ease, -webkit-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
-		-moz-transition: opacity 0.3s ease, visibility 0.3s ease, -moz-transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
-		transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(.71,1.7,.77,1.24);
+	&::before,
+	&::after {
+		-webkit-transition: opacity .3s ease, visibility .3s ease, -webkit-transform .3s cubic-bezier(.71, 1.7, .77, 1.24);
+		-moz-transition: opacity .3s ease, visibility .3s ease, -moz-transform .3s cubic-bezier(.71, 1.7, .77, 1.24);
+		transition: opacity .3s ease, visibility .3s ease, transform .3s cubic-bezier(.71, 1.7, .77, 1.24);
 	}
 }

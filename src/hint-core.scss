@@ -11,10 +11,11 @@
  */
 
 [data-hint] {
-	position: relative;
 	display: inline-block;
+	position: relative;
 
-	&:before, &:after {
+	&::before,
+	&::after {
 		position: absolute;
 
 		// HACK: Trigger hardware accelerated rendering, otherwise transform was not
@@ -24,34 +25,34 @@
 		// HACK: visibility is set to hidden because IE & Opera don't support
 		// pointer-events on HTML content yet because of which hovering a hidden tooltip
 		// shows the tooltip.
-		visibility: hidden;
 		opacity: 0;
-		z-index: $hintZIndex;
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
+		visibility: hidden;
+		z-index: $hintZIndex;
 
-		@include vendor('transition', 0.3s ease);
+		@include vendor('transition', .3s ease);
 		@include vendor('transition-delay', $hintHideDelay);
 	}
 
-	&:hover:before, &:hover:after {
-		visibility: visible;
-		opacity: 1;
-	}
-
-	&:hover:before, &:hover:after {
-		// $hintShowDelay will apply as soon as element is hovered.
-		@include vendor('transition-delay', $hintShowDelay);
+	&:hover {
+		&::before,
+		&::after {
+			// $hintShowDelay will apply as soon as element is hovered.
+			@include vendor('transition-delay', $hintShowDelay);
+			visibility: visible;
+			opacity: 1;
+		}
 	}
 
 	/**
 	 * tooltip arrow
 	 */
-	&:before {
-		content: '';
-		position: absolute;
+	&::before {
 		background: transparent;
 		border: $hintArrowBorderWidth solid transparent;
+		content: '';
+		position: absolute;
 		// move z-index 1 up than :after so that it shows over box-shadow
 		z-index: $hintZIndex + 1;
 	}
@@ -59,20 +60,21 @@
 	/**
 	 * tooltip body
 	 */
-	&:after {
-		content: attr(data-hint); // The magic!
+	&::after {
 		background: $hintDefaultColor;
-		color: white;
-		padding: $hintVerticalPadding $hintHorizontalPadding;
-		font-size: $hintFontSize;
+		color: #fff;
+		content: attr(data-hint); // The magic!
 		font-family: $hintFontFamily;
+		font-size: $hintFontSize;
 		line-height: $hintFontSize; // Vertical centering.
+		padding: $hintVerticalPadding $hintHorizontalPadding;
 		white-space: nowrap; // Prevent breaking to new line.
 	}
 }
 
 [data-hint=''] {
-	&:before, &:after {
+	&::before,
+	&::after {
 		display: none !important;
 	}
 }

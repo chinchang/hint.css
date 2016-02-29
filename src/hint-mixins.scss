@@ -15,12 +15,13 @@
 		@if $position == top or $position == bottom {
 			// Loop further for classes like .top-left, bottom-right etc
 			@each $xDir in left, right {
-				&.#{$hintPrefix}#{$position}-#{$xDir}:before {
+				&.#{$hintPrefix}#{$position}-#{$xDir}::before {
 					border-#{$position}-color: $color;
 				}
 			}
 		}
-		&.#{$hintPrefix}#{$position}:before {
+
+		&.#{$hintPrefix}#{$position}::before {
 			border-#{$position}-color: $color;
 		}
 	}
@@ -30,11 +31,11 @@
 // $property
 @mixin set-margin($property, $transitionDirection, $translateX: 0) {
 	$value: unquote("#{$property}(#{$hintTransitionDistance * $transitionDirection})");
-	&:after, &:before {
+	&::after,
+	&::before {
 		@if $translateX != 0 {
 			@include vendor('transform', translateX($translateX) $value);
-		}
-		@else {
+		} @else {
 			@include vendor('transform', $value);
 		}
 	}
