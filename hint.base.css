@@ -1,4 +1,4 @@
-/*! Hint.css (base version) - v2.1.0 - 2016-02-15
+/*! Hint.css (base version) - v2.1.0 - 2016-03-05
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2016 Kushagra Gour; Licensed  */
 
@@ -55,6 +55,8 @@
     -webkit-transition-delay: 100ms;
     -moz-transition-delay: 100ms;
     transition-delay: 100ms; }
+  [data-hint]:hover:after {
+    padding: 8px 10px; }
   [data-hint]:before {
     content: '';
     position: absolute;
@@ -65,7 +67,7 @@
     content: attr(data-hint);
     background: #383838;
     color: white;
-    padding: 8px 10px;
+    padding: 8px 0;
     font-size: 12px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 12px;

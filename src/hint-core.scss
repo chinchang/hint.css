@@ -43,6 +43,10 @@
 		// $hintShowDelay will apply as soon as element is hovered.
 		@include vendor('transition-delay', $hintShowDelay);
 	}
+	
+	&:hover:after {
+		padding: $hintVerticalPadding $hintHorizontalPadding;
+	}
 
 	/**
 	 * tooltip arrow
@@ -63,7 +67,7 @@
 		content: attr(data-hint); // The magic!
 		background: $hintDefaultColor;
 		color: white;
-		padding: $hintVerticalPadding $hintHorizontalPadding;
+		padding: $hintVerticalPadding 0;
 		font-size: $hintFontSize;
 		font-family: $hintFontFamily;
 		line-height: $hintFontSize; // Vertical centering.
