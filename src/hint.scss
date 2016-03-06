@@ -1,5 +1,5 @@
 // hint.scss
-// 
+//
 // Aggregates all other sass files.
 
 /*-------------------------------------*\
@@ -18,11 +18,12 @@
  */
 
 
-// root path needs to be specified because of a bug in grunt-sass 
+// root path needs to be specified because of a bug in grunt-sass
 @import "hint-variables";
 @import "hint-mixins";
 @import "hint-core";
 @import "hint-position";
+@import "hint-sizes";
 @import "hint-theme";
 @import "hint-color-types";
 @import "hint-always";
