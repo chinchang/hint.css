@@ -5,32 +5,33 @@
  * across multiple lines.
  *
  * Classes added:
- * 	1) hint--s
- * 	2) hint--m
- * 	3) hint--l
+ * 	1) hint--small
+ * 	2) hint--medium
+ * 	3) hint--large
  *
  */
 
-.#{$hintPrefix}s,
-.#{$hintPrefix}m,
-.#{$hintPrefix}l {
+
+.#{$hintPrefix}small,
+.#{$hintPrefix}medium,
+.#{$hintPrefix}large {
 	&:after {
 		white-space: normal;
 		line-height: 1.4em;
 	}
 }
 
-.#{$hintPrefix}s {
+.#{$hintPrefix}small {
 	&:after {
 		width: $hintSizeSmall;
 	}
 }
-.#{$hintPrefix}m {
+.#{$hintPrefix}medium {
 	&:after {
 		width: $hintSizeMedium;
 	}
 }
-.#{$hintPrefix}l {
+.#{$hintPrefix}large {
 	&:after {
 		width: $hintSizeLarge;
 	}
