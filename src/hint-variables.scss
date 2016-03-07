@@ -40,9 +40,9 @@ $hintHideDelay: 0ms !default;
 $hintZIndex: 1000000 !default;
 
 // Size options
-$hintSizeSmall: 80px;
-$hintSizeMedium: 150px;
-$hintSizeLarge: 300px;
+$hintSizeSmall: 80px !default;
+$hintSizeMedium: 150px !default;
+$hintSizeLarge: 300px !default;
 
 // Various colors
 // Default color is blackish
