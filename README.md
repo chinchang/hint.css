@@ -57,10 +57,8 @@ Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
 ```
 
 Use it with other available modifiers in various combinations. Available modifiers:
-- `hint--error`
-- `hint--info`
-- `hint--warning`
-- `hint--success`
+- *Colors* - `hint--error`, `hint--info`, `hint--warning`, `hint--success`
+- *Sizes* - `hint--small`, `hint--medium`, `hint--large`
 - `hint--always`
 - `hint--rounded`
 - `hint--no-animate`
@@ -88,7 +86,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Fiverr's Devflow](https://github.com/fiverr/devflow/)
 - [codeMagic](http://codemagic.gr/)
 
-Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
+Are you using **hint.css** in your awesome project too? Just tweet it out to [@hint_css](https://twitter.com/hint_css) or let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
 ## Browser Support
 **hint.css** works on all latest browsers, though the transition effect is supported only on IE10+, Chrome 26+ and FF4+ at present.
