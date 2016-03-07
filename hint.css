@@ -1,4 +1,4 @@
-/*! Hint.css - v2.1.0 - 2016-02-15
+/*! Hint.css - v2.2.0 - 2016-03-08
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2016 Kushagra Gour; Licensed  */
 
@@ -281,6 +281,33 @@
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px); }
+
+/**
+ * source: hint-sizes.scss
+ *
+ * Defines width restricted tooltips that can span
+ * across multiple lines.
+ *
+ * Classes added:
+ * 	1) hint--small
+ * 	2) hint--medium
+ * 	3) hint--large
+ *
+ */
+.hint--small:after,
+.hint--medium:after,
+.hint--large:after {
+  white-space: normal;
+  line-height: 1.4em; }
+
+.hint--small:after {
+  width: 80px; }
+
+.hint--medium:after {
+  width: 150px; }
+
+.hint--large:after {
+  width: 300px; }
 
 /**
  * source: hint-theme.scss
