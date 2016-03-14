@@ -10,7 +10,7 @@
  * 	1) hint
  */
 
-[data-hint] {
+[class*="hint--"] {
 	position: relative;
 	display: inline-block;
 
@@ -60,7 +60,7 @@
 	 * tooltip body
 	 */
 	&:after {
-		content: attr(data-hint); // The magic!
+		content: attr(aria-label); // The magic!
 		background: $hintDefaultColor;
 		color: white;
 		padding: $hintVerticalPadding $hintHorizontalPadding;
@@ -71,7 +71,7 @@
 	}
 }
 
-[data-hint=''] {
+[aria-label=''] {
 	&:before, &:after {
 		display: none !important;
 	}
