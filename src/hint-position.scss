@@ -12,7 +12,8 @@
 
 @mixin vertical-positioned-tooltip($propertyY, $transitionDirection, $xDirection:0) {
 	&:before {
-		// bring arrow inside so that it animates to normal position when shown
+		// bring arrow inside so that it animates to normal position when shown.
+		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
 		margin-#{$propertyY}: -2 * $hintArrowBorderWidth + 1px;
 	}
 
@@ -52,6 +53,7 @@
 @mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
 	&:before {
 		// bring arrow inside so that it animates to normal position when shown
+		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
 		margin-#{$propertyX}: -2 * $hintArrowBorderWidth + 1px;
 		// bring back to center vertically
 		margin-bottom: -1 * $hintArrowBorderWidth;
