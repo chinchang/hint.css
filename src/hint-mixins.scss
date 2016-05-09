@@ -31,9 +31,14 @@
 // $property
 @mixin set-margin($property, $transitionDirection, $translateX: 0) {
 	$value: unquote("#{$property}(#{$hintTransitionDistance * $transitionDirection})");
-	&::after,
+
 	&::before {
+		@include vendor('transform', $value);
+	}
+	&::after {
 		@if $translateX != 0 {
+			// For vertical tooltips, we need to animate in y-direction
+			// retaining its x-transform.
 			@include vendor('transform', translateX($translateX) $value);
 		} @else {
 			@include vendor('transform', $value);

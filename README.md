@@ -1,14 +1,11 @@
-# Hint.css [![npm version](https://badge.fury.io/js/hint.css.svg)](https://badge.fury.io/js/hint.css) [![Join the chat at https://gitter.im/chinchang/hint.css](https://badges.gitter.im/chinchang/hint.css.svg)](https://gitter.im/chinchang/hint.css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# Hint.css [![npm version](https://badge.fury.io/js/hint.css.svg)](https://badge.fury.io/js/hint.css) ![downloads/month](https://img.shields.io/npm/dm/hint.css.svg) [![Join the chat at https://gitter.im/chinchang/hint.css](https://badges.gitter.im/chinchang/hint.css.svg)](https://gitter.im/chinchang/hint.css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Gratipay donate ](https://img.shields.io/badge/gratipay-donate-yellow.svg)](https://gratipay.com/~chinchang/)
 *A tooltip library in CSS for your lovely websites*
+
+[Demo](http://kushagragour.in/lab/hint/) • [Get started](#get-started) • [Who's using this?](#whos-using-this) • [Browser support](#browser-support) • [Contributing](#contributing)
 
 `hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript but rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
 
-[Read more about it](http://kushagragour.in/blog/2013/02/years-first-side-project-hint/).
-
-### Try it out:
-http://kushagragour.in/lab/hint/
-
-If you find this useful and want to show some love & encouragement, I am on [Gittip](https://www.gittip.com/chinchang/).
+If you find this useful and want to show some love & encouragement, [I am on Gratipay](https://gratipay.com/~chinchang/).
 
 ## Get Started
 
@@ -60,10 +57,8 @@ Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
 ```
 
 Use it with other available modifiers in various combinations. Available modifiers:
-- `hint--error`
-- `hint--info`
-- `hint--warning`
-- `hint--success`
+- *Colors* - `hint--error`, `hint--info`, `hint--warning`, `hint--success`
+- *Sizes* - `hint--small`, `hint--medium`, `hint--large`
 - `hint--always`
 - `hint--rounded`
 - `hint--no-animate`
@@ -84,6 +79,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Webflow Playground](http://playground.webflow.com/)
 - [Panda chrome app](http://usepanda.com/)
 - [Tridiv](http://tridiv.com/)
+- [Prototyp](http://prototyp.in/)
 - [Tradus](http://tradus.com/)
 - [Formspree](http://formspree.io/)
 - [Stackshare](http://stackshare.io/)
@@ -91,7 +87,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Fiverr's Devflow](https://github.com/fiverr/devflow/)
 - [codeMagic](http://codemagic.gr/)
 
-Are you using **hint.css** in your awesome project too? Let us know on the [mailing list](mailto:hintcss@googlegroups.com).
+Are you using **hint.css** in your awesome project too? Just tweet it out to [@hint_css](https://twitter.com/hint_css) or let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
 ## Browser Support
 **hint.css** works on all latest browsers, though the transition effect is supported only on IE10+, Chrome 26+ and FF4+ at present.
