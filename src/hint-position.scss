@@ -12,13 +12,18 @@
 
 @mixin vertical-positioned-tooltip($propertyY, $transitionDirection, $xDirection:0) {
 	&:before {
-		// get the arrow out
-		margin-#{$propertyY}: -2 * $hintArrowBorderWidth;
+		// bring arrow inside so that it animates to normal position when shown.
+		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
+		margin-#{$propertyY}: -2 * $hintArrowBorderWidth + 1px;
 	}
 
 	&:before, &:after {
 		#{$propertyY}: 100%;
-		left: 50%;
+		left: 50%; // get top-left corner in center
+	}
+
+	&:before {
+		left: calc(50% - #{$hintArrowBorderWidth}); // get arrow center aligned with content
 	}
 
 	$translateX: -50%;
@@ -29,7 +34,7 @@
 		$translateX: 0;
 	}
 
-	&:after, &:before {
+	&:after {
 		@include vendor('transform', translateX($translateX));
 	}
 
@@ -47,9 +52,10 @@
 
 @mixin horizontal-positioned-tooltip($propertyX, $transitionDirection) {
 	&:before {
-		// get the arrow out
-		margin-#{$propertyX}: -2 * $hintArrowBorderWidth;
-		// bring back to center
+		// bring arrow inside so that it animates to normal position when shown
+		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
+		margin-#{$propertyX}: -2 * $hintArrowBorderWidth + 1px;
+		// bring back to center vertically
 		margin-bottom: -1 * $hintArrowBorderWidth;
 	}
 

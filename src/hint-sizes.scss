@@ -1,0 +1,38 @@
+/**
+ * source: hint-sizes.scss
+ *
+ * Defines width restricted tooltips that can span
+ * across multiple lines.
+ *
+ * Classes added:
+ * 	1) hint--small
+ * 	2) hint--medium
+ * 	3) hint--large
+ *
+ */
+
+
+.#{$hintPrefix}small,
+.#{$hintPrefix}medium,
+.#{$hintPrefix}large {
+	&:after {
+		white-space: normal;
+		line-height: 1.4em;
+	}
+}
+
+.#{$hintPrefix}small {
+	&:after {
+		width: $hintSizeSmall;
+	}
+}
+.#{$hintPrefix}medium {
+	&:after {
+		width: $hintSizeMedium;
+	}
+}
+.#{$hintPrefix}large {
+	&:after {
+		width: $hintSizeLarge;
+	}
+}

@@ -22,7 +22,7 @@ $hintTooltipHeight: $hintFontSize + 2 * $hintVerticalPadding !default;
 $hintArrowBorderWidth: 6px !default;
 
 // horizontal arrow offset
-$hintArrowOffsetX: 1 * $hintArrowBorderWidth !default;
+$hintArrowOffsetX: 2 * $hintArrowBorderWidth !default;
 
 // text-shadow darken percentage
 $hintTextShadowDarkenAmount: 25% !default;
@@ -39,6 +39,10 @@ $hintHideDelay: 0ms !default;
 // z-index for tooltips
 $hintZIndex: 1000000 !default;
 
+// Size options
+$hintSizeSmall: 80px !default;
+$hintSizeMedium: 150px !default;
+$hintSizeLarge: 300px !default;
 
 // Various colors
 // Default color is blackish
