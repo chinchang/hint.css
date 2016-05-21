@@ -5,7 +5,7 @@
  *
  */
 
-[data-hint] {
+[class*="#{$hintPrefix}"] {
 	/**
 	 * tooltip body
 	 */

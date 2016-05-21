@@ -1,4 +1,4 @@
-/*! Hint.css - v2.2.1 - 2016-05-09
+/*! Hint.css - v2.3.0 - 2016-05-21
 * http://kushagragour.in/lab/hint/
 * Copyright (c) 2016 Kushagra Gour; Licensed  */
 
@@ -24,7 +24,7 @@
  * Classes added:
  * 	1) hint
  */
-[data-hint] {
+[class*="hint--"] {
   display: inline-block;
   position: relative;
   /**
@@ -33,7 +33,7 @@
   /**
 	 * tooltip body
 	 */ }
-  [data-hint]::before, [data-hint]::after {
+  [class*="hint--"]::before, [class*="hint--"]::after {
     position: absolute;
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
@@ -48,19 +48,19 @@
     -webkit-transition-delay: 0ms;
     -moz-transition-delay: 0ms;
     transition-delay: 0ms; }
-  [data-hint]:hover::before, [data-hint]:hover::after {
+  [class*="hint--"]:hover::before, [class*="hint--"]:hover::after {
     -webkit-transition-delay: 100ms;
     -moz-transition-delay: 100ms;
     transition-delay: 100ms;
     visibility: visible;
     opacity: 1; }
-  [data-hint]::before {
+  [class*="hint--"]::before {
     background: transparent;
     border: 6px solid transparent;
     content: '';
     position: absolute;
     z-index: 1000001; }
-  [data-hint]::after {
+  [class*="hint--"]::after {
     background: #383838;
     color: #fff;
     content: attr(data-hint);
@@ -69,8 +69,14 @@
     line-height: 12px;
     padding: 8px 10px;
     white-space: nowrap; }
+  [class*="hint--"][aria-label]::after {
+    content: attr(aria-label); }
+  [class*="hint--"][data-hint]::after {
+    content: attr(data-hint); }
 
-[data-hint='']::before, [data-hint='']::after {
+[aria-label='']::before, [aria-label='']::after,
+[data-hint='']::before,
+[data-hint='']::after {
   display: none !important; }
 
 /**
@@ -364,11 +370,11 @@
  * Defines basic theme for tooltips.
  *
  */
-[data-hint] {
+[class*="hint--"] {
   /**
 	 * tooltip body
 	 */ }
-  [data-hint]::after {
+  [class*="hint--"]::after {
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
     text-shadow: 0 -1px 0 black; }
 
