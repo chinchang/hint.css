@@ -3,7 +3,7 @@
 
 [Demo](http://kushagragour.in/lab/hint/) • [Get started](#get-started) • [Who's using this?](#whos-using-this) • [Browser support](#browser-support) • [Contributing](#contributing)
 
-`hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript but rather uses **data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
+`hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript but rather uses **aria-label**/**data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
 
 If you find this useful and want to show some love & encouragement, [I am on Gratipay](https://gratipay.com/~chinchang/).
 
@@ -21,22 +21,11 @@ Get the library using one of the following ways:
  - [unminified] : https://raw.github.com/chinchang/hint.css/master/hint.base.css
  - [minified] : https://raw.github.com/chinchang/hint.css/master/hint.base.min.css
 
-2. **Bower**
+2. **Bower** : `bower install hint.css`
 
- ```
- bower install hint.css
- ```
+3. **npm**: `npm install --save hint.css`
 
-3. **npm**
-
- ```
- npm install --save hint.css
- ```
-
-4. **CDN**
-
- [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
- [https://cdnjs.com/libraries/hint.css](https://cdnjs.com/libraries/hint.css)
+4. **CDN**: [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css) or [https://cdnjs.com/libraries/hint.css](https://cdnjs.com/libraries/hint.css)
 
 Now include the library in the ``HEAD`` tag of your page:
 
@@ -49,11 +38,12 @@ or
 <link rel="stylesheet" href="hint.min.css"></link>
 ```
 
-Now, all you need to do is give your element any position class and tooltip text using the `data-hint` attribute:
+Now, all you need to do is give your element any position class and tooltip text using the `aria-label` attribute.
+Note, if you don't want to use `aria-label` attribute, you can also specify the tooltip text using the `data-hint` attribute, but its recommended to use `aria-label` in support of accessibility. [Read more about aria-label](https://webaccessibility.withgoogle.com/unit?unit=6&lesson=10).
 
 
 ```html
-Hello Sir, <span class="hint--bottom" data-hint="Thank you!">hover me.</span>
+Hello Sir, <span class="hint--bottom" aria-label="Thank you!">hover me.</span>
 ```
 
 Use it with other available modifiers in various combinations. Available modifiers:
