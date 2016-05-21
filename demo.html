@@ -253,7 +253,7 @@
 
 			<h1 style="display:inline-block;position:relative">Hint.css <small class="version">2.0</small> </h1>
 			<h3>A pure CSS tooltip library for your lovely websites</h3>
-				<br>
+			<br>
 		</div>
 
 		<div class="section  section--inverted">
@@ -308,15 +308,15 @@
 						<h3>Size variations</h3>
 
 						<p>
-							<a class="hint--top  hint--small" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" data-hint="You can show very very long sentences inside tooltips by using various available size variation classes.">
+							<a class="hint--top  hint--small" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" aria-label="You can show very very long sentences inside tooltips by using various available size variation classes.">
 								Small
 							</a>
 
-							<a class="hint--top  hint--medium" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" data-hint="You can show very very long sentences inside tooltips by using various available size variation classes.">
+							<a class="hint--top  hint--medium" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" aria-label="You can show very very long sentences inside tooltips by using various available size variation classes.">
 								Medium
 							</a>
 
-							<a class="hint--top  hint--large" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" data-hint="You can show very very long sentences inside tooltips by using various available size variation classes.">
+							<a class="hint--top  hint--large" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" aria-label="You can show very very long sentences inside tooltips by using various available size variation classes.">
 								Large
 							</a>
 						</p>
@@ -345,11 +345,14 @@
 
 				<div class="section-inner" style="opacity: 0.7; margin-top: 25px">
 					<strong>Upgrading from v1.x</strong>: If you are already using v1.x, you may need to tweak certain position classes because of the way tooltips are positioned in v2.
+					<br>
+					Its recommended to use <code>aria-label</code> attribute to specify your tooltip text in support of accessibility. Though, you can always use <code>data-hint</code> attribute instead. <a href="https://webaccessibility.withgoogle.com/unit?unit=6&lesson=10">Read more about <code>aria-label</code> here</a>.
+
 				</div>
 		</div>
 
 		<div class="section  footer">
-			Made with hands by <a data-hint="@chinchang457" class="hint--top" href="https://twitter.com/chinchang457">Kushagra Gour</a> in India
+			Made with hands by <a aria-label="@chinchang457" class="hint--top" href="https://twitter.com/chinchang457">Kushagra Gour</a> in India
 		</div>
 
 	</body>
