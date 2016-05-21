@@ -25,10 +25,7 @@ Get the library using one of the following ways:
 
 3. **npm**: `npm install --save hint.css`
 
-4. **CDN**
-
- [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css)
- [https://cdnjs.com/libraries/hint.css](https://cdnjs.com/libraries/hint.css)
+4. **CDN**: [http://www.jsdelivr.com/#!hint.css](http://www.jsdelivr.com/#!hint.css) or [https://cdnjs.com/libraries/hint.css](https://cdnjs.com/libraries/hint.css)
 
 Now include the library in the ``HEAD`` tag of your page:
 
@@ -42,7 +39,7 @@ or
 ```
 
 Now, all you need to do is give your element any position class and tooltip text using the `aria-label` attribute.
-Note: If you don't want to use `aria-label` attribute, you can also specify the tooltip text using the `data-hint` attribute, but its recommended to use `aria-label` in support of accessibility. [Read more about aria-label](https://webaccessibility.withgoogle.com/unit?unit=6&lesson=10).
+Note, if you don't want to use `aria-label` attribute, you can also specify the tooltip text using the `data-hint` attribute, but its recommended to use `aria-label` in support of accessibility. [Read more about aria-label](https://webaccessibility.withgoogle.com/unit?unit=6&lesson=10).
 
 
 ```html
