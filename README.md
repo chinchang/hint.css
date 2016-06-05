@@ -3,7 +3,7 @@
 
 [Demo](http://kushagragour.in/lab/hint/) • [Get started](#get-started) • [Who's using this?](#whos-using-this) • [Browser support](#browser-support) • [Contributing](#contributing)
 
-`hint.css` is written as a pure CSS resource using which you can create cool tooltips for your web app. It does not rely on JavaScript but rather uses **aria-label**/**data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
+`hint.css` is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. It does not rely on JavaScript but rather uses **aria-label**/**data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
 
 If you find this useful and want to show some love & encouragement, [I am on Gratipay](https://gratipay.com/~chinchang/).
 
