@@ -68,6 +68,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 ## Who's Using This?
 - [Webflow Playground](http://playground.webflow.com/)
 - [Panda chrome app](http://usepanda.com/)
+- [Tolks](https://tolks.io)
 - [Tridiv](http://tridiv.com/)
 - [Prototyp](http://prototyp.in/)
 - [Tradus](http://tradus.com/)
