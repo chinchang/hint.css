@@ -18,6 +18,7 @@
 	&:after {
 		white-space: normal;
 		line-height: 1.4em;
+		word-wrap: break-word; // Ensure long words do not overflow.
 	}
 }
 
