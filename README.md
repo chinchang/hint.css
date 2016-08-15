@@ -68,6 +68,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 ## Who's Using This?
 - [Webflow Playground](http://playground.webflow.com/)
 - [Panda chrome app](http://usepanda.com/)
+- [Fiverr](https://www.fiverr.com/)
 - [Tolks](https://tolks.io)
 - [Tridiv](http://tridiv.com/)
 - [Prototyp](http://prototyp.in/)
@@ -75,7 +76,6 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Formspree](http://formspree.io/)
 - [Stackshare](http://stackshare.io/)
 - [TypeScript Builder](http://www.typescriptbuilder.com/)
-- [Fiverr's Devflow](https://github.com/fiverr/devflow/)
 - [codeMagic](http://codemagic.gr/)
 
 Are you using **hint.css** in your awesome project too? Just tweet it out to [@hint_css](https://twitter.com/hint_css) or let us know on the [mailing list](mailto:hintcss@googlegroups.com).
