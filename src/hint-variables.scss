@@ -59,3 +59,15 @@ $hintInfoColor: hsl(200, 50%, 45%) !default;
 
 // Success Color
 $hintSuccessColor: hsl(121, 32%, 40%) !default;
+
+// Breakpoint for large screen sizes
+$hintBreakpointLG: (min-width 1200px) !default;
+
+// Breakpoint for medium screen sizes
+$hintBreakpointMD: (min-width 992px) !default;
+
+// Breakpoint for small screen sizes
+$hintBreakpointSM: (min-width 768px) !default;
+
+// Breakpoint for extra small screen sizes
+$hintBreakpointXS: (max-width 767px) !default;
