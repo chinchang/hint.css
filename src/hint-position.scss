@@ -137,3 +137,111 @@
 .#{$hintPrefix}bottom-right {
 	@include vertical-positioned-tooltip('top', 1, 1);
 }
+
+@media (min-width: $hintBreakpointLG) {
+	.#{$hintPrefix}top-lg {
+	  @include vertical-positioned-tooltip('bottom', -1);
+	}
+	.#{$hintPrefix}bottom-lg {
+		@include vertical-positioned-tooltip('top', 1);
+	}
+	.#{$hintPrefix}right-lg {
+		@include horizontal-positioned-tooltip('left', 1);
+	}
+	.#{$hintPrefix}left-lg {
+		@include horizontal-positioned-tooltip('right', -1);
+	}
+	.#{$hintPrefix}top-left-lg {
+		@include vertical-positioned-tooltip('bottom', -1, -1);
+	}
+	.#{$hintPrefix}top-right-lg {
+		@include vertical-positioned-tooltip('bottom', -1, 1);
+	}
+	.#{$hintPrefix}bottom-left-lg {
+		@include vertical-positioned-tooltip('top', 1, -1);
+	}
+	.#{$hintPrefix}bottom-right-lg {
+		@include vertical-positioned-tooltip('top', 1, 1);
+	}
+}
+
+@media (min-width: $hintBreakpointMD) {
+	.#{$hintPrefix}top-md {
+	  @include vertical-positioned-tooltip('bottom', -1);
+	}
+	.#{$hintPrefix}bottom-md {
+		@include vertical-positioned-tooltip('top', 1);
+	}
+	.#{$hintPrefix}right-md {
+		@include horizontal-positioned-tooltip('left', 1);
+	}
+	.#{$hintPrefix}left-md {
+		@include horizontal-positioned-tooltip('right', -1);
+	}
+	.#{$hintPrefix}top-left-md {
+		@include vertical-positioned-tooltip('bottom', -1, -1);
+	}
+	.#{$hintPrefix}top-right-md {
+		@include vertical-positioned-tooltip('bottom', -1, 1);
+	}
+	.#{$hintPrefix}bottom-left-md {
+		@include vertical-positioned-tooltip('top', 1, -1);
+	}
+	.#{$hintPrefix}bottom-right-md {
+		@include vertical-positioned-tooltip('top', 1, 1);
+	}
+}
+
+@media (min-width: $hintBreakpointSM) {
+	.#{$hintPrefix}top-sm {
+	  @include vertical-positioned-tooltip('bottom', -1);
+	}
+	.#{$hintPrefix}bottom-sm {
+		@include vertical-positioned-tooltip('top', 1);
+	}
+	.#{$hintPrefix}right-sm {
+		@include horizontal-positioned-tooltip('left', 1);
+	}
+	.#{$hintPrefix}left-sm {
+		@include horizontal-positioned-tooltip('right', -1);
+	}
+	.#{$hintPrefix}top-left-sm {
+		@include vertical-positioned-tooltip('bottom', -1, -1);
+	}
+	.#{$hintPrefix}top-right-sm {
+		@include vertical-positioned-tooltip('bottom', -1, 1);
+	}
+	.#{$hintPrefix}bottom-left-sm {
+		@include vertical-positioned-tooltip('top', 1, -1);
+	}
+	.#{$hintPrefix}bottom-right-sm {
+		@include vertical-positioned-tooltip('top', 1, 1);
+	}
+}
+
+@media (max-width: $hintBreakpointXS) {
+	.#{$hintPrefix}top-xs {
+	  @include vertical-positioned-tooltip('bottom', -1);
+	}
+	.#{$hintPrefix}bottom-xs {
+		@include vertical-positioned-tooltip('top', 1);
+	}
+	.#{$hintPrefix}right-xs {
+		@include horizontal-positioned-tooltip('left', 1);
+	}
+	.#{$hintPrefix}left-xs {
+		@include horizontal-positioned-tooltip('right', -1);
+	}
+	.#{$hintPrefix}top-xs {
+		@include vertical-positioned-tooltip('bottom', -1, -1);
+	}
+	.#{$hintPrefix}top-right-xs {
+		@include vertical-positioned-tooltip('bottom', -1, 1);
+	}
+	.#{$hintPrefix}bottom-left-xs {
+		@include vertical-positioned-tooltip('top', 1, -1);
+	}
+	.#{$hintPrefix}bottom-right-xs {
+		@include vertical-positioned-tooltip('top', 1, 1);
+	}
+}
