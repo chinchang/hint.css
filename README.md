@@ -1,11 +1,9 @@
-# Hint.css [![npm version](https://badge.fury.io/js/hint.css.svg)](https://badge.fury.io/js/hint.css) ![downloads/month](https://img.shields.io/npm/dm/hint.css.svg) [![Join the chat at https://gitter.im/chinchang/hint.css](https://badges.gitter.im/chinchang/hint.css.svg)](https://gitter.im/chinchang/hint.css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Gratipay donate ](https://img.shields.io/badge/gratipay-donate-yellow.svg)](https://gratipay.com/~chinchang/)
+# Hint.css [![npm version](https://badge.fury.io/js/hint.css.svg)](https://badge.fury.io/js/hint.css) ![downloads/month](https://img.shields.io/npm/dm/hint.css.svg) [![Join the chat at https://gitter.im/chinchang/hint.css](https://badges.gitter.im/chinchang/hint.css.svg)](https://gitter.im/chinchang/hint.css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 *A tooltip library in CSS for your lovely websites*
 
-[Demo](http://kushagragour.in/lab/hint/) • [Get started](#get-started) • [Who's using this?](#whos-using-this) • [Browser support](#browser-support) • [FAQs](#faqs) • [Contributing](#contributing)
+[Demo](http://kushagragour.in/lab/hint/) • [Get started](#get-started) • [Who's using this?](#whos-using-this) • [Browser support](#browser-support) • [FAQs](#faqs) • [Contributing](#contributing) • [License](#license)
 
 `hint.css` is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. It does not rely on JavaScript but rather uses **aria-label**/**data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
-
-If you find this useful and want to show some love & encouragement, [I am on Gratipay](https://gratipay.com/~chinchang/).
 
 ## Get Started
 
@@ -109,8 +107,14 @@ To catch all updates and discussion, join the mailing list: [**hintcss@googlegro
 Or follow on twitter: [**@hint_css**](https://twitter.com/hint_css)
 
 ## License
-Copyright (c) 2013-2016 Kushagra Gour
-Licensed under the [MIT license](http://opensource.org/licenses/MIT).
+
+### Commercial License
+
+If you want to use Hint.css for business, commercial sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Purchase a Hint.css Commercial License at https://site.uplabs.com/posts/hint-css
+
+### Open-source License
+
+Hint.css is free for personal use under the GNU AGPLv3.
 
 ## Credits
 This doesn't make use of a lot of BEM methodology but big thanks to [@csswizardry](https://twitter.com/csswizardry), [@necolas](https://twitter.com/necolas) for their awesome articles on BEM and to [@joshnh](https://twitter.com/_joshnh) through whose work I came to know about it :)
