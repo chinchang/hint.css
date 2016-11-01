@@ -73,6 +73,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Tradus](http://tradus.com/)
 - [Formspree](http://formspree.io/)
 - [Stackshare](http://stackshare.io/)
+- [LessPass](https://lesspass.com/#/)
 - [TypeScript Builder](http://www.typescriptbuilder.com/)
 - [codeMagic](http://codemagic.gr/)
 
