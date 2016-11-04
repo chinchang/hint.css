@@ -4,6 +4,7 @@
   "description": "A tooltip library in CSS for your lovely websites.",
   "version": "2.4.0",
   "style": "hint.css",
+  "main": "hint.css",
   "homepage": "http://kushagragour.in/lab/hint/",
   "author": {
     "name": "Kushagra Gour",
