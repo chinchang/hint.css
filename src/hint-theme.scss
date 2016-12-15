@@ -5,7 +5,7 @@
  *
  */
 
-[class*="#{$hintPrefix}"] {
+#{$hintSelector} {
 	/**
 	 * tooltip body
 	 */

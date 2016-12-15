@@ -5,6 +5,9 @@
 // Prefix for all classes. By default, BEM naming convention is used
 $hintPrefix: 'hint--' !default;
 
+// Selector applying to all hints
+$hintSelector: '[class*="#{$hintPrefix}"]' !default;
+
 // font size
 $hintFontSize: 12px !default;
 
