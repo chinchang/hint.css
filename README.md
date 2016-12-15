@@ -60,7 +60,7 @@ If you are already using v1.x, you may need to tweak certain position classes be
 
 Don't like BEM naming (`hint--`) or want to use your own prefix for the class names?
 
-Simply update `src/hint-variables.scss` and change the `$hintPrefix` variable.
+Simply customize via the `$hintSelector` and `$hintPrefix` variables defined in [src/hint-variables.scss](src/hint-variables.scss)
 To generate the css file, please read the [contributing page](./CONTRIBUTING.md).
 
 ## Who's Using This?
