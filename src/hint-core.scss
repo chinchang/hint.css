@@ -30,7 +30,7 @@
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
-		@include vendor('transition', 0.3s ease);
+		@include vendor('transition', $hintTransitionDuration ease);
 		@include vendor('transition-delay', $hintHideDelay);
 	}
 
