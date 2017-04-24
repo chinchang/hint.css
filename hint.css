@@ -57,7 +57,7 @@
     content: '';
     position: absolute;
     background: transparent;
-    border: 6px solid transparent;
+    border: 7px solid transparent;
     z-index: 1000001; }
   [class*="hint--"]:after {
     background: #383838;
