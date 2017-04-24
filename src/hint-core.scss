@@ -13,7 +13,7 @@
 [class*="#{$hintPrefix}"] {
 	position: relative;
 	display: inline-block;
-
+	font-family: $fontFamily;
 	&:before, &:after {
 		position: absolute;
 
