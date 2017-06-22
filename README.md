@@ -76,6 +76,7 @@ To generate the css file, please read the [contributing page](./CONTRIBUTING.md)
 - [Formspree](http://formspree.io/)
 - [LessPass](https://lesspass.com/#/)
 - [codeMagic](http://codemagic.gr/)
+- [Siftery](https://siftery.com/)
 
 Are you using **hint.css** in your awesome project too? Just tweet it out to [@hint_css](https://twitter.com/hint_css) or let us know on the [mailing list](mailto:hintcss@googlegroups.com).
 
