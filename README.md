@@ -5,6 +5,10 @@
 
 `hint.css` is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. It does not rely on JavaScript but rather uses **aria-label**/**data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
 
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/tmHYNguwxPeXncc6xCXiWrFj/chinchang/hint.css'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/tmHYNguwxPeXncc6xCXiWrFj/chinchang/hint.css.svg' />
+</a>
+
 ## Get Started
 
 Get the library using one of the following ways:
