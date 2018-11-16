@@ -15,12 +15,12 @@
 		@if $position == top or $position == bottom {
 			// Loop further for classes like .top-left, bottom-right etc
 			@each $xDir in left, right {
-				&.#{$hintPrefix}#{$position}-#{$xDir}:before {
+				#{if(&, "&", "")}.#{$hintPrefix}#{$position}-#{$xDir}:before {
 					border-#{$position}-color: $color;
 				}
 			}
 		}
-		&.#{$hintPrefix}#{$position}:before {
+		#{if(&, "&", "")}.#{$hintPrefix}#{$position}:before {
 			border-#{$position}-color: $color;
 		}
 	}
