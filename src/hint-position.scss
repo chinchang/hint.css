@@ -29,8 +29,7 @@
 	$translateX: -50%;
 	@if $xDirection == -1 {
 		$translateX: -100%;
-	}
-	@elseif $xDirection == 1 {
+	} @else if $xDirection == 1 {
 		$translateX: 0;
 	}
 
