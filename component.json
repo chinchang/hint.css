@@ -2,7 +2,7 @@
   "name": "hint.css",
   "repo": "chinchang/hint.css",
   "description": "A tooltip library in CSS for your lovely websites.",
-  "version": "1.3.6",
+  "version": "2.6.0",
   "keywords": ["tooltip", "css"],
   "dependencies": {},
   "development": {},
