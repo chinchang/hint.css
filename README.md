@@ -30,12 +30,12 @@ Get the library using one of the following ways:
 Now include the library in the ``HEAD`` tag of your page:
 
 ```html
-<link rel="stylesheet" href="hint.css"></link>
+<link rel="stylesheet" href="hint.css" />
 ```
 or
 
 ```html
-<link rel="stylesheet" href="hint.min.css"></link>
+<link rel="stylesheet" href="hint.min.css" />
 ```
 
 Now, all you need to do is give your element any position class and tooltip text using the `aria-label` attribute.
