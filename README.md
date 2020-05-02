@@ -113,13 +113,7 @@ Or follow on twitter: [**@hint_css**](https://twitter.com/hint_css)
 
 ## License
 
-### Commercial License
-
-If you want to use Hint.css for business, commercial sites, themes, projects, and applications, the Commercial license is the appropriate license. With this option, your source code is kept proprietary. Purchase a Hint.css Commercial License at https://kushagragour.in/lab/hint/#commercial
-
-### Open-source License
-
-Hint.css is free for personal use under the GNU AGPLv3.
+Hint.css is free for personal and commercial use under the MIT License.
 
 ## Credits
 This doesn't make use of a lot of BEM methodology but big thanks to [@csswizardry](https://twitter.com/csswizardry), [@necolas](https://twitter.com/necolas) for their awesome articles on BEM and to [@joshnh](https://twitter.com/_joshnh) through whose work I came to know about it :)
