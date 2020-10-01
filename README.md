@@ -7,7 +7,7 @@
 
 
 
-## Get Started
+## Get Started with the amazing magic of CSS
 
 Get the library using one of the following ways:
 
