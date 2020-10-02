@@ -23,6 +23,8 @@
  * Classes added:
  * 	1) hint
  */
+
+
 [class*="hint--"] {
   position: relative;
   display: inline-block;
@@ -148,7 +150,10 @@
  * bottom tooltip
  */
 .hint--bottom:before {
-  margin-top: -11px; }
+  margin-top: -11px; 
+}
+
+
 
 .hint--bottom:before, .hint--bottom:after {
   top: 100%;
