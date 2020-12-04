@@ -1,7 +1,7 @@
 # Hint.css [![npm version](https://badge.fury.io/js/hint.css.svg)](https://badge.fury.io/js/hint.css) ![downloads/month](https://img.shields.io/npm/dm/hint.css.svg) [![Join the chat at https://gitter.im/chinchang/hint.css](https://badges.gitter.im/chinchang/hint.css.svg)](https://gitter.im/chinchang/hint.css?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) ![gzip size](http://img.badgesize.io/https://unpkg.com/hint.css/hint.min.css?compression=gzip&label=gzip%20size)
 *A tooltip library in CSS for your lovely websites*
 
-[Demo](https://kushagragour.in/lab/hint/) • [Get started](#get-started) • [Who's using this?](#whos-using-this) • [Browser support](#browser-support) • [FAQs](#faqs) • [Contributing](#contributing) • [License](#license)
+[Demo](https://kushagra.dev/lab/hint/) • [Get started](#get-started) • [Who's using this?](#whos-using-this) • [Browser support](#browser-support) • [FAQs](#faqs) • [Contributing](#contributing) • [License](#license)
 
 `hint.css` is written as a pure CSS resource using which you can create cool accessible tooltips for your web app. It does not rely on JavaScript but rather uses **aria-label**/**data-* attribute**, **pseudo elements**, **content property** and **CSS3 transitions** to create the tooltips. Also it uses **BEM** naming convention particularly for the modifiers.
 
