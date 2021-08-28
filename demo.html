@@ -248,6 +248,11 @@
 		<link rel="stylesheet" href="hint.css">
 	</head>
 	<body>
+		<!--Pre-Loader. Contributed by:-Ankur Bodhak-->>
+		<div class="container">
+  			<div class="loader"></div>
+		</div>
+		<!--Pre-loader ends-->
 
 		<div class="section  hero">
 
@@ -358,5 +363,12 @@
 			Made with hands by <a aria-label="@chinchang457" class="hint--top" href="https://twitter.com/chinchang457">Kushagra Gour</a> in India
 		</div>
 
+		<script>
+			$(window).on('load',function(){
+				setTimeout(function(){
+					$(".container").fadeOut('slow');
+				},3000)
+			})
+		</script>
 	</body>
 </html>
