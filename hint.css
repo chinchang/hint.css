@@ -1,6 +1,6 @@
-/*! Hint.css - v2.6.0 - 2019-04-27
-* http://kushagragour.in/lab/hint/
-* Copyright (c) 2019 Kushagra Gour */
+/*! Hint.css - v2.7.0 - 2021-10-01
+* https://kushagra.dev/lab/hint/
+* Copyright (c) 2021 Kushagra Gour */
 
 /*-------------------------------------*\
 	HINT.css - A CSS tooltip library
@@ -650,3 +650,6 @@
 .hint--no-shadow:before, .hint--no-shadow:after {
   text-shadow: initial;
   box-shadow: initial; }
+
+.hint--no-arrow:before {
+  display: none; }

@@ -2,14 +2,14 @@
 	"name": "hint",
 	"title": "Hint.css",
 	"description": "A tooltip library in CSS for your lovely websites.",
-	"version": "2.6.0",
+	"version": "2.7.0",
 	"style": "hint.css",
 	"main": "hint.css",
-	"homepage": "http://kushagragour.in/lab/hint/",
+	"homepage": "https://kushagra.dev/lab/hint/",
 	"author": {
 		"name": "Kushagra Gour",
 		"email": "chinchang457@gmail.com",
-		"url": "http://kushagragour.in"
+		"url": "https://kushagra.dev"
 	},
 	"repository": {
 		"type": "git",
@@ -20,10 +20,10 @@
 	},
 	"license": "MIT",
 	"keywords": [
+		"css",
 		"tooltip",
 		"ui",
 		"sass",
-		"css",
 		"help",
 		"hint"
 	],
