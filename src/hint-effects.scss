@@ -32,3 +32,11 @@
 		box-shadow: initial;
 	}
 }
+
+// Remove shadows from tooltips.
+.#{$hintPrefix}no-arrow {
+	&:before {
+		display: none;
+	}
+}
+
