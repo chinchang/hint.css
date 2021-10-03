@@ -6,6 +6,9 @@
 	"style": "hint.css",
 	"main": "hint.css",
 	"homepage": "https://kushagra.dev/lab/hint/",
+	"scripts": {
+		"dev": "watch 'grunt' ./src"
+	},
 	"author": {
 		"name": "Kushagra Gour",
 		"email": "chinchang457@gmail.com",
@@ -33,6 +36,7 @@
 		"grunt-contrib-cssmin": "~0.12.3",
 		"grunt-contrib-watch": "~0.5.3",
 		"grunt-sass": "^3.0.2",
-		"node-sass": "^4.13.1"
+		"node-sass": "^4.13.1",
+		"watch": "^1.0.2"
 	}
 }
