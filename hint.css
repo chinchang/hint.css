@@ -66,7 +66,7 @@
     padding: 8px 10px;
     font-size: 12px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    line-height: 12px;
+    line-height: 20px;
     white-space: nowrap; }
   [class*="hint--"][aria-label]:after {
     content: attr(aria-label); }
@@ -370,7 +370,8 @@
   width: 150px; }
 
 .hint--large:after {
-  width: 300px; }
+  width: 300px; 
+  overflow: hidden;}
 
 /**
  * source: hint-theme.scss
