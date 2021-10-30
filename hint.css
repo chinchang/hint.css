@@ -343,8 +343,7 @@
   -webkit-transform: translateY(8px);
   -moz-transform: translateY(8px);
   transform: translateY(8px); }
-
-/**
+ /**
  * source: hint-sizes.scss
  *
  * Defines width restricted tooltips that can span
@@ -521,6 +520,12 @@
 
 .hint--success.hint--right:before {
   border-right-color: #458746; }
+
+
+  .position-grid__cell:hover {
+    background-color: #ADD8E6;
+  }
+ 
 
 /**
  * source: hint-always.scss
