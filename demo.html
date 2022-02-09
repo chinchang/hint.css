@@ -1,61 +1,66 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<title>Hint.css - A tooltip library in CSS</title>
-		<meta name="description" content="A CSS only tooltip library">
-		<meta name="viewport" content="width=device-width">
-		<link href='https://fonts.googleapis.com/css?family=Lobster&display=swap' rel='stylesheet' type='text/css'>
+		<meta name="description" content="A CSS only tooltip library" />
+		<meta name="viewport" content="width=device-width" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+			rel="stylesheet"
+			type="text/css"
+		/>
 
-		<link rel="image_src" href="hint.png"/>
+		<link rel="image_src" href="hint.png" />
 
 		<style type="text/css">
 			body {
 				text-align: center;
 				font-family: Arial;
-				background: #D9623F;
+				background: #d9623f;
 				min-height: 100vh;
 				font-size: 18px;
 				padding: 0;
 				margin: 0;
 				color: white;
+				overflow-x: hidden;
 			}
 
 			h1 {
 				font-size: 6em;
-					text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
-				font-family: 'Lobster', cursive;
+				text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
+				font-family: "Lobster", cursive;
 			}
 			h2 {
 				font-size: 4em;
 				margin: 0.5em 0;
-					text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
-				font-family: 'Lobster', cursive;
+				text-shadow: 0 6px 1px rgba(0, 0, 0, 0.2);
+				font-family: "Lobster", cursive;
 			}
 			.version {
-					font-size: 0.3em;
-					border-radius: 50%;
-					padding: 1px 11px;
-					text-shadow: none;
-					top: 0px;
-					position: absolute;
-					right: -65px;
+				font-size: 0.3em;
+				border-radius: 50%;
+				padding: 1px 11px;
+				text-shadow: none;
+				top: 0px;
+				position: absolute;
+				right: -65px;
 			}
 			.section {
 				padding: 3em 0;
 				position: relative;
 			}
 			.section:after {
-					content: '';
-					position: absolute;
-					bottom: -25px;
-					background: inherit;
-					left: -4px;
-					height: 50px;
-					right: -2px;
-					z-index: 1;
-					transform: rotate(2deg);
+				content: "";
+				position: absolute;
+				bottom: -25px;
+				background: inherit;
+				left: -4px;
+				height: 50px;
+				right: -2px;
+				z-index: 1;
+				transform: rotate(2deg);
 			}
 			.section:last-of-type {
 				padding-bottom: 2em;
@@ -64,35 +69,35 @@
 				display: none;
 			}
 			.section--inverted:after {
-					left: -4px;
-					height: 50px;
-					right: -2px;
-					z-index: 1;
-					transform: rotate(-2deg);
+				left: -4px;
+				height: 50px;
+				right: -2px;
+				z-index: 1;
+				transform: rotate(-2deg);
 			}
 			.hero {
-				background: #5CC2F1;
-				background: #81C439;
-				background: #7D6EC6;
-					/*text-shadow: 0 3px 7px rgba(0,0,0,0.25);*/
+				background: #5cc2f1;
+				background: #81c439;
+				background: #7d6ec6;
+				/*text-shadow: 0 3px 7px rgba(0,0,0,0.25);*/
 			}
 			.section:nth-child(2) {
-				background: #9993C1;
-				background: #8BBA66;
-				background: #5BC0EB;
-				background:
+				background: #9993c1;
+				background: #8bba66;
+				background: #5bc0eb;
+				background: ;
 			}
 			.section:nth-child(3) {
-				background: #D9623F;
-				background: #E4CC37;
+				background: #d9623f;
+				background: #e4cc37;
 				/* #BD3769 */
 				/* #E18335 */
 			}
 			.section:nth-child(4) {
-				background: #7D6EC6;
+				background: #7d6ec6;
 			}
 			.section:nth-child(5) {
-				background: #D9623F;
+				background: #d9623f;
 				/*background: ##E18335;*/
 				/* #BD3769 */
 				/* #E18335 */
@@ -101,11 +106,12 @@
 				max-width: 600px;
 				margin: 0 auto;
 			}
-			h1,h3{
+			h1,
+			h3 {
 				margin: 5px 0;
 			}
 			a {
-				color: #1A5A7A;
+				color: #1a5a7a;
 				color: #fff;
 				outline: none;
 				text-decoration: none;
@@ -123,7 +129,7 @@
 				transform: scale(1.2);
 			}
 			.download-btn {
-				color: #7D6EC6;
+				color: #7d6ec6;
 				margin-top: 1em;
 			}
 			.position-grid {
@@ -148,7 +154,7 @@
 				border-radius: 3px;
 				padding: 5px 6px 2px;
 				margin: 0 4px;
-				border: 1px solid rgba(0,0,0,0.2);
+				border: 1px solid rgba(0, 0, 0, 0.2);
 			}
 			.features ul {
 				padding: 0;
@@ -164,7 +170,7 @@
 				margin: auto;
 				border: 1px solid #acacac;
 				border-radius: 6px;
-				box-shadow: 0px 6px 17px rgba(0,0,0,0.2);
+				box-shadow: 0px 6px 17px rgba(0, 0, 0, 0.2);
 				cursor: default;
 			}
 
@@ -194,12 +200,11 @@
 				line-height: 11px;
 				width: 11px;
 				height: 11px;
-				border: 1px solid rgba(0,0,0,0.15);
+				border: 1px solid rgba(0, 0, 0, 0.15);
 				border-radius: 50%;
 				display: inline-block;
 				margin-right: 5px;
 				cursor: pointer;
-
 			}
 			.close {
 				background: #ff5c5c;
@@ -225,9 +230,9 @@
 				font-size: 0.8em;
 				margin: 22px 0 0;
 				padding: 4px 0;
-				background: rgba(00,0,0,0.02);
-				color: rgba(0,0,0,0.9);
-				border-bottom: 1px solid rgba(0,0,0,0.04);
+				background: rgba(00, 0, 0, 0.02);
+				color: rgba(0, 0, 0, 0.9);
+				border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 			}
 			pre {
 				color: #555;
@@ -240,122 +245,236 @@
 				fill: white;
 			}
 		</style>
-		<link rel="stylesheet" href="hint.css">
+		<link rel="stylesheet" href="hint.css" />
 	</head>
 	<body>
-
-		<div class="section  hero">
-
-			<h1 style="display:inline-block;position:relative">Hint.css <small class="version">2.0</small> </h1>
+		<div class="section hero">
+			<h1 style="display: inline-block; position: relative">
+				Hint.css <small class="version">2.0</small>
+			</h1>
 			<h3>A pure CSS tooltip library for your lovely websites</h3>
-			<br>
+			<br />
 		</div>
 
-		<div class="section  section--inverted">
+		<div class="section section--inverted">
 			<h2>Tryout</h2>
 
-				<div class="window">
-					<div class="titlebar">
-						<div class="buttons">
-							<a class="titlebar__btn  close  hint--bottom-right" aria-label="Close"></a>
-							<a class="titlebar__btn  minimize  hint--bottom-right" aria-label="Minimize"></a>
-							<a class="titlebar__btn  zoom  hint--bottom-right" aria-label="Zoom"></a>
-						</div>
-						Try hovering over different things
+			<div class="window">
+				<div class="titlebar">
+					<div class="buttons">
+						<a
+							class="titlebar__btn close hint--bottom-right"
+							aria-label="Close"
+						></a>
+						<a
+							class="titlebar__btn minimize hint--bottom-right"
+							aria-label="Minimize"
+						></a>
+						<a
+							class="titlebar__btn zoom hint--bottom-right"
+							aria-label="Zoom"
+						></a>
 					</div>
-					<div class="content">
-						<div class="position-grid">
-							<div class="position-grid__cell"><a href="#" aria-label="bottom-right" class="hint--bottom-right">bottom-right</a></div>
-							<div class="position-grid__cell"><a href="#" aria-label="bottom" class="hint--bottom">bottom</a></div>
-							<div class="position-grid__cell"><a href="#" aria-label="bottom-left" class="hint--bottom-left">bottom-left</a></div>
-							<div class="position-grid__cell"><a href="#" aria-label="right" class="hint--right">right</a></div>
-							<div class="position-grid__cell"><a>.</a></div>
-							<div class="position-grid__cell"><a href="#" aria-label="left" class="hint--left">left</a></div>
-							<div class="position-grid__cell"><a href="#" aria-label="top-right" class="hint--top-right">top-right</a></div>
-							<div class="position-grid__cell"><a href="#" aria-label="top" class="hint--top">top</a></div>
-							<div class="position-grid__cell"><a href="#" aria-label="top-left" class="hint--top-left">top-left</a></div>
+					Try hovering over different things
+				</div>
+				<div class="content">
+					<div class="position-grid">
+						<div class="position-grid__cell">
+							<a href="#" aria-label="bottom-right" class="hint--bottom-right"
+								>bottom-right</a
+							>
 						</div>
-
-						<h3>Color Modifiers</h3>
-						<p>
-							<a class="status-icon  hint--bottom-right  hint--error" style="background:indianred" aria-label="This is an error tooltip">
-								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-										<path fill="#ffffff" d="M8.27,3L3,8.27V15.73L8.27,21H15.73L21,15.73V8.27L15.73,3M8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41" />
-								</svg>
-							</a>
-							<a class="status-icon  hint--bottom-right  hint--warning" style="background:orange" aria-label="This is a warning tooltip">
-								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-										<path fill="#ffffff" d="M11,4.5H13V15.5H11V4.5M13,17.5V19.5H11V17.5H13Z" />
-								</svg>
-							</a>
-							<a class="status-icon  hint--bottom-left  hint--info" style="background:lightblue" aria-label="This is an info tooltip">
-								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-										<path fill="#ffffff" d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z" />
-								</svg>
-							</a>
-							<a class="status-icon  hint--bottom-right  hint--success" style="background:lightgreen" aria-label="This is success tooltip">
-								<svg style="width:24px;height:24px" viewBox="0 0 24 24">
-									<path fill="#ffffff" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
-								</svg>
-							</a>
-						</p>
-
-						<h3>Size variations</h3>
-
-						<p>
-							<a class="hint--top  hint--small" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" data-hint="You can show very very long sentences inside tooltips by using various available size variation classes.">
-								Small
-							</a>
-
-							<a class="hint--top  hint--medium" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" data-hint="You can show very very long sentences inside tooltips by using various available size variation classes.">
-								Medium
-							</a>
-
-							<a class="hint--top  hint--large" style="border: 1px solid #eee;padding:3px 6px;border-radius:4px;" data-hint="You can show very very long sentences inside tooltips by using various available size variation classes.">
-								Large
-							</a>
-						</p>
-
-
-						<h3>Extra</h3>
-
-						<p>
-							<a class="hint--left  hint--always" aria-label="...which always keep showing">You can also make tooltips...</a>
-						</p>
-
-						<p>
-							<a class="hint--top  hint--rounded" aria-label="We have rounded corners for you">Hmm...So you don't like sharp edges?</a>
-						</p>
-
-						<p>
-							<a class="hint--top  hint--no-arrow" aria-label="Just the tip!">You can omit the arrow too.</a>
-						</p>
-
-						<h3>Effects</h3>
-
-						<p>
-							<a class="hint--top  hint--no-animate" aria-label="Get a simple show/hide tooltip">Dont like animation?</a>
-						</p>
-						<p>
-							<a class="hint--right  hint--bounce" aria-label="Bounce">Adding a <code>hint--bounce</code> class gives you that...</a>
-						</p>
-						<p>
-							<a class="hint--left  hint--no-shadow" aria-label="Yes, no shadows!">Maybe you do not want shadows.</a>
-						</p>
+						<div class="position-grid__cell">
+							<a href="#" aria-label="bottom" class="hint--bottom">bottom</a>
+						</div>
+						<div class="position-grid__cell">
+							<a href="#" aria-label="bottom-left" class="hint--bottom-left"
+								>bottom-left</a
+							>
+						</div>
+						<div class="position-grid__cell">
+							<a href="#" aria-label="right" class="hint--right">right</a>
+						</div>
+						<div class="position-grid__cell"><a>.</a></div>
+						<div class="position-grid__cell">
+							<a href="#" aria-label="left" class="hint--left">left</a>
+						</div>
+						<div class="position-grid__cell">
+							<a href="#" aria-label="top-right" class="hint--top-right"
+								>top-right</a
+							>
+						</div>
+						<div class="position-grid__cell">
+							<a href="#" aria-label="top" class="hint--top">top</a>
+						</div>
+						<div class="position-grid__cell">
+							<a href="#" aria-label="top-left" class="hint--top-left"
+								>top-left</a
+							>
+						</div>
 					</div>
-				</div>
 
-				<div class="section-inner" style="opacity: 0.7; margin-top: 25px">
-					<strong>Upgrading from v1.x</strong>: If you are already using v1.x, you may need to tweak certain position classes because of the way tooltips are positioned in v2.
-					<br>
-					Its recommended to use <code>aria-label</code> attribute to specify your tooltip text in support of accessibility. Though, you can always use <code>data-hint</code> attribute instead. <a href="https://webaccessibility.withgoogle.com/unit?unit=6&lesson=10">Read more about <code>aria-label</code> here</a>.
+					<h3>Color Modifiers</h3>
+					<p>
+						<a
+							class="status-icon hint--bottom-right hint--error"
+							style="background: indianred"
+							aria-label="This is an error tooltip"
+						>
+							<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+								<path
+									fill="#ffffff"
+									d="M8.27,3L3,8.27V15.73L8.27,21H15.73L21,15.73V8.27L15.73,3M8.41,7L12,10.59L15.59,7L17,8.41L13.41,12L17,15.59L15.59,17L12,13.41L8.41,17L7,15.59L10.59,12L7,8.41"
+								/>
+							</svg>
+						</a>
+						<a
+							class="status-icon hint--bottom-right hint--warning"
+							style="background: orange"
+							aria-label="This is a warning tooltip"
+						>
+							<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+								<path
+									fill="#ffffff"
+									d="M11,4.5H13V15.5H11V4.5M13,17.5V19.5H11V17.5H13Z"
+								/>
+							</svg>
+						</a>
+						<a
+							class="status-icon hint--bottom-left hint--info"
+							style="background: lightblue"
+							aria-label="This is an info tooltip"
+						>
+							<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+								<path
+									fill="#ffffff"
+									d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z"
+								/>
+							</svg>
+						</a>
+						<a
+							class="status-icon hint--bottom-right hint--success"
+							style="background: lightgreen"
+							aria-label="This is success tooltip"
+						>
+							<svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+								<path
+									fill="#ffffff"
+									d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"
+								/>
+							</svg>
+						</a>
+					</p>
 
+					<h3>Size variations</h3>
+
+					<p>
+						<a
+							class="hint--top hint--small"
+							style="
+								border: 1px solid #eee;
+								padding: 3px 6px;
+								border-radius: 4px;
+							"
+							data-hint="You can show very very long sentences inside tooltips by using various available size variation classes."
+						>
+							Small
+						</a>
+
+						<a
+							class="hint--top hint--medium"
+							style="
+								border: 1px solid #eee;
+								padding: 3px 6px;
+								border-radius: 4px;
+							"
+							data-hint="You can show very very long sentences inside tooltips by using various available size variation classes."
+						>
+							Medium
+						</a>
+
+						<a
+							class="hint--top hint--large"
+							style="
+								border: 1px solid #eee;
+								padding: 3px 6px;
+								border-radius: 4px;
+							"
+							data-hint="You can show very very long sentences inside tooltips by using various available size variation classes."
+						>
+							Large
+						</a>
+					</p>
+
+					<h3>Extra</h3>
+
+					<p>
+						<a
+							class="hint--left hint--always"
+							aria-label="...which always keep showing"
+							>You can also make tooltips...</a
+						>
+					</p>
+
+					<p>
+						<a
+							class="hint--top hint--rounded"
+							aria-label="We have rounded corners for you"
+							>Hmm...So you don't like sharp edges?</a
+						>
+					</p>
+
+					<p>
+						<a class="hint--top hint--no-arrow" aria-label="Just the tip!"
+							>You can omit the arrow too.</a
+						>
+					</p>
+
+					<h3>Effects</h3>
+
+					<p>
+						<a
+							class="hint--top hint--no-animate"
+							aria-label="Get a simple show/hide tooltip"
+							>Dont like animation?</a
+						>
+					</p>
+					<p>
+						<a class="hint--right hint--bounce" aria-label="Bounce"
+							>Adding a <code>hint--bounce</code> class gives you that...</a
+						>
+					</p>
+					<p>
+						<a class="hint--left hint--no-shadow" aria-label="Yes, no shadows!"
+							>Maybe you do not want shadows.</a
+						>
+					</p>
 				</div>
+			</div>
+
+			<div class="section-inner" style="opacity: 0.7; margin-top: 25px">
+				<strong>Upgrading from v1.x</strong>: If you are already using v1.x, you
+				may need to tweak certain position classes because of the way tooltips
+				are positioned in v2.
+				<br />
+				Its recommended to use <code>aria-label</code> attribute to specify your
+				tooltip text in support of accessibility. Though, you can always use
+				<code>data-hint</code> attribute instead.
+				<a href="https://webaccessibility.withgoogle.com/unit?unit=6&lesson=10"
+					>Read more about <code>aria-label</code> here</a
+				>.
+			</div>
 		</div>
 
-		<div class="section  footer">
-			Made with hands by <a aria-label="@chinchang457" class="hint--top" href="https://twitter.com/chinchang457">Kushagra Gour</a> in India
+		<div class="section footer">
+			Made with hands by
+			<a
+				aria-label="@chinchang457"
+				class="hint--top"
+				href="https://twitter.com/chinchang457"
+				>Kushagra Gour</a
+			>
+			in India
 		</div>
-
 	</body>
 </html>
