@@ -36,7 +36,7 @@
 		"grunt-contrib-cssmin": "~0.12.3",
 		"grunt-contrib-watch": "~0.5.3",
 		"grunt-sass": "^3.0.2",
-		"node-sass": "^4.13.1",
+		"node-sass": "^7.0.0",
 		"watch": "^1.0.2"
 	}
 }
