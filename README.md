@@ -53,7 +53,7 @@ Use it with other available modifiers in various combinations. Available modifie
 - `hint--rounded`
 - `hint--no-animate`
 - `hint--bounce`
-- `hint-no-arrow`
+- `hint--no-arrow`
 
 ## Upgrading from v1.x
 
