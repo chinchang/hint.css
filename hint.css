@@ -23,6 +23,9 @@
  * Classes added:
  * 	1) hint
  */
+body{
+	font-family: 'Baloo 2', cursive;
+}
 [class*="hint--"] {
   position: relative;
   display: inline-block;
