@@ -3,13 +3,13 @@
 // Declares some variables used within the library.
 
 // Prefix for all classes. By default, BEM naming convention is used
-$hintPrefix: 'hint--' !default;
+$hintPrefix: "hint--" !default;
 
 // font size
-$hintFontSize: 12px !default;
+$hintFontSize: 1rem !default;
 
 // default font family
-$hintFontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif !default;
+$hintFontFamily: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 // paddings
 $hintVerticalPadding: 8px !default;
