@@ -10,20 +10,28 @@
  * 	4) hint--right
  */
 
-@mixin vertical-positioned-tooltip($propertyY, $transitionDirection, $xDirection:0) {
+@mixin vertical-positioned-tooltip(
+	$propertyY,
+	$transitionDirection,
+	$xDirection: 0
+) {
 	&:before {
 		// bring arrow inside so that it animates to normal position when shown.
 		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
-		margin-#{$propertyY}: -2 * $hintArrowBorderWidth + 1px;
+		margin-#{$propertyY}: -1 * $hintArrowBorderWidth + 1px;
+		transform: rotate(var(--rotation));
 	}
 
-	&:before, &:after {
+	&:before,
+	&:after {
 		#{$propertyY}: 100%;
 		left: 50%; // get top-left corner in center
 	}
 
 	&:before {
-		left: calc(50% - #{$hintArrowBorderWidth}); // get arrow center aligned with content
+		left: calc(
+			50% - #{$hintArrowBorderWidth}
+		); // get arrow center aligned with content
 	}
 
 	$translateX: -50%;
@@ -34,7 +42,7 @@
 	}
 
 	&:after {
-		@include vendor('transform', translateX($translateX));
+		transform: translateX($translateX);
 	}
 
 	&:after {
@@ -45,7 +53,7 @@
 	}
 
 	&:hover {
-		@include set-margin('translateY', $transitionDirection, $translateX);
+		@include set-margin("translateY", $transitionDirection, $translateX);
 	}
 }
 
@@ -53,9 +61,10 @@
 	&:before {
 		// bring arrow inside so that it animates to normal position when shown
 		// HACK: +1px to avoid the 1 px white space between arrow and body during transition.
-		margin-#{$propertyX}: -2 * $hintArrowBorderWidth + 1px;
+		margin-#{$propertyX}: -1 * $hintArrowBorderWidth + 1px;
 		// bring back to center vertically
 		margin-bottom: -1 * $hintArrowBorderWidth;
+		transform: rotate(var(--rotation));
 	}
 
 	&:after {
@@ -63,16 +72,16 @@
 		margin-bottom: -1 * floor($hintTooltipHeight / 2);
 	}
 
-	&:before, &:after {
+	&:before,
+	&:after {
 		#{$propertyX}: 100%;
 		bottom: 50%;
 	}
 
 	&:hover {
-		@include set-margin('translateX', $transitionDirection);
+		@include set-margin("translateX", $transitionDirection);
 	}
 }
-
 
 /**
  * set default color for tooltip arrows
@@ -83,56 +92,62 @@
  * top tooltip
  */
 .#{$hintPrefix}top {
-	@include vertical-positioned-tooltip('bottom', -1);
+	--rotation: 135deg;
+	@include vertical-positioned-tooltip("bottom", -1);
 }
 
 /**
  * bottom tooltip
  */
 .#{$hintPrefix}bottom {
-	@include vertical-positioned-tooltip('top', 1);
+	--rotation: -45deg;
+	@include vertical-positioned-tooltip("top", 1);
 }
 
 /**
  * right tooltip
  */
 .#{$hintPrefix}right {
-	@include horizontal-positioned-tooltip('left', 1);
+	--rotation: -135deg;
+	@include horizontal-positioned-tooltip("left", 1);
 }
 
 /**
  * left tooltip
  */
 .#{$hintPrefix}left {
-	@include horizontal-positioned-tooltip('right', -1);
+	--rotation: 45deg;
+	@include horizontal-positioned-tooltip("right", -1);
 }
 
 /**
  * top-left tooltip
  */
 .#{$hintPrefix}top-left {
-	@include vertical-positioned-tooltip('bottom', -1, -1);
+	--rotation: 135deg;
+	@include vertical-positioned-tooltip("bottom", -1, -1);
 }
-
 
 /**
  * top-right tooltip
  */
 .#{$hintPrefix}top-right {
-	@include vertical-positioned-tooltip('bottom', -1, 1);
+	--rotation: 135deg;
+	@include vertical-positioned-tooltip("bottom", -1, 1);
 }
 
 /**
  * bottom-left tooltip
  */
 .#{$hintPrefix}bottom-left {
-	@include vertical-positioned-tooltip('top', 1, -1);
+	--rotation: -45deg;
+	@include vertical-positioned-tooltip("top", 1, -1);
 }
-
 
 /**
  * bottom-right tooltip
  */
 .#{$hintPrefix}bottom-right {
-	@include vertical-positioned-tooltip('top', 1, 1);
+	--rotation: -45deg;
+	@include vertical-positioned-tooltip("top", 1, 1);
 }

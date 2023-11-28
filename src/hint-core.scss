@@ -14,12 +14,13 @@
 	position: relative;
 	display: inline-block;
 
-	&:before, &:after {
+	&:before,
+	&:after {
 		position: absolute;
 
 		// HACK: Trigger hardware accelerated rendering, otherwise transform was not
 		// working on a hidden element
-		@include vendor('transform', translate3d(0, 0, 0));
+		transform: translate3d(0, 0, 0);
 
 		// HACK: visibility is set to hidden because IE & Opera don't support
 		// pointer-events on HTML content yet because of which hovering a hidden tooltip
@@ -30,28 +31,32 @@
 		// shouldn't receive pointer events, otherwise even hovering tooltip will make it appear
 		pointer-events: none;
 
-		@include vendor('transition', $hintTransitionDuration ease);
-		@include vendor('transition-delay', $hintHideDelay);
+		transition: $hintTransitionDuration ease;
+		transition-delay: $hintHideDelay;
 	}
 
-	&:hover:before, &:hover:after {
+	&:hover:before,
+	&:hover:after {
 		visibility: visible;
 		opacity: 1;
 	}
 
-	&:hover:before, &:hover:after {
+	&:hover:before,
+	&:hover:after {
 		// $hintShowDelay will apply as soon as element is hovered.
-		@include vendor('transition-delay', $hintShowDelay);
+		transition-delay: $hintShowDelay;
 	}
 
 	/**
 	 * tooltip arrow
 	 */
 	&:before {
-		content: '';
+		content: "";
 		position: absolute;
 		background: transparent;
 		border: $hintArrowBorderWidth solid transparent;
+		background-color: $hintDefaultColor;
+		clip-path: polygon(-5%0%, 100%0%, 100%105%);
 		// move z-index 1 up than :after so that it shows over box-shadow
 		z-index: $hintZIndex + 1;
 	}
@@ -80,9 +85,10 @@
 }
 
 // Hide tooltips if any of the supported attributes is empty.
-[aria-label=''],
-[data-hint=''] {
-	&:before, &:after {
+[aria-label=""],
+[data-hint=""] {
+	&:before,
+	&:after {
 		display: none !important;
 	}
 }

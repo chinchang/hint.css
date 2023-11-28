@@ -11,12 +11,14 @@
  *
  */
 
-
 // mixin to generate different color style tooltips
 @mixin hint-type($color) {
 	&:after {
 		background-color: $color;
 		text-shadow: 0 -1px 0px darken($color, $hintTextShadowDarkenAmount);
+	}
+	&:before {
+		background-color: $color;
 	}
 
 	// generate arrow color style
@@ -34,19 +36,19 @@
  * Warning
  */
 .#{$hintPrefix}warning {
-	@include hint-type($hintWarningColor)
+	@include hint-type($hintWarningColor);
 }
 
 /**
  * Info
  */
 .#{$hintPrefix}info {
-	@include hint-type($hintInfoColor)
+	@include hint-type($hintInfoColor);
 }
 
 /**
  * Success
  */
 .#{$hintPrefix}success {
-	@include hint-type($hintSuccessColor)
+	@include hint-type($hintSuccessColor);
 }

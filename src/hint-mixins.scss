@@ -29,18 +29,19 @@
 // mixin to set margin on tooltip using translate transform
 // $property
 @mixin set-margin($property, $transitionDirection, $translateX: 0) {
-	$value: unquote("#{$property}(#{$hintTransitionDistance * $transitionDirection})");
+	$value: unquote(
+		"#{$property}(#{$hintTransitionDistance * $transitionDirection})"
+	);
 	&:before {
-		@include vendor('transform', $value);
+		transform: $value rotate(var(--rotation));
 	}
 	&:after {
 		@if $translateX != 0 {
 			// For vertical tooltips, we need to animate in y-direction
 			// retaining its x-transform.
-			@include vendor('transform', translateX($translateX) $value);
-		}
-		@else {
-			@include vendor('transform', $value);
+			transform: translateX($translateX) $value;
+		} @else {
+			transform: $value;
 		}
 	}
 }
