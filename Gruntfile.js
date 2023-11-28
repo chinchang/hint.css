@@ -1,83 +1,83 @@
 /*global module:false*/
 
-const sass = require("node-sass");
+const sass = require("sass");
 
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 	// Project configuration.
 	grunt.initConfig({
 		pkg: grunt.file.readJSON("package.json"),
 
 		meta: {
-			getBanner: function() {
+			getBanner: function () {
 				return "/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - <%= meta.banner %>";
 			},
-			getBannerForBaseVersion: function() {
+			getBannerForBaseVersion: function () {
 				return "/*! <%= pkg.title || pkg.name %> (base version) - v<%= pkg.version %> - <%= meta.banner %>";
 			},
 			banner:
 				'<%= grunt.template.today("yyyy-mm-dd") + "\\n" %>' +
 				'<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-				'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %> */\n\n'
+				'* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %> */\n\n',
 		},
 
 		sass: {
 			options: {
 				implementation: sass,
-				sourceMap: false
+				sourceMap: false,
 			},
 			dist: {
 				files: {
 					"<%= pkg.name %>.css": "src/<%= pkg.name %>.scss",
-					"<%= pkg.name %>.base.css": "src/<%= pkg.name %>.base.scss"
-				}
-			}
+					"<%= pkg.name %>.base.css": "src/<%= pkg.name %>.base.scss",
+				},
+			},
 		},
 
 		cssmin: {
 			options: {
-				sourceMap: false
+				sourceMap: false,
 			},
 			compress: {
 				files: {
 					"<%= pkg.name %>.min.css": ["<%= pkg.name %>.css"],
-					"<%= pkg.name %>.base.min.css": ["<%= pkg.name %>.base.css"]
-				}
-			}
+					"<%= pkg.name %>.base.min.css": ["<%= pkg.name %>.base.css"],
+				},
+			},
 		},
 
 		// concat banner to final lib files
 		concat: {
 			options: {
-				banner: "<%= meta.getBanner() %>"
+				banner: "<%= meta.getBanner() %>",
 			},
 			lib: {
 				src: ["<%= pkg.name %>.css"],
-				dest: "<%= pkg.name %>.css"
+				dest: "<%= pkg.name %>.css",
 			},
 			minLib: {
 				src: ["<%= pkg.name %>.min.css"],
-				dest: "<%= pkg.name %>.min.css"
+				dest: "<%= pkg.name %>.min.css",
 			},
 			baseLib: {
 				options: {
-					banner: "<%= meta.getBannerForBaseVersion() %>"
+					banner: "<%= meta.getBannerForBaseVersion() %>",
 				},
 				src: ["<%= pkg.name %>.base.css"],
-				dest: "<%= pkg.name %>.base.css"
+				dest: "<%= pkg.name %>.base.css",
 			},
 			baseMinLib: {
 				options: {
-					banner: "<%= meta.getBannerForBaseVersion() %>"
+					banner: "<%= meta.getBannerForBaseVersion() %>",
 				},
 				src: ["<%= pkg.name %>.base.min.css"],
-				dest: "<%= pkg.name %>.base.min.css"
-			}
+				dest: "<%= pkg.name %>.base.min.css",
+			},
 		},
 
 		watch: {
 			files: "src/*.scss",
-			tasks: "default"
-		}
+			tasks: "default",
+		},
 	});
 
 	// Dependencies
