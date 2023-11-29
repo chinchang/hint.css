@@ -2,7 +2,7 @@
 	"name": "hint",
 	"title": "Hint.css",
 	"description": "A tooltip library in CSS for your lovely websites.",
-	"version": "2.7.0",
+	"version": "3.0.0",
 	"style": "hint.css",
 	"main": "hint.css",
 	"homepage": "https://kushagra.dev/lab/hint/",
