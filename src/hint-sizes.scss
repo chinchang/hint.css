@@ -14,8 +14,10 @@
 
 .#{$hintPrefix}small,
 .#{$hintPrefix}medium,
-.#{$hintPrefix}large {
+.#{$hintPrefix}large,
+.#{$hintPrefix}fit {
 	&:after {
+		box-sizing: border-box;
 		white-space: normal;
 		line-height: 1.4em;
 		word-wrap: break-word; // Ensure long words do not overflow.
@@ -35,5 +37,10 @@
 .#{$hintPrefix}large {
 	&:after {
 		width: $hintSizeLarge;
+	}
+}
+.#{$hintPrefix}fit {
+	&:after {
+		width: 100%;
 	}
 }
