@@ -84,11 +84,6 @@
 }
 
 /**
- * set default color for tooltip arrows
- */
-@include arrow-border-color($hintDefaultColor);
-
-/**
  * top tooltip
  */
 .#{$hintPrefix}top {

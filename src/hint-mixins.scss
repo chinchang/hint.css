@@ -9,23 +9,6 @@
 	#{$property}: $value;
 }
 
-// Generates border-color rules for all possible positions
-@mixin arrow-border-color($color) {
-	@each $position in top, bottom, left, right {
-		@if $position == top or $position == bottom {
-			// Loop further for classes like .top-left, bottom-right etc
-			@each $xDir in left, right {
-				#{if(&, "&", "")}.#{$hintPrefix}#{$position}-#{$xDir}:before {
-					border-#{$position}-color: $color;
-				}
-			}
-		}
-		#{if(&, "&", "")}.#{$hintPrefix}#{$position}:before {
-			border-#{$position}-color: $color;
-		}
-	}
-}
-
 // mixin to set margin on tooltip using translate transform
 // $property
 @mixin set-margin($property, $transitionDirection, $translateX: 0) {

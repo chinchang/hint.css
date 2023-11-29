@@ -20,9 +20,6 @@
 	&:before {
 		background-color: $color;
 	}
-
-	// generate arrow color style
-	@include arrow-border-color($color);
 }
 
 /**
