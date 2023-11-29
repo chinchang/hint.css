@@ -56,7 +56,7 @@
 		background: transparent;
 		border: $hintArrowBorderWidth solid transparent;
 		background-color: $hintDefaultColor;
-		clip-path: polygon(-5%0%, 100%0%, 100%105%);
+		clip-path: polygon(0%0%, 100%0%, 100%100%);
 		// move z-index 1 up than :after so that it shows over box-shadow
 		z-index: $hintZIndex + 1;
 	}

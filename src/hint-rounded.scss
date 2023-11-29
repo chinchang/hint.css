@@ -9,7 +9,9 @@
  */
 
 .#{$hintPrefix}rounded {
-	&:before,
+	&:before {
+		border-radius: 0 $hintBorderRadius 0 0;
+	}
 	&:after {
 		border-radius: $hintBorderRadius;
 	}

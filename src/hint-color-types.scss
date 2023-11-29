@@ -15,7 +15,7 @@
 @mixin hint-type($color) {
 	&:after {
 		background-color: $color;
-		text-shadow: 0 -1px 0px darken($color, $hintTextShadowDarkenAmount);
+		text-shadow: 0 1px 0px darken($color, $hintTextShadowDarkenAmount);
 	}
 	&:before {
 		background-color: $color;
