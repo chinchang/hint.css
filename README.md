@@ -50,12 +50,13 @@ Hello Sir, <span class="hint--bottom" aria-label="Thank you!">hover me.</span>
 Use it with other available modifiers in various combinations. Available modifiers:
 
 - _Colors_ - `hint--error`, `hint--info`, `hint--warning`, `hint--success`
-- _Sizes_ - `hint--small`, `hint--medium`, `hint--large`
+- _Sizes_ - `hint--small`, `hint--medium`, `hint--large`, `hint--fit`
 - `hint--always`
 - `hint--rounded`
 - `hint--no-animate`
 - `hint--bounce`
 - `hint--no-arrow`
+- `hint--no-shadow`
 
 ## Upgrading from v1.x
 
