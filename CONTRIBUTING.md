@@ -37,6 +37,4 @@ Though this should be sufficient for building the library for testing, in case y
 
 # Stay in touch
 
-To catch all updates and discussion, join the mailing list: **hintcss@googlegroups.com**.
-
-To subscribe: **hintcss+subscribe@googlegroups.com** or visit [here](https://groups.google.com/forum/?fromgroups=#!forum/hintcss).
+Best place to get in touch regarding this library is the [issues board on Github](https://github.com/chinchang/hint.css/issues).
