@@ -21,32 +21,43 @@
 .#{$hintPrefix}bounce {
 	&:before,
 	&:after {
-		--spring-easing: linear(
-			0,
-			0.009,
-			0.035 2.1%,
-			0.141 4.4%,
-			0.723 12.9%,
-			0.938,
-			1.077 20.4%,
-			1.121,
-			1.149 24.3%,
-			1.159,
-			1.163 27%,
-			1.154,
-			1.129 32.8%,
-			1.051 39.6%,
-			1.017 43.1%,
-			0.991,
-			0.977 51%,
-			0.975 57.1%,
-			0.997 69.8%,
-			1.003 76.9%,
-			1
-		);
-
 		transition: opacity 0.3s ease, visibility 0.3s ease,
-			transform 0.5s var(--spring-easing);
+			transform 0.3s cubic-bezier(0.71, 1.7, 0.77, 1.24);
+	}
+}
+
+// Better bounce on support browsers
+@supports (transition-timing-function: linear(0, 1)) {
+	.#{$hintPrefix}bounce {
+		&:before,
+		&:after {
+			--spring-easing: linear(
+				0,
+				0.009,
+				0.035 2.1%,
+				0.141 4.4%,
+				0.723 12.9%,
+				0.938,
+				1.077 20.4%,
+				1.121,
+				1.149 24.3%,
+				1.159,
+				1.163 27%,
+				1.154,
+				1.129 32.8%,
+				1.051 39.6%,
+				1.017 43.1%,
+				0.991,
+				0.977 51%,
+				0.975 57.1%,
+				0.997 69.8%,
+				1.003 76.9%,
+				1
+			);
+
+			transition: opacity 0.3s ease, visibility 0.3s ease,
+				transform 0.5s var(--spring-easing);
+		}
 	}
 }
 
