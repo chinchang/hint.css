@@ -11,6 +11,6 @@
 .#{$hintPrefix}rounded {
 	&:before,
 	&:after {
-		border-radius: 4px;
+		border-radius: $hintBorderRadius;
 	}
 }
