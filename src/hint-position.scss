@@ -69,7 +69,7 @@
 
 	&:after {
 		// bring back to center
-		margin-bottom: -1 * floor($hintTooltipHeight / 2);
+		margin-bottom: calc(-1 * $hintTooltipHeight / 2);
 	}
 
 	&:before,

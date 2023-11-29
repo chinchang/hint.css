@@ -16,7 +16,7 @@ $hintVerticalPadding: 8px !default;
 $hintHorizontalPadding: 10px !default;
 
 // default tooltip height
-$hintTooltipHeight: $hintFontSize + 2 * $hintVerticalPadding !default;
+$hintTooltipHeight: calc($hintFontSize + 2 * $hintVerticalPadding) !default;
 
 // border-width for tooltip arrow
 $hintArrowBorderWidth: 6px !default;
