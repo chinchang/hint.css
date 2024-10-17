@@ -122,4 +122,4 @@ This doesn't make use of a lot of BEM methodology but big thanks to [@csswizardr
 
 # Sponsor
 
-[![](https://user-images.githubusercontent.com/379918/134402085-15cf29bc-2266-4b2d-9354-1830adc4a240.png)](https://cssbattle.dev)
+[![](https://user-images.githubusercontent.com/379918/134402085-15cf29bc-2266-4b2d-9354-1830adc4a240.png)](https://cssbattle.dev?utm_source=hintcssrepo)
